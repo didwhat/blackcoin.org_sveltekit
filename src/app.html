@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Website for Blackcoin.org" />
+		<link rel="icon" type="image/png" sizes="100x100" href="/favicon.png" />
+		<title>Blackcoin.org</title>
+
+		%sveltekit.head%
+		<!-- Gitter -->
+		<style type="text/css">
+			.gitter-open-chat-button {
+				background-color: #262626;
+			}
+		</style>
+	</head>
+	<body data-sveltekit-prefetch>
+		<div>%sveltekit.body%</div>
+		<!-- Gitter -->
+		<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+		<script>
+			((window.gitter = {}).chat = {}).options = {
+				room: 'BlackCoin_Hub/General'
+			};
+		</script>
+	</body>
+</html>

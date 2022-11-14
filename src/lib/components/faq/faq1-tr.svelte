@@ -1,0 +1,243 @@
+<script>
+	import FAQ1 from '$lib/data/faq1';
+</script>
+
+<!-- FAQ Group 1 -->
+<div class="faq-group">
+	<div>
+		<h3>General</h3>
+		<p>General questions about Blackcoin.</p>
+	</div>
+
+	<!-- FAQ Accordion -->
+	<div
+		class="panel-group accordions-1 ws-s"
+		id="faq-accordion-1"
+		role="tablist"
+		aria-multiselectable="true"
+	>
+		<!-- Item 1 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-1">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.MORE_ABOUT_BLACKCOIN}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER1}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER2}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER3}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER4}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER5}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER6}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER7}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER8}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER9}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER10}</p>
+					<p>{FAQ1.MORE_ABOUT_BLACKCOIN_ANSWER11}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+		<!-- Item 2 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-2">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.HOW_DOES_IT_WORK}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER1}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER2}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER3}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER4}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER5}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER6}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER7}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER8}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER9}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER10}</p>
+					<p>{FAQ1.HOW_DOES_IT_WORK_ANSWER11}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 3 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-3">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.BLACKCOIN_VS_BITCOIN}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.BLACKCOIN_VS_BITCOIN_ANSWER1}</p>
+					<p>{FAQ1.BLACKCOIN_VS_BITCOIN_ANSWER2}</p>
+					<p>{FAQ1.BLACKCOIN_VS_BITCOIN_ANSWER3}</p>
+					<p>{FAQ1.BLACKCOIN_VS_BITCOIN_ANSWER4}</p>
+					<p>{FAQ1.BLACKCOIN_VS_BITCOIN_ANSWER5}</p>
+					<p>{FAQ1.BLACKCOIN_VS_BITCOIN_ANSWER6}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 4 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-4">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.PROOF_OF_STAKE_VS_PROOF_OF_WORK}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.PROOF_OF_STAKE_VS_PROOF_OF_WORK_ANSWER1}</p>
+					<p>{FAQ1.PROOF_OF_STAKE_VS_PROOF_OF_WORK_ANSWER2}</p>
+					<p>{FAQ1.PROOF_OF_STAKE_VS_PROOF_OF_WORK_ANSWER3}</p>
+					<p>{FAQ1.PROOF_OF_STAKE_VS_PROOF_OF_WORK_ANSWER4}</p>
+					<p>{FAQ1.PROOF_OF_STAKE_VS_PROOF_OF_WORK_ANSWER5}</p>
+					<p>{FAQ1.PROOF_OF_STAKE_VS_PROOF_OF_WORK_ANSWER6}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 5 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-5">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.THE_ANNUAL_INFLATION_OF_BLACKCOIN}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.THE_ANNUAL_INFLATION_OF_BLACKCOIN_ANSWER1}</p>
+					<p>{FAQ1.THE_ANNUAL_INFLATION_OF_BLACKCOIN_ANSWER2}</p>
+					<p>{FAQ1.THE_ANNUAL_INFLATION_OF_BLACKCOIN_ANSWER3}</p>
+					<p>{FAQ1.THE_ANNUAL_INFLATION_OF_BLACKCOIN_ANSWER4}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 6 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-6">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.WHERE_CAN_I_CHECK_THE_NETWORK_WEIGHT}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.WHERE_CAN_I_CHECK_THE_NETWORK_WEIGHT_ANSWER1}</p>
+					<p>{FAQ1.WHERE_CAN_I_CHECK_THE_NETWORK_WEIGHT_ANSWER2}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 7 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-7">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.WHERE_CAN_I_BUY_BLACKCOIN}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.WHERE_CAN_I_BUY_BLACKCOIN_ANSWER1}</p>
+					<p>{FAQ1.WHERE_CAN_I_BUY_BLACKCOIN_ANSWER2}</p>
+					<p>{FAQ1.WHERE_CAN_I_BUY_BLACKCOIN_ANSWER3}</p>
+					<p>{FAQ1.WHERE_CAN_I_BUY_BLACKCOIN_ANSWER4}</p>
+					<p>{FAQ1.WHERE_CAN_I_BUY_BLACKCOIN_ANSWER5}</p>
+					<p>{FAQ1.WHERE_CAN_I_BUY_BLACKCOIN_ANSWER6}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 8 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-8">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.STAKING}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.STAKING_ANSWER1}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 9 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-9">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.WHAT_KIND_OF_COMPUTING_POWER_IS_REQUIRED_FOR_STAKING}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.WHAT_KIND_OF_COMPUTING_POWER_IS_REQUIRED_FOR_STAKING_ANSWER}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 10 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-10">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.HOW_BIG_ARE_BLOCK_REWARDS}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.HOW_BIG_ARE_BLOCK_REWARDS_ANSWER}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 11 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-11">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.HOW_OFTEN_WILL_I_RECEIVE_A_BLOCK_REWARD}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.HOW_OFTEN_WILL_I_RECEIVE_A_BLOCK_REWARD_ANSWER1}</p>
+					<p>{FAQ1.HOW_OFTEN_WILL_I_RECEIVE_A_BLOCK_REWARD_ANSWER2}</p>
+					<p>{FAQ1.HOW_OFTEN_WILL_I_RECEIVE_A_BLOCK_REWARD_ANSWER3}</p>
+					<p>{FAQ1.HOW_OFTEN_WILL_I_RECEIVE_A_BLOCK_REWARD_ANSWER4}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+
+		<!-- Item 12 -->
+		<div class="panel panel-default">
+			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-1-h-12">
+				<h4 class="panel-title">
+					<span>
+						<p>{FAQ1.WHAT_ARE_THE_OFFICIAL_BLACKCOIN_WEBSITES}</p>
+					</span>
+				</h4>
+				<div class="panel-body">
+					<p>{FAQ1.WHAT_ARE_THE_OFFICIAL_BLACKCOIN_WEBSITES}</p>
+				</div>
+			</div>
+		</div>
+		<!-- / .panel -->
+	</div>
+	<!-- / .panel-group .accordion-1 -->
+	<hr class="mb-sm-50" />
+</div>
+<!-- / .faq-group -->
