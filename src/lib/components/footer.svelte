@@ -14,7 +14,7 @@
 				home.all_rights_reserved['en']}
 		</small>
 		<small>
-			<a href="#page-top">{home.to_the_top[lang] || home.to_the_top['en']} ^ </a>
+			<a href="#home">{home.to_the_top[lang] || home.to_the_top['en']} ^ </a>
 		</small>
 	</div>
 </footer>

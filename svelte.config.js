@@ -8,7 +8,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter({precompress: true, strict: false})
+		adapter: adapter({precompress: true})
 	}
 };
 

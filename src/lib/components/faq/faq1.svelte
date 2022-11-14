@@ -291,7 +291,7 @@
 					</p>
 					<p>
 						You could find exchanges with the greatest volume at
-						<a href=" https://coinmarketcap.com/currencies/blackcoin/#markets" target="_blank"
+						<a href="https://coinmarketcap.com/currencies/blackcoin/#markets" target="_blank"
 							>Coinmarketcap.com/Markets</a
 						>
 					</p>

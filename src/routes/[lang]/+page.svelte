@@ -15,6 +15,8 @@
 	<meta name="description" content="BlackcoinOrg" />
 	<meta name="lang" content={lang} />
 </svelte:head>
+
+<div id="home"></div>
 <Hero bind:lang />
 <About bind:lang />
 <Exchange bind:lang />

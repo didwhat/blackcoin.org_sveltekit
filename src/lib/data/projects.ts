@@ -97,7 +97,7 @@ export default [
 				address: 'BDFgwjx8q9xrpeNzyY1Hz8x36Dmg39C4BU',
 				links: [
 					{
-						url: '../https://blackcoinmore.org/',
+						url: 'https://blackcoinmore.org/',
 						link_content: 'Blackcoin More'
 					}
 				]
