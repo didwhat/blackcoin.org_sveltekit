@@ -36,7 +36,6 @@
 	}
 	#menuOpener {
 		float: right;
-		font-size: x-large;
 		background-color: transparent;
 		border: none;
 		padding-bottom: 1rem;
@@ -63,6 +62,9 @@
 			padding: 3rem;
 			width: 9vw;
 			font-size: xxx-large;
+		}
+		#menuOpener {
+			font-size: x-large;
 		}
 	}
 </style>

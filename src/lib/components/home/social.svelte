@@ -26,6 +26,9 @@
 </div>
 
 <style>
+	.container {
+		overflow: hidden;
+	}
 	ul {
 		display: flex;
 		flex-direction: row;

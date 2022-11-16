@@ -5,7 +5,7 @@
 	import LangSelect from './lang-select.svelte';
 	
 	export let lang;
-	let width = 700
+	let width = 0
 	
 	let open = false
 

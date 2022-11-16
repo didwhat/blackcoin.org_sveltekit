@@ -77,7 +77,6 @@
 	.container {
 		padding: 5vw;
 		display: block;
-		width: 80%;
 	}
 	.blkb {
 		display: flex;
@@ -92,6 +91,7 @@
 		.container {
 			display: flex;
 			justify-content: center;
+			width: 80%;
 		}
 		.about-section {
 			width: 33%;

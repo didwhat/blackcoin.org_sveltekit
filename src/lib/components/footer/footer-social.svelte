@@ -14,6 +14,7 @@
 	.social {
 		display: inline-flex;
 		justify-content: center;
+		flex-wrap: wrap;
 	}
 	a {
 		padding-right: 1rem;

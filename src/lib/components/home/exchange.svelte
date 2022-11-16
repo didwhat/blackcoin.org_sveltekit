@@ -49,6 +49,11 @@
 		padding: 3rem 0;
 	}
 	li {
-		padding: 3rem;
+		padding: 1rem;
+	}
+	@media (min-width: 700px) {
+		li {
+			padding: 3rem;
+		}
 	}
 </style>
