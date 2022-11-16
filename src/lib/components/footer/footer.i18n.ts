@@ -47,4 +47,4 @@ export default {
 		it: 'In alto' /*Italian*/,
 		hr: '' /*Croatian*/
 	}
-}
+};

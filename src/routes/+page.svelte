@@ -14,7 +14,7 @@
 	<meta name="lang" content={lang} />
 </svelte:head>
 
-<div id="home"></div>
+<div id="home" />
 <Hero {lang} />
 <About {lang} />
 <Exchange {lang} />

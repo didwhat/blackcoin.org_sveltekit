@@ -18,7 +18,7 @@
 	>
 		<!-- Item 1 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-3-h-1">
+			<div class="panel-heading" role="tab" id="faq-3-h-1">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ3.BLACKCOIN_FAUCETS}</p>
@@ -34,7 +34,7 @@
 
 		<!-- Item 2 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-3-h-2">
+			<div class="panel-heading" role="tab" id="faq-3-h-2">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ3.BOOTSTRAP}</p>
@@ -64,7 +64,7 @@
 
 		<!-- Item 3 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-3-h-3">
+			<div class="panel-heading" role="tab" id="faq-3-h-3">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ3.INTEGRATING_BLACKCOIN_PAYMENTS}</p>
@@ -81,7 +81,8 @@
 
 	<span class="faq-contact-links"
 		><i class="fa fa-info-circle" /> If you have more questions
-		<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter.</a></span
+		<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter.</a
+		></span
 	>
 </div>
 <!-- / .faq-group -->

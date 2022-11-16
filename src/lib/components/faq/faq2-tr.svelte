@@ -18,7 +18,7 @@
 	>
 		<!-- Item 1 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-1">
+			<div class="panel-heading" role="tab" id="faq-2-h-1">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.HOW_LONG_DOES_THE_WALLET_TAKE_TO_SYNC}</p>
@@ -35,7 +35,7 @@
 
 		<!-- Item 2 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-2">
+			<div class="panel-heading" role="tab" id="faq-2-h-2">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.WHY_IS_WALLET_NOT_SYNCING}</p>
@@ -69,7 +69,7 @@
 
 		<!-- Item 3 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-3">
+			<div class="panel-heading" role="tab" id="faq-2-h-3">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.HOW_TO_SEND_BLACKCOIN}</p>
@@ -91,7 +91,7 @@
 
 		<!-- Item 4 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-4">
+			<div class="panel-heading" role="tab" id="faq-2-h-4">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.HOW_TO_RECEIVE_BLACKCOINS}</p>
@@ -111,7 +111,7 @@
 
 		<!-- Item 5 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-5">
+			<div class="panel-heading" role="tab" id="faq-2-h-5">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.HOW_TO_OPEN_YOUR_WALLET_FOR_STAKING}</p>
@@ -127,7 +127,7 @@
 
 		<!-- Item 6 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-6">
+			<div class="panel-heading" role="tab" id="faq-2-h-6">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.WHAT_IS_THE_MAX_AMOUNT_OF_NETWORK_CONNECTIONS}</p>
@@ -144,7 +144,7 @@
 
 		<!-- Item 7 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-7">
+			<div class="panel-heading" role="tab" id="faq-2-h-7">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.UPGRADING_WALLET}</p>
@@ -160,7 +160,7 @@
 
 		<!-- Item 8 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-8">
+			<div class="panel-heading" role="tab" id="faq-2-h-8">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.CHANGING_WALLET_LOCATION}</p>
@@ -175,7 +175,7 @@
 
 		<!-- Item 9 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-9">
+			<div class="panel-heading" role="tab" id="faq-2-h-9">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.HOW_OFTEN_DO_I_NEED_TO_BACKUP_MY_WALLET}</p>
@@ -191,7 +191,7 @@
 
 		<!-- Item 10 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-10">
+			<div class="panel-heading" role="tab" id="faq-2-h-10">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.HOW_TO_STOP_STAKING_TO_BE_ABLE_TO_SEND_COINS}</p>
@@ -207,7 +207,7 @@
 
 		<!-- Item 11 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-11">
+			<div class="panel-heading" role="tab" id="faq-2-h-11">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.SENDING_BLACKCOINS_FROM_CERTAIN_ADDRESS}</p>
@@ -224,7 +224,7 @@
 
 		<!-- Item 12 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-12">
+			<div class="panel-heading" role="tab" id="faq-2-h-12">
 				<h4 class="panel-title">
 					<span>
 						<p>{FAQ2.DOES_A_WEB_OR_MOBILE_WALLET_EXIST}</p>

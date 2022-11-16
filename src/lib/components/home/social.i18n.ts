@@ -22,5 +22,5 @@ export default {
 		nl: 'Word lid van de Blackcoin-community' /*Dutch*/,
 		it: 'Unisciti alla comunità Blackcoin' /*Italian*/,
 		hr: 'Pridružite se zajednici Blackcoin' /*Croatian*/
-	},
-}
+	}
+};

@@ -334,5 +334,5 @@ export default {
 		nl: 'Iedereen kan de portemonnee beheren en transacties uitvoeren met dezelfde anonimiteit als Bitcoin. Er is geen persoonlijk identificeerbare informatie vereist.' /*Dutch*/,
 		it: 'Chiunque può eseguire il portafoglio ed effettuare transazioni con lo stesso anonimato di Bitcoin. Non sono richieste informazioni di identificazione personale.' /*Italian*/,
 		hr: 'Svatko može pokretati novčanik i obavljati transakcije s istom anonimnošću kao i Bitcoin. Nisu potrebne osobne identifikacijske informacije.' /*Croatian*/
-	},
-}
+	}
+};

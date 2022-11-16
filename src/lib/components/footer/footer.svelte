@@ -2,19 +2,19 @@
 	import footerI18n from './footer.i18n';
 	import FooterSocial from './footer-social.svelte';
 	export let lang;
-	const date = new Date()
+	const date = new Date();
 </script>
 
 <footer>
 	<p>
 		<a href="#home">{footerI18n.to_the_top[lang] || footerI18n.to_the_top['en']} ^ </a>
-		<FooterSocial {lang} />
+		<FooterSocial />
 	</p>
 	<div class="copyright">
 		<small
 			>&copy; 2014-{date.getFullYear()}
 			<span id="copyright" />
-			Blackcoin.org 
+			Blackcoin.org
 		</small>
 		<small>
 			- {footerI18n.all_rights_reserved[lang] || footerI18n.all_rights_reserved['en']}
@@ -32,7 +32,7 @@
 	a {
 		float: right;
 		color: goldenrod;
-		padding: .2rem;
+		padding: 0.2rem;
 	}
 	.copyright {
 		width: 50%;

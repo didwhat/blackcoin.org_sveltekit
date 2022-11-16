@@ -46,5 +46,5 @@ export default {
 		nl: 'Donaties' /*Dutch*/,
 		it: 'Donazioni' /*Italian*/,
 		hr: 'Donacije' /*Croatian*/
-	},
-}
+	}
+};

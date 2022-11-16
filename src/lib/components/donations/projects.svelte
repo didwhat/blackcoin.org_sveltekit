@@ -4,15 +4,11 @@
 	import outreach from './outreach';
 	import development from './development';
 
-	const projects = [
-		...development,
-		...outreach,
-		...ongoing,
-		...community,
-	]
+	const projects = [...development, ...outreach, ...ongoing, ...community];
+	export let lang;
 </script>
 
-<div class="container">
+<div class="grid">
 	{#each projects as group}
 		<div class="group">
 			<center>
@@ -42,39 +38,11 @@
 </div>
 
 <style>
-	a {
-		color: #337ab7;
-		text-decoration: none;
-	}
-	a:focus,
-	a:hover {
-		color: #23527c;
-		text-decoration: underline;
-	}
-	a:focus {
-		outline: thin dotted;
-		outline: 5px auto -webkit-focus-ring-color;
-		outline-offset: -2px;
-	}
-
-	a {
-		color: #862;
-		text-decoration: none !important;
-	}
-
-	a:hover {
-		color: #ccc !important;
-	}
-
-	a:focus {
-		color: #ccc !important;
-	}
-
 	li {
 		font-size: x-large;
 	}
 
-	.container {
+	.grid {
 		padding-top: 15rem;
 		display: grid;
 		align-items: start;
@@ -95,7 +63,7 @@
 		text-align: center;
 		padding: 1rem;
 		margin: 1rem;
-		background-color: rgba(255,255,255, .1);
+		background-color: rgba(255, 255, 255, 0.1);
 	}
 	.content {
 		display: grid;
@@ -104,7 +72,7 @@
 		justify-items: center;
 	}
 	@media (min-width: 700px) {
-		.container {
+		.grid {
 			grid-template-columns: 1fr 1fr;
 		}
 	}

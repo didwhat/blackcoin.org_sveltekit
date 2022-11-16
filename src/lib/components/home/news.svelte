@@ -1,7 +1,7 @@
 <script type="typescript">
 	import newsI18n from './news.i18n';
 	import news from './news';
-  import i18n from '$lib/i18n';
+	import i18n from '$lib/i18n';
 
 	let i = 0;
 	$: bn = news[i % news.length];
@@ -18,14 +18,14 @@
 	<br />
 	<div class="newsBox">
 		<div class="title">
-			<h2>{i18n(newsI18n,'latest_news',lang)}</h2>
+			<h2>{i18n(newsI18n, 'latest_news', lang)}</h2>
 		</div>
 		<ul class="innerBox">
 			<li>
 				<h3>
 					<a href={bn.url}>
 						<span>{bn.date}</span>
-						<span class="content">{i18n(bn,'news',lang)}</span>
+						<span class="content">{i18n(bn, 'news', lang)}</span>
 					</a>
 				</h3>
 			</li>

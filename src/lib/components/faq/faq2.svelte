@@ -1,5 +1,7 @@
 <script>
+	import i18n from '$lib/i18n';
 	import FAQ2 from './faq2';
+	export let lang;
 </script>
 
 <!-- FAQ Group 2 -->
@@ -18,10 +20,10 @@
 	>
 		<!-- Item 1 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-1">
+			<div class="panel-heading" role="tab" id="faq-2-h-1">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.HOW_LONG_DOES_THE_WALLET_TAKE_TO_SYNC}
+						{i18n(FAQ2, 'HOW_LONG_DOES_THE_WALLET_TAKE_TO_SYNC', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -41,10 +43,10 @@
 
 		<!-- Item 2 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-2">
+			<div class="panel-heading" role="tab" id="faq-2-h-2">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.WHY_IS_WALLET_NOT_SYNCING}
+						{i18n(FAQ2, 'WHY_IS_WALLET_NOT_SYNCING', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -99,10 +101,10 @@
 
 		<!-- Item 3 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-3">
+			<div class="panel-heading" role="tab" id="faq-2-h-3">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.HOW_TO_SEND_BLACKCOIN}
+						{i18n(FAQ2, 'HOW_TO_SEND_BLACKCOIN', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -140,10 +142,10 @@
 
 		<!-- Item 4 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-4">
+			<div class="panel-heading" role="tab" id="faq-2-h-4">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.HOW_TO_RECEIVE_BLACKCOINS}
+						{i18n(FAQ2, 'HOW_TO_RECEIVE_BLACKCOINS', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -170,10 +172,10 @@
 
 		<!-- Item 5 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-5">
+			<div class="panel-heading" role="tab" id="faq-2-h-5">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.HOW_TO_OPEN_YOUR_WALLET_FOR_STAKING}
+						{i18n(FAQ2, 'HOW_TO_OPEN_YOUR_WALLET_FOR_STAKING', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -187,10 +189,10 @@
 
 		<!-- Item 6 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-6">
+			<div class="panel-heading" role="tab" id="faq-2-h-6">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.WHAT_IS_THE_MAX_AMOUNT_OF_NETWORK_CONNECTIONS}
+						{i18n(FAQ2, 'WHAT_IS_THE_MAX_AMOUNT_OF_NETWORK_CONNECTIONS', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -207,10 +209,10 @@
 
 		<!-- Item 7 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-7">
+			<div class="panel-heading" role="tab" id="faq-2-h-7">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.UPGRADING_WALLET}
+						{i18n(FAQ2, 'UPGRADING_WALLET', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -226,10 +228,10 @@
 
 		<!-- Item 8 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-8">
+			<div class="panel-heading" role="tab" id="faq-2-h-8">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.CHANGING_WALLET_LOCATION}
+						{i18n(FAQ2, 'CHANGING_WALLET_LOCATION', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -243,10 +245,10 @@
 
 		<!-- Item 9 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-9">
+			<div class="panel-heading" role="tab" id="faq-2-h-9">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.HOW_OFTEN_DO_I_NEED_TO_BACKUP_MY_WALLET}
+						{i18n(FAQ2, 'HOW_OFTEN_DO_I_NEED_TO_BACKUP_MY_WALLET', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -263,10 +265,10 @@
 
 		<!-- Item 10 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-10">
+			<div class="panel-heading" role="tab" id="faq-2-h-10">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.HOW_TO_STOP_STAKING_TO_BE_ABLE_TO_SEND_COINS}
+						{i18n(FAQ2, 'HOW_TO_STOP_STAKING_TO_BE_ABLE_TO_SEND_COINS', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -281,10 +283,10 @@
 
 		<!-- Item 11 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-11">
+			<div class="panel-heading" role="tab" id="faq-2-h-11">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.SENDING_BLACKCOINS_FROM_CERTAIN_ADDRESS}
+						{i18n(FAQ2, 'SENDING_BLACKCOINS_FROM_CERTAIN_ADDRESS', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -303,10 +305,10 @@
 
 		<!-- Item 12 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-2-h-12">
+			<div class="panel-heading" role="tab" id="faq-2-h-12">
 				<h4 class="panel-title">
 					<span>
-						{FAQ2.DOES_A_WEB_OR_MOBILE_WALLET_EXIST}
+						{i18n(FAQ2, 'DOES_A_WEB_OR_MOBILE_WALLET_EXIST', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -315,8 +317,9 @@
 						multisignature, secure blackcoin wallet platform for both individuals and companies.
 					</p>
 					<p>
-						Web: <a href="https://payblk.blackcoin.io/" target="_blank norefer">PayBLK.BlackCoin.io</a><br
-						/>
+						Web: <a href="https://payblk.blackcoin.io/" target="_blank norefer"
+							>PayBLK.BlackCoin.io</a
+						><br />
 						Mobile:
 						<a
 							href="https://play.google.com/store/apps/details?id=com.obsidiancvt.payblk"

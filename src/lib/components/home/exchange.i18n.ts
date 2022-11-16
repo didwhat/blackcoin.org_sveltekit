@@ -70,5 +70,5 @@ export default {
 		nl: 'Marktvolume' /*Dutch*/,
 		it: 'volume dei mercati' /*Italian*/,
 		hr: 'količinu tržišta' /*Croatian*/
-	},
-}
+	}
+};

@@ -1,5 +1,7 @@
 <script>
+	import i18n from '$lib/i18n';
 	import FAQ3 from './faq3';
+	export let lang;
 </script>
 
 <!-- FAQ Group 3 -->
@@ -18,10 +20,10 @@
 	>
 		<!-- Item 1 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-3-h-1">
+			<div class="panel-heading" role="tab" id="faq-3-h-1">
 				<h4 class="panel-title">
 					<span>
-						{FAQ3.BLACKCOIN_FAUCETS}
+						{i18n(FAQ3, 'BLACKCOIN_FAUCETS', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -38,10 +40,10 @@
 
 		<!-- Item 2 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-3-h-2">
+			<div class="panel-heading" role="tab" id="faq-3-h-2">
 				<h4 class="panel-title">
 					<span>
-						{FAQ3.BOOTSTRAP}
+						{i18n(FAQ3, 'BOOTSTRAP', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
@@ -97,16 +99,17 @@
 
 		<!-- Item 3 -->
 		<div class="panel panel-default">
-			<div onclick="return toggleDisplay(this)" class="panel-heading" role="tab" id="faq-3-h-3">
+			<div class="panel-heading" role="tab" id="faq-3-h-3">
 				<h4 class="panel-title">
 					<span>
-						{FAQ3.INTEGRATING_BLACKCOIN_PAYMENTS}
+						{i18n(FAQ3, 'INTEGRATING_BLACKCOIN_PAYMENTS', lang)}
 					</span>
 				</h4>
 				<div class="panel-body">
 					<p>
-						<a href="/Step-By-Step-Instructions-for-Online-Businesses-_BLK.pdf" target="_blank norefer"
-							>Guide for online businesses on integrating blk payments.</a
+						<a
+							href="/Step-By-Step-Instructions-for-Online-Businesses-_BLK.pdf"
+							target="_blank norefer">Guide for online businesses on integrating blk payments.</a
 						><br />
 					</p>
 				</div>
@@ -118,7 +121,8 @@
 
 	<span class="faq-contact-links"
 		><i class="fa fa-info-circle" /> If you have more questions
-		<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter.</a></span
+		<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter.</a
+		></span
 	>
 </div>
 <!-- / .faq-group -->

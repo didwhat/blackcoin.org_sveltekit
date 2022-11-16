@@ -1,13 +1,13 @@
 <script>
 	import { Hamburger } from 'svelte-hamburgers';
-	import i18n from '$lib/i18n'
+	import i18n from '$lib/i18n';
 	import navI18n from './nav.i18n';
 	import LangSelect from './lang-select.svelte';
-	
+
 	export let lang;
-	let width = 0
-	
-	let open = false
+	let width = 0;
+
+	let open = false;
 
 	const linkArr = [
 		{
@@ -15,7 +15,7 @@
 			title: `CryptoID ${i18n(navI18n, 'explorer', lang)}`
 		},
 		{
-			url: `https://www.coingecko.com/${i18n(navI18n,'locale',lang)}/coins/blackcoin`,
+			url: `https://www.coingecko.com/${i18n(navI18n, 'locale', lang)}/coins/blackcoin`,
 			title: 'Coingecko'
 		},
 		{
@@ -28,11 +28,11 @@
 		},
 		{
 			url: 'https://node.blackcoin.io/insight/',
-			title: `Blacksight ${i18n(navI18n,'explorer',lang)}`
+			title: `Blacksight ${i18n(navI18n, 'explorer', lang)}`
 		},
 		{
 			url: 'https://bitinfocharts.com/blackcoin/',
-			title: `Bitinfocharts ${i18n(navI18n,'explorer',lang)}`
+			title: `Bitinfocharts ${i18n(navI18n, 'explorer', lang)}`
 		},
 		{
 			url: 'https://gihub.com/coinblack/',
@@ -46,10 +46,11 @@
 	$: links = false;
 	$: markets = false;
 </script>
+
 <svelte:window bind:innerWidth={width} />
 <nav id="navbar">
 	<div class="bar">
-		<a id="nav-logo" href="/{i18n(navI18n,'locale',lang)}/">
+		<a id="nav-logo" href="/{i18n(navI18n, 'locale', lang)}/">
 			<img src="/images/blkb.png" alt="Blackcoin - Logo" />
 		</a>
 
@@ -58,10 +59,11 @@
 				<div>
 					<ul id="main-menu">
 						<li>
-							<a  
-								on:click={()=>!!open ? open = false : open = true}
-								href="/{i18n(navI18n,'locale',lang)}/#about">
-								{i18n(navI18n,'about',lang)}
+							<a
+								on:click={() => (!!open ? (open = false) : (open = true))}
+								href="/{i18n(navI18n, 'locale', lang)}/#about"
+							>
+								{i18n(navI18n, 'about', lang)}
 							</a>
 						</li>
 						<!-- <li>
@@ -71,23 +73,24 @@
                 </li> -->
 
 						<li>
-							<a  
-								on:click={()=>!!open ? open = false : open = true}
-								href="/{i18n(navI18n,'locale',lang)}/#downloads">
-								{i18n(navI18n,'download',lang)}
+							<a
+								on:click={() => (!!open ? (open = false) : (open = true))}
+								href="/{i18n(navI18n, 'locale', lang)}/#downloads"
+							>
+								{i18n(navI18n, 'download', lang)}
 							</a>
 						</li>
 						<li on:click={() => (!!markets ? (markets = false) : (markets = true))}>
-							{i18n(navI18n,'markets',lang)}
+							{i18n(navI18n, 'markets', lang)}
 							<ul id="markets" style="display:{!!markets ? 'flex' : 'none'};">
 								<button class="x">X</button>
 								<a
 									class="centered"
-									href="https://www.coingecko.com/{i18n(navI18n,'locale',lang)}/coins/blackcoin"
+									href="https://www.coingecko.com/{i18n(navI18n, 'locale', lang)}/coins/blackcoin"
 									rel="noopener"
 									target="_blanknoreferer"
 								>
-									{i18n(navI18n,'more_charts_on',lang)} CoinGecko
+									{i18n(navI18n, 'more_charts_on', lang)} CoinGecko
 								</a>
 							</ul>
 						</li>
@@ -102,14 +105,15 @@
                     </ul>
                 </li> -->
 						<li>
-							<a  
-								on:click={()=>!!open ? open = false : open = true}
-								href="/{i18n(navI18n,'locale',lang)}/donations">
-								{i18n(navI18n,'donations',lang)}
+							<a
+								on:click={() => (!!open ? (open = false) : (open = true))}
+								href="/{i18n(navI18n, 'locale', lang)}/donations"
+							>
+								{i18n(navI18n, 'donations', lang)}
 							</a>
 						</li>
 						<li on:click={() => (!!links ? (links = false) : (links = true))}>
-							{i18n(navI18n,'links',lang)}
+							{i18n(navI18n, 'links', lang)}
 
 							<ul id="links" style="display:{!!links ? 'flex' : 'none'};">
 								<button class="x">X</button>
@@ -121,11 +125,12 @@
 									</li>
 								{/each}
 								<li id="faq">
-									<a  
-										on:click={()=>!!open ? open = false : open = true}
-										href="/{i18n(navI18n,'locale',lang)}/faq">
+									<a
+										on:click={() => (!!open ? (open = false) : (open = true))}
+										href="/{i18n(navI18n, 'locale', lang)}/faq"
+									>
 										<span>
-											{i18n(navI18n,'faq',lang)}
+											{i18n(navI18n, 'faq', lang)}
 										</span>
 									</a>
 								</li>
@@ -240,7 +245,7 @@
 		top: 0;
 		border-color: #ddb77a;
 		font-size: x-large;
-		padding: 0 .75rem;
+		padding: 0 0.75rem;
 	}
 
 	@media (max-width: 700px) {

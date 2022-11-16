@@ -22,5 +22,5 @@ export default {
 		nl: 'Laatste nieuws' /*Dutch*/,
 		it: 'Ultime notizie' /*Italian*/,
 		hr: ' Najnovije vijesti' /*Croatian*/
-	},
-}
+	}
+};

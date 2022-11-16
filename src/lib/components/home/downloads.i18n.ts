@@ -214,5 +214,5 @@ export default {
 		nl: 'Gitlab-broncode' /*Dutch*/,
 		it: 'Codice sorgente di Gitlab' /*Italian*/,
 		hr: 'Izvorni kod Gitlaba' /*Croatian*/
-	},
-}
+	}
+};
