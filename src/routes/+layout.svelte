@@ -6,5 +6,13 @@
 </script>
 
 <Navbar bind:lang />
-<slot />
+<div>
+	<slot />
+</div>
 <Footer {lang} />
+
+<style>
+	div {
+		padding-top: 5rem;
+	}
+</style>

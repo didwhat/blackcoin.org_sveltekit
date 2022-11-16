@@ -178,8 +178,11 @@
 	.bar {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 1rem;
+		padding: 0 1rem 1rem 1rem;
 		width: 100vw;
+		position: absolute;
+		top: 0;
+		background-image: linear-gradient(#222, #111, #000, #000, transparent);
 	}
 	.bar img {
 		width: 5rem;

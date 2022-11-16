@@ -1,32 +1,4 @@
-<script>
-	import i18n from '$lib/i18n';
-	import FAQ2 from './faq2';
-	export let lang;
-</script>
 
-<!-- FAQ Group 2 -->
-<div class="faq-group">
-	<div>
-		<h3>Wallet</h3>
-		<p>Wallet related questions/issues.</p>
-	</div>
-
-	<!-- FAQ Accordion -->
-	<div
-		class="panel-group ws-s accordions-1"
-		id="faq-accordion-2"
-		role="tablist"
-		aria-multiselectable="true"
-	>
-		<!-- Item 1 -->
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="faq-2-h-1">
-				<h4 class="panel-title">
-					<span>
-						{i18n(FAQ2, 'HOW_LONG_DOES_THE_WALLET_TAKE_TO_SYNC', lang)}
-					</span>
-				</h4>
-				<div class="panel-body">
 					<p>
 						The current bootstrap is around 2.0 GB. It can take a long time to download (
 						pan>depending on your internet speed and available peers).
