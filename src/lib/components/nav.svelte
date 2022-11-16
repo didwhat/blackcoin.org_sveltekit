@@ -1,5 +1,5 @@
 <script>
-	import nav from '$lib/data/nav';
+	import nav from '$lib/components/nav';
 	import LangSelect from './lang-select.svelte';
 	export let lang;
 
@@ -45,13 +45,6 @@
 		<img src="/images/blkb.png" alt="Blackcoin - Logo" />
 	</a>
 	<row>
-		<a
-			id="hamburger-toggle"
-			href="#"
-			on:click={() => (!!burgerOpen ? (burgerOpen = false) : (burgerOpen = true))}
-		>
-			<img src="/images/svg/hamburger.svg" alt="Hamburger Icon" />
-		</a>
 		<ul id="menu-main">
 			<li>
 				<a href="#" on:click={() => (!!burgerOpen ? (burgerOpen = false) : (burgerOpen = true))}>

@@ -1,7 +1,8 @@
 <script>
+	import footerI18n from './footer.i18n';
+  	import i18ncommon from '$lib/i18n-common';
 	import FooterSocial from './footer-social.svelte';
 	export let lang;
-	import home from '$lib/data/home';
 </script>
 
 <footer>
@@ -10,11 +11,10 @@
 		<small
 			>&copy; 2014
 			<span id="copyright" />
-			{home.blackcoin[lang] || home.blackcoin['en']}Org - {home.all_rights_reserved[lang] ||
-				home.all_rights_reserved['en']}
+			{i18ncommon.blackcoin[lang] || i18ncommon.blackcoin['en']}Org - {footerI18n.all_rights_reserved[lang] || footerI18n.all_rights_reserved['en']}
 		</small>
 		<small>
-			<a href="#home">{home.to_the_top[lang] || home.to_the_top['en']} ^ </a>
+			<a href="#footer">{footerI18n.to_the_top[lang] || footerI18n.to_the_top['en']} ^ </a>
 		</small>
 	</div>
 </footer>

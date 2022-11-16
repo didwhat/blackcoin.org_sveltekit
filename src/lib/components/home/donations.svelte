@@ -1,5 +1,5 @@
 <script>
-	import home from '../../data/home';
+	import donationsI18n from "./donations.i18n";
 	export let lang;
 </script>
 
@@ -9,14 +9,14 @@
 			<center>
 				<h3 id="support">
 					<span style="color: #ffffff;"
-						>{home.support_blackcoin[lang] || home.support_blackcoin['en']}</span
+						>{donationsI18n.support_blackcoin[lang] || donationsI18n.support_blackcoin['en']}</span
 					>
 				</h3>
 			</center>
 			<center>
 				<h4 class="golden">
 					<a id="donation-link" alt="Link to Donations Page" href="donations/"
-						>{home.donations[lang] || home.donations['en']}</a
+						>{donationsI18n.donations[lang] || donationsI18n.donations['en']}</a
 					>
 				</h4>
 			</center>

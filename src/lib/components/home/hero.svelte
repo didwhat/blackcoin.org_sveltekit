@@ -1,5 +1,5 @@
 <script>
-	import home from '../../data/home';
+	import i18nMisc from '$lib/i18n-misc';
 	import BreakingNews from './news.svelte';
 	let height;
 	let width;
@@ -21,8 +21,8 @@
 			<div id="page-hero" class="hero-content-wrapper">
 				<div class="hero-content">
 					<img src="/images/hero/ag2-logo.png" alt="Blackcoin Logo" />
-					<h1>{home.blackcoin[lang] || home.blackcoin['en']}</h1>
-					<h2>{home.since2014[lang] || home.since2014['en']}</h2>
+					<h1>{i18nMisc.blackcoin[lang] || i18nMisc.blackcoin['en']}</h1>
+					<h2>{i18nMisc.since2014[lang] || i18nMisc.since2014['en']}</h2>
 					<a href="#community" class="join-community">
 						<img src="/images/joincommunity.png" alt="Join the Blackcoin Community!" />
 					</a>

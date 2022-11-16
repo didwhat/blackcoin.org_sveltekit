@@ -1,6 +1,5 @@
 <script>
-	import home from '$lib/data/home';
-	import socialLinks from '$lib/data/social-links';
+	import socialLinks from './social';
 </script>
 
 <!-- Social Links -->
@@ -11,7 +10,7 @@
 				<div class="row">
 					<ul>
 						{#each socialLinks as l}
-							<li><a href={l.url}>{l.text}</a></li>
+							<li><a href={l.url}>{l.alt}</a></li>
 						{/each}
 					</ul>
 				</div>

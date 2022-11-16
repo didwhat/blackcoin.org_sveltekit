@@ -1,5 +1,5 @@
 <script>
-	import metadata from '$lib/data/metadata';
+	import metadata from '$lib/components/metadata';
 	export let lang;
 </script>
 

@@ -1,5 +1,5 @@
 <script>
-	import FAQ1 from '$lib/data/faq1';
+	import FAQ1 from './faq1';
 </script>
 
 <!-- FAQ Group 1 -->

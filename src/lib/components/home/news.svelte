@@ -1,6 +1,6 @@
 <script type="typescript">
-	import home from '$lib/data/home';
-	import news from '$lib/data/news';
+	import newsI18n from './news.i18n';
+	import news from './news';
 
 	let i = 0;
 	$: bn = news[i % news.length];
@@ -17,7 +17,7 @@
 	<br />
 	<div class="newsBox">
 		<div class="title">
-			<h2>{home.latest_news[lang] || home.latest_news['en']}</h2>
+			<h2>{newsI18n.latest_news[lang] || newsI18n.latest_news['en']}</h2>
 		</div>
 		<ul class="innerBox">
 			<li>
