@@ -3,10 +3,11 @@
 	import i18n from '$lib/i18n'
 	import navI18n from './nav.i18n';
 	import LangSelect from './lang-select.svelte';
-
-	let open = false;
-
+	
 	export let lang;
+	let width = 700
+	
+	let open = false
 
 	const linkArr = [
 		{
@@ -45,15 +46,15 @@
 	$: links = false;
 	$: markets = false;
 </script>
-
-<nav id="navbar" role="navigation">
+<svelte:window bind:innerWidth={width} />
+<nav id="navbar">
 	<div class="bar">
 		<a id="nav-logo" href="/{i18n(navI18n,'locale',lang)}/">
 			<img src="/images/blkb.png" alt="Blackcoin - Logo" />
 		</a>
 
 		<div id="opened">
-			{#if open}
+			{#if open || width > 600}
 				<div>
 					<ul id="main-menu">
 						<li>
@@ -122,7 +123,7 @@
 								<li id="faq">
 									<a  
 										on:click={()=>!!open ? open = false : open = true}
-										href="/faq">
+										href="/{i18n(navI18n,'locale',lang)}/faq">
 										<span>
 											{i18n(navI18n,'faq',lang)}
 										</span>

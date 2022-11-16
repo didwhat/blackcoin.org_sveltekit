@@ -315,12 +315,12 @@
 						multisignature, secure blackcoin wallet platform for both individuals and companies.
 					</p>
 					<p>
-						Web: <a href="https://payblk.blackcoin.io/" target="_blank">PayBLK.BlackCoin.io</a><br
+						Web: <a href="https://payblk.blackcoin.io/" target="_blank norefer">PayBLK.BlackCoin.io</a><br
 						/>
 						Mobile:
 						<a
 							href="https://play.google.com/store/apps/details?id=com.obsidiancvt.payblk"
-							target="_blank">PayBLK on Google Play</a
+							target="_blank norefer">PayBLK on Google Play</a
 						>
 					</p>
 				</div>

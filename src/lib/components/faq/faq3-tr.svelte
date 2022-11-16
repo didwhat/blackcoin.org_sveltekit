@@ -81,7 +81,7 @@
 
 	<span class="faq-contact-links"
 		><i class="fa fa-info-circle" /> If you have more questions
-		<a href="https://gitter.im/BlackCoin_Hub" target="_blank">contact us on Gitter.</a></span
+		<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter.</a></span
 	>
 </div>
 <!-- / .faq-group -->

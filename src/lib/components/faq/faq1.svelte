@@ -291,7 +291,7 @@
 					</p>
 					<p>
 						You could find exchanges with the greatest volume at
-						<a href="https://coinmarketcap.com/currencies/blackcoin/#markets" target="_blank"
+						<a href="https://coinmarketcap.com/currencies/blackcoin/#markets" target="_blank norefer"
 							>Coinmarketcap.com/Markets</a
 						>
 					</p>
@@ -404,9 +404,9 @@
 				</h4>
 				<div class="panel-body">
 					<p>
-						<a href="https://blackcoin.org/" target="_blank">https://blackcoin.org</a> -
-						<a href="https://blackcoinmore.org/" target="_blank">https://blackcoinmore.org</a>
-						- <a href="https://blackcoin.nl/" target="_blank">https://blackcoin.nl</a> are
+						<a href="https://blackcoin.org/" target="_blank norefer">https://blackcoin.org</a> -
+						<a href="https://blackcoinmore.org/" target="_blank norefer">https://blackcoinmore.org</a>
+						- <a href="https://blackcoin.nl/" target="_blank norefer">https://blackcoin.nl</a> are
 						<span>the only official Blackcoin websites</span>.<br />. Note: The domain blackcoin.io
 						is used for Blacksight, PayBLK and Iris.
 					</p>

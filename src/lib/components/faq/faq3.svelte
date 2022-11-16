@@ -26,10 +26,10 @@
 				</h4>
 				<div class="panel-body">
 					<p>
-						<a href="https://blackcoinfaucet.com/faucet-list/blackcoin" target="_blank"
+						<a href="https://blackcoinfaucet.com/faucet-list/blackcoin" target="_blank norefer"
 							>Blackcoin Faucet</a
 						><br />
-						<a href="https://faucetdump.com/blackcoin" target="_blank">Faucet Dump</a>
+						<a href="https://faucetdump.com/blackcoin" target="_blank norefer">Faucet Dump</a>
 					</p>
 				</div>
 			</div>
@@ -48,9 +48,9 @@
 					<p>
 						<a
 							href="https://mega.nz/#!R64nQARY!o8Ovl-2OLWMF6quSfpEXPEbcsmHiLhPegSnaHQXgR6I"
-							target="_blank">Bootstrap: 14 May 2017</a
+							target="_blank norefer">Bootstrap: 14 May 2017</a
 						><br />
-						<a href="https://mega.nz/#F!ru5lTJSD!3Ysa0Whk4Nyztc9xfu8pjQ" target="_blank"
+						<a href="https://mega.nz/#F!ru5lTJSD!3Ysa0Whk4Nyztc9xfu8pjQ" target="_blank norefer"
 							>Bootstrap: 16 December 2018</a
 						><br />
 					</p>
@@ -105,7 +105,7 @@
 				</h4>
 				<div class="panel-body">
 					<p>
-						<a href="/Step-By-Step-Instructions-for-Online-Businesses-_BLK.pdf" target="_blank"
+						<a href="/Step-By-Step-Instructions-for-Online-Businesses-_BLK.pdf" target="_blank norefer"
 							>Guide for online businesses on integrating blk payments.</a
 						><br />
 					</p>
@@ -118,7 +118,7 @@
 
 	<span class="faq-contact-links"
 		><i class="fa fa-info-circle" /> If you have more questions
-		<a href="https://gitter.im/BlackCoin_Hub" target="_blank">contact us on Gitter.</a></span
+		<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter.</a></span
 	>
 </div>
 <!-- / .faq-group -->
