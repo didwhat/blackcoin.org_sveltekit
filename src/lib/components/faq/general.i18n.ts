@@ -168,43 +168,43 @@ export default {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
 			en: `
-			<p>
-				Did you know that in the United States that cryptocurrency is considered a commodity? So
-				this means you get incredible tax breaks! Also many countries do not even tax it. Many
-				people think smart contracts are the future! This is like the dawn of the internet.
-			</p>
-			<p>
-				<span>Money will never be the same again</span>. So how does this work?
-			</p>
-			<p>
-				The ability to manage transactions and issue additional BlackCoins is all handled by the
-				network of users utilizing BlackCoin. <br />
-				So this means <span>YOU are the banker</span>. Because the
-				<span>BlackCoin network is run by the people</span>, holders of BlackCoin,
-				<span>who receive a 1% yearly reward through a process called staking</span>.<br />
-				BlackCoin is <span>open-source</span> too, meaning that the software that makes it
-				function is completely available for public scrutiny giving you peace of mind.
-				<span>No one owns BlackCoin</span>, it is not a single entity;
-				<span>anyone can be a part of it</span>. The bank history is also called a "Blockchain".
-				This history is shared by everyone. So when you download the program you save a copy of
-				the history and share it! In addition you will stake while the software is running and
-				make sure the bank history is secure. So it is <span>impossible to counterfeit</span>.
-				Your account is a collection of keys. You can use those keys to sign transactions and
-				evencontracts! Nobody else in the world has a copy of those keys, only you. So it is
-				<span>impossible to forge your digital signature</span>. Thanks to the brilliant
-				combination of digital signatures and torrents, cryptocurrency has risen to popularity.
-			</p>
-			<p>So to summarize:</p>
-			<p>
-				&#8211;<span>Everyone gets paid to keep the network secure</span><br />
-				-Everyone shares the bank history, so <span>its transparent</span><br />
-				-The software is open source so you know <span>its safe</span><br />
-				&#8211;<span>It is anonymous</span> and anyone can open an account<br />
-				&#8211;<span>It is extremely fast</span>, you can send money to anyone in the world
-				within minutes<br />
-				&#8211;<span>It is</span> and will always BE
-				<span>FREE.</span>
-			</p>` /*English*/,
+				<p>
+					Did you know that in the United States that cryptocurrency is considered a commodity? So
+					this means you get incredible tax breaks! Also many countries do not even tax it. Many
+					people think smart contracts are the future! This is like the dawn of the internet.
+				</p>
+				<p>
+					<span>Money will never be the same again</span>. So how does this work?
+				</p>
+				<p>
+					The ability to manage transactions and issue additional BlackCoins is all handled by the
+					network of users utilizing BlackCoin. <br />
+					So this means <span>YOU are the banker</span>. Because the
+					<span>BlackCoin network is run by the people</span>, holders of BlackCoin,
+					<span>who receive a 1% yearly reward through a process called staking</span>.<br />
+					BlackCoin is <span>open-source</span> too, meaning that the software that makes it
+					function is completely available for public scrutiny giving you peace of mind.
+					<span>No one owns BlackCoin</span>, it is not a single entity;
+					<span>anyone can be a part of it</span>. The bank history is also called a "Blockchain".
+					This history is shared by everyone. So when you download the program you save a copy of
+					the history and share it! In addition you will stake while the software is running and
+					make sure the bank history is secure. So it is <span>impossible to counterfeit</span>.
+					Your account is a collection of keys. You can use those keys to sign transactions and
+					evencontracts! Nobody else in the world has a copy of those keys, only you. So it is
+					<span>impossible to forge your digital signature</span>. Thanks to the brilliant
+					combination of digital signatures and torrents, cryptocurrency has risen to popularity.
+				</p>
+				<p>So to summarize:</p>
+				<p>
+					&#8211;<span>Everyone gets paid to keep the network secure</span><br />
+					-Everyone shares the bank history, so <span>its transparent</span><br />
+					-The software is open source so you know <span>its safe</span><br />
+					&#8211;<span>It is anonymous</span> and anyone can open an account<br />
+					&#8211;<span>It is extremely fast</span>, you can send money to anyone in the world
+					within minutes<br />
+					&#8211;<span>It is</span> and will always BE
+					<span>FREE.</span>
+				</p>` /*English*/,
 			hi: `` /*Hindi*/,
 			ar: `` /*Arabic - Right-to-left*/,
 			pt: `` /*Portuguese*/,
@@ -264,59 +264,59 @@ export default {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
 			en: `
-			<p>
-				So <span>what makes Blackcoin so different from Bitcoin?</span>
-			</p>
-			<p>
-				We love Bitcoin however we also seek to improve on it.
-				<span
-					>Because Bitcoin is so big, it takes too much time for people to agree on innovative
-					changes</span
-				>. This is why there was a huge surge in alternative currencies last few years. This has
-				paved the way for Blackcoin.<br />
-				<span>Blackcoin</span> has continued to lead the way in blockchain innovation. <br />
-				The coin itself
-				<span>has been forked from Github more than any other coin in the world!</span>
-				It was started by Rat4 who worked on mostly POS(Proof of Stake) innovations. Rat4 wanted
-				to prove that staking could be
-				<span
-					>secure and more efficient than Bitcoins old fashioned and expensive Proof of Work</span
-				>.
-			</p>
-			<p>
-				Several members of the community combined the fast POS with a mining pool to help
-				support the market price and volume by applying upward pressure and this resulted in a
-				huge rise in Blackcoins popularity. Later Rat4 was joined by David Zimbeck the sole
-				creator of
-				<span>BlackHalo</span> who was an active community member. David who was previously well
-				known in other fields such as Chess and Entertainment taught himself Python and coded a
-				'Smart Contracting' platform called BitHalo. Because he believed in Rat4 and agreed with
-				the security of Blackcoin and the Multipool innovations, David chose to debut Halo in
-				Blackcoin. Because of this,
-				<span
-					>Blackcoin was an entire year ahead of other Smart Contracting proposals such as
-					Etherium</span
-				>. Rat4 then took to making proof of stake more secure by forcing users to interact more
-				with the network and to eliminate some of the security flaws. So he created
-				<span>Proof of Stake 2.0</span>. In 2015, Rat4 has started working on a 3.0 protocol to
-				finally master the protocol. In the meantime, David released a Decentralized Marketplace
-				and Decentralized Servers and greatly improved BlackHalo giving it tons of new and
-				exciting features focused on user friendliness. All of this was to prepare the coin for
-				the arrival of a
-				<span>Decentralized Exchange built solely on Blackcoin</span>. Since then, many other
-				developers have contributed. Drunkonsound, a community member, built and sponsored the
-				exco.in exchange as well as several other Blackcoin projects. The exco.in exchange was
-				the first exchange to have live, high frequency trading and built with lots of great
-				charting and features for trading. Again Blackcoin grew and a new project, Legionairre
-				was also started by a community member, btclaw. Legionairre gives people the ability to
-				have <span>Stealth Addresses</span>. Their primary focus is your privacy. The momentum
-				in Blackcoin has been continuing and
-				<span>every year more new and exciting features are being added</span>.
-			</p>
-			<p>
-				The best part is, if you get involved you can be part of all of the excitement of
-				<span>the future of the internet</span>.
-			</p>` /*English*/,
+				<p>
+					So <span>what makes Blackcoin so different from Bitcoin?</span>
+				</p>
+				<p>
+					We love Bitcoin however we also seek to improve on it.
+					<span
+						>Because Bitcoin is so big, it takes too much time for people to agree on innovative
+						changes</span
+					>. This is why there was a huge surge in alternative currencies last few years. This has
+					paved the way for Blackcoin.<br />
+					<span>Blackcoin</span> has continued to lead the way in blockchain innovation. <br />
+					The coin itself
+					<span>has been forked from Github more than any other coin in the world!</span>
+					It was started by Rat4 who worked on mostly POS(Proof of Stake) innovations. Rat4 wanted
+					to prove that staking could be
+					<span
+						>secure and more efficient than Bitcoins old fashioned and expensive Proof of Work</span
+					>.
+				</p>
+				<p>
+					Several members of the community combined the fast POS with a mining pool to help
+					support the market price and volume by applying upward pressure and this resulted in a
+					huge rise in Blackcoins popularity. Later Rat4 was joined by David Zimbeck the sole
+					creator of
+					<span>BlackHalo</span> who was an active community member. David who was previously well
+					known in other fields such as Chess and Entertainment taught himself Python and coded a
+					'Smart Contracting' platform called BitHalo. Because he believed in Rat4 and agreed with
+					the security of Blackcoin and the Multipool innovations, David chose to debut Halo in
+					Blackcoin. Because of this,
+					<span
+						>Blackcoin was an entire year ahead of other Smart Contracting proposals such as
+						Etherium</span
+					>. Rat4 then took to making proof of stake more secure by forcing users to interact more
+					with the network and to eliminate some of the security flaws. So he created
+					<span>Proof of Stake 2.0</span>. In 2015, Rat4 has started working on a 3.0 protocol to
+					finally master the protocol. In the meantime, David released a Decentralized Marketplace
+					and Decentralized Servers and greatly improved BlackHalo giving it tons of new and
+					exciting features focused on user friendliness. All of this was to prepare the coin for
+					the arrival of a
+					<span>Decentralized Exchange built solely on Blackcoin</span>. Since then, many other
+					developers have contributed. Drunkonsound, a community member, built and sponsored the
+					exco.in exchange as well as several other Blackcoin projects. The exco.in exchange was
+					the first exchange to have live, high frequency trading and built with lots of great
+					charting and features for trading. Again Blackcoin grew and a new project, Legionairre
+					was also started by a community member, btclaw. Legionairre gives people the ability to
+					have <span>Stealth Addresses</span>. Their primary focus is your privacy. The momentum
+					in Blackcoin has been continuing and
+					<span>every year more new and exciting features are being added</span>.
+				</p>
+				<p>
+					The best part is, if you get involved you can be part of all of the excitement of
+					<span>the future of the internet</span>.
+				</p>` /*English*/,
 			hi: `` /*Hindi*/,
 			ar: `` /*Arabic - Right-to-left*/,
 			pt: `` /*Portuguese*/,
@@ -372,35 +372,35 @@ export default {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
 			en: `
-			<p>
-				Proof-of-Work was a fantastic innovation that formed the backbone of the original
-				Bitcoin protocol. The idea is that by solving a computationally intensive math problem,
-				one can prove the effort they've done to secure the protocol. This is how a blockchain
-				is generated, and the effort that is required to perform this computations contribute to
-				a coin's scarcity and value.
-			</p>
-			<p>
-				However, <span
-					>Proof-of-Work eventually becomes an extraordinarily expensive system</span
-				>.
-			</p>
-			<p>
-				<span>Proof of Stake solves this issue</span> in a very elegant way. Rather than using
-				computer power as a scarce resource to generate security, Proof of Stake uses the
-				scarcity of the coin itself. A user may choose to
-				<span>"stake" his coins to generate the next block in the chain</span>, and his chance
-				of doing so is basically proportional to the weight of his own coins.
-			</p>
-			<p>
-				BlackCoin was notably the first coin to use a Proof-of-Work creation cycle followed by
-				transition to full Proof-of-stake. <br />
-				<span
-					>Proof-of-Stake is eco-friendly and efficient, and avoids the vast waste of energy and
-					hardware overhead of Proof-of-Work based networks</span
-				>.<br />
-				Over time, BlackCoin's core protocol has made industry-leading improvements to Proof-of-Stake
-				security and general functionality (PoS 2.0 and PoS 3.0).
-			</p>` /*English*/,
+				<p>
+					Proof-of-Work was a fantastic innovation that formed the backbone of the original
+					Bitcoin protocol. The idea is that by solving a computationally intensive math problem,
+					one can prove the effort they've done to secure the protocol. This is how a blockchain
+					is generated, and the effort that is required to perform this computations contribute to
+					a coin's scarcity and value.
+				</p>
+				<p>
+					However, <span
+						>Proof-of-Work eventually becomes an extraordinarily expensive system</span
+					>.
+				</p>
+				<p>
+					<span>Proof of Stake solves this issue</span> in a very elegant way. Rather than using
+					computer power as a scarce resource to generate security, Proof of Stake uses the
+					scarcity of the coin itself. A user may choose to
+					<span>"stake" his coins to generate the next block in the chain</span>, and his chance
+					of doing so is basically proportional to the weight of his own coins.
+				</p>
+				<p>
+					BlackCoin was notably the first coin to use a Proof-of-Work creation cycle followed by
+					transition to full Proof-of-stake. <br />
+					<span
+						>Proof-of-Stake is eco-friendly and efficient, and avoids the vast waste of energy and
+						hardware overhead of Proof-of-Work based networks</span
+					>.<br />
+					Over time, BlackCoin's core protocol has made industry-leading improvements to Proof-of-Stake
+					security and general functionality (PoS 2.0 and PoS 3.0).
+				</p>` /*English*/,
 			hi: `` /*Hindi*/,
 			ar: `` /*Arabic - Right-to-left*/,
 			pt: `` /*Portuguese*/,

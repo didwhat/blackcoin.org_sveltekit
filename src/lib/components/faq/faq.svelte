@@ -1,12 +1,13 @@
 <script>
 	import i18n from '$lib/i18n';
   	import { onMount } from 'svelte';
-	import FAQ0 from './faq0';
-	import FAQ1 from './faq1';
-	// import FAQ2 from './faq2'
+	import layout from './faq-layout.i18n';
+	import generalI18n from './general.i18n';
+	import walletI18n from './wallet.i18n'
+	import otherI18n from './other.i18n';
 	export let lang;
 
-	const doThese = [FAQ1]
+	const doThese = [generalI18n, walletI18n, otherI18n]
 	const titles = []
 	const Qs = Array.from({length: doThese.length},()=>[])
 	const As = Array.from({length: doThese.length},()=>[])
@@ -55,6 +56,12 @@
 		<hr class="mb-sm-50" />
 	</div>
 {/each}
+
+<span class="faq-contact-links"
+><i class="fa fa-info-circle" /> If you have more questions
+<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter.</a
+></span
+>
 
 <style>
 	.faq-group {
