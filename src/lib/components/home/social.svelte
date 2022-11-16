@@ -1,4 +1,5 @@
 <script>
+  import i18n from "$lib/i18n";
 	import social from "./social";
 	import socialI18n from "./social.i18n";
 	export let lang;
@@ -8,7 +9,7 @@
 	<center>
 		<h3>
 			<a name="community" alt="Join the Blackcoin Community!">
-				<span style="color: #FFFFFF;">{socialI18n.join_community[lang] || socialI18n.join_community['en']}</span
+				<span style="color: #FFFFFF;">{i18n(socialI18n, 'join_community', lang)}</span
 				>
 			</a>
 		</h3>
@@ -30,5 +31,9 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	li {
+		width: 5%;
+		padding: .5rem;
 	}
 </style>

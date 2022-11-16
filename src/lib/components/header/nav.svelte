@@ -1,19 +1,20 @@
 <script>
 	import { Hamburger } from 'svelte-hamburgers';
-
-	let open = true;
-
-	import nav from '$lib/components/nav';
+	import i18n from '$lib/i18n'
+	import navI18n from './nav.i18n';
 	import LangSelect from './lang-select.svelte';
+
+	let open = false;
+
 	export let lang;
 
 	const linkArr = [
 		{
 			url: 'https://chainz.cryptoid.info/blk/',
-			title: `CryptoID ${nav[lang].explorer || nav['en'].explorer}`
+			title: `CryptoID ${i18n(navI18n, 'explorer', lang)}`
 		},
 		{
-			url: `https://www.coingecko.com/${nav[lang].locale}/coins/blackcoin`,
+			url: `https://www.coingecko.com/${i18n(navI18n,'locale',lang)}/coins/blackcoin`,
 			title: 'Coingecko'
 		},
 		{
@@ -26,11 +27,11 @@
 		},
 		{
 			url: 'https://node.blackcoin.io/insight/',
-			title: `Blacksight ${nav[lang].explorer || nav['en'].explorer}`
+			title: `Blacksight ${i18n(navI18n,'explorer',lang)}`
 		},
 		{
 			url: 'https://bitinfocharts.com/blackcoin/',
-			title: `Bitinfocharts ${nav[lang].explorer || nav['en'].explorer}`
+			title: `Bitinfocharts ${i18n(navI18n,'explorer',lang)}`
 		},
 		{
 			url: 'https://gihub.com/coinblack/',
@@ -47,7 +48,7 @@
 
 <nav id="navbar" role="navigation">
 	<div class="bar">
-		<a id="nav-logo" href="/{nav[lang].locale || nav['en'].locale}/">
+		<a id="nav-logo" href="/{i18n(navI18n,'locale',lang)}/">
 			<img src="/images/blkb.png" alt="Blackcoin - Logo" />
 		</a>
 
@@ -56,37 +57,43 @@
 				<div>
 					<ul id="main-menu">
 						<li>
-							<a href="/#about">
-								{nav[lang].about || nav['en'].about}
+							<a  
+								on:click={()=>!!open ? open = false : open = true}
+								href="/{i18n(navI18n,'locale',lang)}/#about">
+								{i18n(navI18n,'about',lang)}
 							</a>
 						</li>
 						<!-- <li>
                     <a on:click={()=>""}>
-                        {nav[lang].community || nav['en'].community}
+                        {i18n(navI18n,'community',lang)}
                     </a>
                 </li> -->
 
 						<li>
-							<a href="/#downloads">
-								{nav[lang].download || nav['en'].download}
+							<a  
+								on:click={()=>!!open ? open = false : open = true}
+								href="/{i18n(navI18n,'locale',lang)}/#downloads">
+								{i18n(navI18n,'download',lang)}
 							</a>
 						</li>
 						<li on:click={() => (!!markets ? (markets = false) : (markets = true))}>
-							{nav[lang].markets || nav['en'].markets}
+							{i18n(navI18n,'markets',lang)}
 							<ul id="markets" style="display:{!!markets ? 'flex' : 'none'};">
+								<button class="x">X</button>
 								<a
 									class="centered"
-									href="https://www.coingecko.com/{nav[lang].locale ||
-										nav['en'].locale}/coins/blackcoin"
+									href="https://www.coingecko.com/{i18n(navI18n,'locale',lang)}/coins/blackcoin"
 									rel="noopener"
 									target="_blanknoreferer"
 								>
-									{nav[lang].more_charts_on || nav['en'].more_charts_on} CoinGecko
+									{i18n(navI18n,'more_charts_on',lang)} CoinGecko
 								</a>
 							</ul>
 						</li>
 						<!-- <li>
-                    <a href="/#" on:click={()=>""}>
+                    <a  
+						on:click={()=>!!open ? open = false : open = true}
+						href="/#" on:click={()=>""}>
                     Twitter
                 </a>
                     <ul id="menu-twitter">
@@ -94,14 +101,17 @@
                     </ul>
                 </li> -->
 						<li>
-							<a href="/donations">
-								{nav[lang].donations || nav['en'].donations}
+							<a  
+								on:click={()=>!!open ? open = false : open = true}
+								href="/{i18n(navI18n,'locale',lang)}/donations">
+								{i18n(navI18n,'donations',lang)}
 							</a>
 						</li>
 						<li on:click={() => (!!links ? (links = false) : (links = true))}>
-							{nav[lang].links || nav['en'].links}
+							{i18n(navI18n,'links',lang)}
 
-							<ul style="display:{!!links ? 'flex' : 'none'};">
+							<ul id="links" style="display:{!!links ? 'flex' : 'none'};">
+								<button class="x">X</button>
 								{#each linkArr as l}
 									<li>
 										<a rel="noopener" target="_blank noreferer" href={l.url}>
@@ -109,14 +119,16 @@
 										</a>
 									</li>
 								{/each}
+								<li id="faq">
+									<a  
+										on:click={()=>!!open ? open = false : open = true}
+										href="/faq">
+										<span>
+											{i18n(navI18n,'faq',lang)}
+										</span>
+									</a>
+								</li>
 							</ul>
-						</li>
-						<li id="faq">
-							<a href="/faq">
-								<span>
-									{nav[lang].faq || nav['en'].faq}
-								</span>
-							</a>
 						</li>
 					</ul>
 				</div>
@@ -153,16 +165,6 @@
 		display: grid;
 		align-content: center;
 	}
-	#main-menu {
-		line-height: 2rem;
-		margin: 0;
-		display: inline-flex;
-		justify-content: space-around;
-		top: 0;
-		right: 1rem;
-		display: flex;
-		font-size: 1.2vw;
-	}
 	#main-menu li {
 		margin: 1rem;
 		text-shadow: 1px 1px 1px orange;
@@ -182,7 +184,7 @@
 	}
 
 	#nav-logo img {
-		width: 5vw;
+		width: 4rem;
 		height: auto;
 	}
 
@@ -227,9 +229,46 @@
 	#navbar {
 		justify-content: space-around;
 	}
-	@media (min-aspect-ratio: 17/10) {
-		#burger {
-			display: none;
+
+	.x {
+		background-color: transparent;
+		width: fit-content;
+		color: white;
+		position: absolute;
+		right: 1rem;
+		top: 0;
+		border-color: #ddb77a;
+		font-size: x-large;
+		padding: 0 .75rem;
+	}
+
+	@media (max-width: 700px) {
+		#main-menu {
+			position: absolute;
+			top: 5rem;
+			right: 0;
+			width: 100vw;
+			height: calc(100vh - 5rem);
+			display: flex;
+			flex-direction: column;
+			font-size: xxx-large;
+			background-color: black;
+			line-height: 3rem;
+			margin: 0;
+			justify-content: space-around;
+			display: flex;
+		}
+		#links {
+			position: absolute;
+			top: 5rem;
+			height: calc(100vh - 5rem);
+			justify-content: space-around;
+		}
+	}
+	@media (min-width: 700px) {
+		#main-menu {
+			display: inline-flex;
+			font-size: 1.2vw;
 		}
 	}
 </style>

@@ -1,38 +1,39 @@
 <script>
 	import aboutI18n from './about.i18n';
 	import Item from './about-item.svelte';
+  import i18n from '$lib/i18n';
 
 	export let lang;
 </script>
 
 <section class="section">
 	<header>
-		<h2 class="golden" id="about">{aboutI18n.about_blackcoin[lang] || aboutI18n.about_blackcoin['en']}</h2>
+		<h2 class="golden" id="about">{i18n(aboutI18n,'about_blackcoin',lang)}</h2>
 	</header>
 	<div class="container">
 		<div class="about-section">
 			<Item
 				side="left"
-				h3={aboutI18n.proof_of_stake_v3[lang] || aboutI18n.proof_of_stake_v3['en']}
-				p={aboutI18n.users_who_stake[lang] || aboutI18n.users_who_stake['en']}
-				a={aboutI18n.read_more[lang] || aboutI18n.read_more['en']}
+				h3={i18n(aboutI18n,'proof_of_stake_v3',lang)}
+				p={i18n(aboutI18n,'users_who_stake',lang)}
+				a={i18n(aboutI18n,'read_more',lang)}
 				url="https://blackcoin.org/faq/"
 				icon="🔥"
 			/>
 			<Item
 				side="left"
-				h3={aboutI18n.eco_friendly[lang] || aboutI18n.eco_friendly['en']}
-				p={aboutI18n.no_mining[lang] || aboutI18n.no_mining['en']}
+				h3={i18n(aboutI18n,'eco_friendly',lang)}
+				p={i18n(aboutI18n,'no_mining',lang)}
 				icon="🌲"
-				a={aboutI18n.read_more[lang] || aboutI18n.read_more['en']}
+				a={i18n(aboutI18n,'read_more',lang)}
 				url="https://blackcoin.org/faq/"
 			/>
 			<Item
 				side="left"
-				h3={aboutI18n.transparent_ledger[lang] || aboutI18n.transparent_ledger['en']}
-				p={aboutI18n.entirely_transparent[lang] || aboutI18n.entirely_transparent['en']}
+				h3={i18n(aboutI18n,'transparent_ledger',lang)}
+				p={i18n(aboutI18n,'entirely_transparent',lang)}
 				icon="📄"
-				a={aboutI18n.read_more[lang] || aboutI18n.read_more['en']}
+				a={i18n(aboutI18n,'read_more',lang)}
 				url="https://blackcoin.org/faq/"
 			/>
 		</div>
@@ -45,27 +46,27 @@
 			<Item
 				side="right"
 				icon="🆓"
-				h3={aboutI18n.open_source[lang] || aboutI18n.open_source['en']}
-				p={aboutI18n.can_be_audited[lang] || aboutI18n.can_be_audited['en']}
-				a={aboutI18n.read_more[lang] || aboutI18n.read_more['en']}
+				h3={i18n(aboutI18n,'open_source',lang)}
+				p={i18n(aboutI18n,'can_be_audited',lang)}
+				a={i18n(aboutI18n,'read_more',lang)}
 				url="https://blackcoin.org/faq/"
 			/>
 
 			<Item
 				side="right"
 				icon="⚡"
-				h3={aboutI18n.fast[lang] || aboutI18n.fast['en']}
-				p={aboutI18n.to_anyone_in_seconds[lang] || aboutI18n.to_anyone_in_seconds['en']}
-				a={aboutI18n.read_more[lang] || aboutI18n.read_more['en']}
+				h3={i18n(aboutI18n,'fast',lang)}
+				p={i18n(aboutI18n,'to_anyone_in_seconds',lang)}
+				a={i18n(aboutI18n,'read_more',lang)}
 				url="https://blackcoin.org/faq/"
 			/>
 
 			<Item
 				side="right"
 				icon="👁️"
-				h3={aboutI18n.anonymous[lang] || aboutI18n.anonymous['en']}
-				p={aboutI18n.no_identifying_information[lang] || aboutI18n.no_identifying_information['en']}
-				a={aboutI18n.read_more[lang] || aboutI18n.read_more['en']}
+				h3={i18n(aboutI18n,'anonymous',lang)}
+				p={i18n(aboutI18n,'no_identifying_information',lang)}
+				a={i18n(aboutI18n,'read_more',lang)}
 				url="https://blackcoin.org/faq/"
 			/>
 		</div>

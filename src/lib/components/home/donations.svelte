@@ -1,5 +1,6 @@
 <script>
-	import donationsI18n from "./donations.i18n";
+	import i18n from "$lib/i18n";
+import donationsI18n from "./donations.i18n";
 	export let lang;
 </script>
 
@@ -9,14 +10,14 @@
 			<center>
 				<h3 id="support">
 					<span style="color: #ffffff;"
-						>{donationsI18n.support_blackcoin[lang] || donationsI18n.support_blackcoin['en']}</span
+						>{i18n(donationsI18n, 'support_blackcoin', lang)}</span
 					>
 				</h3>
 			</center>
 			<center>
 				<h4 class="golden">
 					<a id="donation-link" alt="Link to Donations Page" href="donations/"
-						>{donationsI18n.donations[lang] || donationsI18n.donations['en']}</a
+						>{i18n(donationsI18n, 'donations', lang)}</a
 					>
 				</h4>
 			</center>

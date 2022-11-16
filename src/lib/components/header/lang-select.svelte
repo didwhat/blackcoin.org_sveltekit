@@ -1,7 +1,7 @@
 <!-- {% set 'pageUrl' = page.url.split('/').slice(2).join('/') %} -->
 <script>
-	import locales from '$lib/components/locales';
-	import SELECT_LANGUAGE from '$lib/components/lang-select';
+	import locales from './locales';
+	import SELECT_LANGUAGE from './lang-select.i18n';
 	export let lang;
 	$: menuOpen = false;
 </script>

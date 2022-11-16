@@ -1,6 +1,6 @@
 <script>
-	import Navbar from '$lib/components/nav-hamburger.svelte';
-	import Footer from '$lib/components/footer.svelte';
+	import Navbar from '$lib/components/header/nav.svelte';
+	import Footer from '$lib/components/footer/footer.svelte';
 	import '$lib/styles.css';
 	let lang = 'en';
 </script>

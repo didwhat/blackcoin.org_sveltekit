@@ -1,5 +1,5 @@
 export default {
-	support_blackcoin: {
+	support_donate: {
 		zh: '支持BlackCoin并捐赠给开发人员和正在进行的项目。' /*Chinese*/,
 		es: 'Apoye a BlackCoin y done a los desarrolladores y los proyectos en curso.' /*Spanish*/,
 		en: 'Support BlackCoin and donate to the developers and the ongoing projects.' /*English*/,

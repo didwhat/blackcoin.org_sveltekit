@@ -1,90 +1,112 @@
 export default [
 	{
-		label: '中文' /*Chinese*/,
+		label: '中文',
+		english: 'Chinese',
 		code: 'zh'
 	},
 	{
-		label: 'Español' /*Spanish*/,
+		label: 'Español',
+		english: 'Spanish',
 		code: 'es'
 	},
 	{
-		label: 'English' /*English*/,
+		label: 'English',
+		english: 'English',
 		code: 'en'
 	},
 	{
-		label: 'हिंदी' /*Hindi*/,
+		label: 'हिंदी',
+		english: 'Hindi',
 		code: 'hi'
 	},
 	{
-		label: 'عربى' /*Arabic - Right-to-left*/,
+		label: 'عربى',
+		english: 'Arabic - Right-to-left',
 		code: 'ar'
 	},
 	{
-		label: 'português' /*Portuguese*/,
+		label: 'português',
+		english: 'Portuguese',
 		code: 'pt'
 	},
 	{
-		label: 'বাংলা' /*Bengal*/,
+		label: 'বাংলা',
+		english: 'Bengal',
 		code: 'bn'
 	},
 	{
-		label: 'русский' /*Russian*/,
+		label: 'русский',
+		english: 'Russian',
 		code: 'ru'
 	},
 	{
-		label: '日本語' /*Japanese*/,
+		label: '日本語',
+		english: 'Japanese',
 		code: 'ja'
 	},
 	{
-		label: 'Wong jawa' /*Javanese*/,
+		label: 'Wong jawa',
+		english: 'Javanese',
 		code: 'jv'
 	},
 	{
-		label: 'Deutsch' /*German*/,
+		label: 'Deutsch',
+		english: 'German',
 		code: 'de'
 	},
 	{
-		label: '한국어' /*Korean*/,
+		label: '한국어',
+		english: 'Korean',
 		code: 'ko'
 	},
 	{
-		label: 'Français' /*French*/,
+		label: 'Français',
+		english: 'French',
 		code: 'fr'
 	},
 	{
-		label: 'తెలుగు' /*Telugu*/,
+		label: 'తెలుగు',
+		english: 'Telugu',
 		code: 'te'
 	},
 	{
-		label: 'मराठी' /*Marathi*/,
+		label: 'मराठी',
+		english: 'Marathi',
 		code: 'mr'
 	},
 	{
-		label: 'Türk' /*Turkish*/,
+		label: 'Türk',
+		english: 'Turkish',
 		code: 'tr'
 	},
 	{
-		label: 'தமிழ்' /*Tamil*/,
+		label: 'தமிழ்',
+		english: 'Tamil',
 		code: 'ta'
 	},
 	{
-		label: 'Tiếng Việt' /*Vietnamese*/,
+		label: 'Tiếng Việt',
+		english: 'Vietnamese',
 		code: 'vi'
 	},
 	{
-		label: 'اردو' /*Urdu - Right-to-left*/,
+		label: 'اردو',
+		english: 'Urdu - Right-to-left',
 		code: 'ur'
 	},
 	{
-		label: 'Dutch' /*Dutch*/,
+		label: 'Dutch',
+		english: 'Dutch',
 		code: 'nl'
 	},
 	{
-		label: 'Italian' /*Italian*/,
+		label: 'Italian',
+		english: 'Italian',
 		code: 'it'
 	},
 	{
-		label: 'Hrvatski' /*Croatian*/,
+		label: 'Hrvatski',
+		english: 'Croatian',
 		code: 'hr'
 	}
 ];

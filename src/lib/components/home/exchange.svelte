@@ -1,13 +1,14 @@
 <script>
 	import exchangeI18n from './exchange.i18n';
 	import exchangeList from './exchange-list';
+  import i18n from '$lib/i18n';
 	export let lang;
 </script>
 
 <div class="container">
 	<center>
 		<h3 id="buy">
-			<span style="color: #FFFFFF;">{exchangeI18n.where_to_buy[lang] || exchangeI18n.where_to_buy['en']}</span>
+			<span style="color: #FFFFFF;">{i18n(exchangeI18n,'where_to_buy',lang)}</span>
 		</h3>
 	</center>
 	<ul>
@@ -23,7 +24,7 @@
 		<h4>
 			<span>
 				<span style="color: #CCC;"
-					><i class="fa fa-info-circle" /> {exchangeI18n.check[lang] || exchangeI18n.check['en']}
+					><i class="fa fa-info-circle" /> {i18n(exchangeI18n,'check',lang)}
 				</span>
 				<a
 					rel="noopener"
@@ -31,7 +32,7 @@
 					href="https://www.coingecko.com/en/coins/blackcoin"
 					alt=""
 				>
-					{exchangeI18n.markets_volume[lang] || exchangeI18n.markets_volume['en']}
+					{i18n(exchangeI18n,'markets_volume',lang)}
 				</a>
 			</span>
 		</h4>
