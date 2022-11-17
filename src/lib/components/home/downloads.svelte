@@ -51,11 +51,11 @@
 ]
 </script>
 <div class="gray-bg">
-	<header>
-		<h2 class="golden" id="downloads">{i18n(downloadsI18n, 'downloads', lang)}</h2>
-		<span class="subheading">{i18n(downloadsI18n, 'official_files', lang)}</span>
-	</header>
 	<section id="services" class="container section ft-boxed-hover">
+		<header>
+			<h2 class="golden" id="downloads">{i18n(downloadsI18n, 'downloads', lang)}</h2>
+			<span class="subheading">{i18n(downloadsI18n, 'official_files', lang)}</span>
+		</header>
 		<ul class="col-row">
 			{#each downloadGroups as dl }			
 				<li class="item">

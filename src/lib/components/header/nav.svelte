@@ -112,7 +112,18 @@
 								{i18n(navI18n, 'donations', lang)}
 							</a>
 						</li>
-						<li on:click={() => (!!links ? (links = false) : (links = true))}>
+						<li id="faq">
+							<a
+								on:click={() => (!!open ? (open = false) : (open = true))}
+								href="/{i18n(navI18n, 'locale', lang)}/faq"
+							>
+								<span>
+									{i18n(navI18n, 'faq', lang)}
+								</span>
+							</a>
+						</li>
+
+						<li id="linksBtn" on:click={() => (!!links ? (links = false) : (links = true))}>
 							{i18n(navI18n, 'links', lang)}
 
 							<ul id="links" style="display:{!!links ? 'flex' : 'none'};">
@@ -124,16 +135,6 @@
 										</a>
 									</li>
 								{/each}
-								<li id="faq">
-									<a
-										on:click={() => (!!open ? (open = false) : (open = true))}
-										href="/{i18n(navI18n, 'locale', lang)}/faq"
-									>
-										<span>
-											{i18n(navI18n, 'faq', lang)}
-										</span>
-									</a>
-								</li>
 							</ul>
 						</li>
 					</ul>
@@ -186,8 +187,21 @@
 		line-height: 3rem;
 		margin: 0;
 		justify-content: center;
+		align-content: center;
 		display: flex;
 		text-align: center;
+	}
+	#linksBtn {
+		background-image: linear-gradient(rgba(255,0,0,.4), transparent);
+		padding: .5rem !important;
+		margin: 0 auto;
+		border-radius: 5%;
+	}
+	#links {
+		position: absolute;
+		top: 5rem;
+		height: calc(100vh - 8rem);
+		justify-content: space-around;
 	}
 	.bar {
 		display: flex;
@@ -197,9 +211,6 @@
 		position: absolute;
 		top: 0;
 		background-image: linear-gradient(#222, #111, #000, #000, transparent);
-	}
-	.bar img {
-		width: 5rem;
 	}
 	.btns {
 		display: flex;
@@ -266,13 +277,7 @@
 		padding: 0 0.75rem;
 	}
 
-		#links {
-			position: absolute;
-			top: 5rem;
-			height: calc(100vh - 5rem);
-			justify-content: space-around;
-		}
-	@media (min-width: 700px) {
+	@media (min-width: 1080px) {
 		#main-menu {
 			position: absolute;
 			top: 2rem;
@@ -280,11 +285,41 @@
 			display: inline-flex;
 			flex-direction: row;
 			justify-content: center;
-			font-size: 2.5rem;
+			font-size: 1rem;
 			background-color: transparent;
+		}
+		#main-menu li {
+			padding: 0 .5rem;
+		}
+		#linksBtn {
+			padding-bottom: 3.5rem !important;
+			margin: 0;
+		}
+		.bar {
+			padding: 0 1vw 1rem 5vw;
+		}
+	}
+	@media (min-width: 1440px) {
+		#main-menu {
+			font-size: 1.5rem;
 		}
 		#main-menu li {
 			padding: 0 1rem;
 		}
+		.bar {
+			padding: 0 2vw 1rem 10vw;
+		}
 	}
+	@media (min-width: 2560px) {
+		#main-menu {
+			font-size: 2rem;
+		}
+		#main-menu li {
+			padding: 0 1.5rem;
+		}
+		.bar {
+			padding: 0 15vw 1rem 20vw;
+		}
+	}
+
 </style>

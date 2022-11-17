@@ -65,6 +65,7 @@
 		}
 		#menuOpener {
 			font-size: x-large;
+			padding: 0;
 		}
 	}
 </style>
