@@ -15,7 +15,7 @@
 		{#each exchangeList as e}
 			<li>
 				<a href={e.url} target="_blank noreferer" rel="noopener">
-					<img src={e.image} alt={e.alt} />
+					<img height="43" width="222" src={e.image} alt={e.alt} />
 				</a>
 			</li>
 		{/each}

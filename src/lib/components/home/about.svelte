@@ -71,7 +71,7 @@
 		</div>
 
 		<div class="blkb about-section">
-			<img src="/images/blkb.png" alt="Blackcoin B" />
+			<img height="526" width="402" src="/images/blkb.png" alt="Blackcoin B" />
 		</div>
 
 		<div class="about-section">

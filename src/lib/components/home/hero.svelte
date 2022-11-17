@@ -20,13 +20,13 @@
 		<div class="bg-overlay">
 			<div id="page-hero" class="content-wrapper">
 				<div class="content">
-					<img id="logo" src="/images/hero/ag2-logo.png" alt="Blackcoin Logo" />
+					<img id="logo" height="128" width="111" src="/images/hero/ag2-logo.png" alt="Blackcoin Logo" />
 					<h1>
 						{i18n(heroI18n, 'blackcoin', lang)}
 					</h1>
 					<h2>{i18n(heroI18n, 'since2014', lang)}</h2>
 					<a href="#community" class="join-community">
-						<img id="cta" src="/images/joincommunity.png" alt="Join the Blackcoin Community!" />
+						<img id="cta" height="46" width="350" src="/images/joincommunity.png" alt="Join the Blackcoin Community!" />
 					</a>
 				</div>
 			</div>
@@ -54,22 +54,13 @@
 	.hero {
 		color: #ececec;
 	}
-
 	#logo {
 		padding-top: 25%;
 		width: 50%;
 		height: auto;
 	}
 
-	.join-community img {
-		width: 80%;
-		padding: 1rem;
-	}
 	@media (min-width: 700px) {
-		.join-community img {
-			width: 20%;
-			padding: 1rem;
-		}
 		#logo {
 			padding-top: 10%;
 			width: 10%;

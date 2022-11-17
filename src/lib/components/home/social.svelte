@@ -17,7 +17,7 @@
 		{#each social as s}
 			<li>
 				<a href={s.url} target="_blank noreferer" rel="noopener">
-					<img src={s.image} alt={s.alt} />
+					<img height="102" width="125" src={s.image} alt={s.alt} />
 				</a>
 			</li>
 		{/each}

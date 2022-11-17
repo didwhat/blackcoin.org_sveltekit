@@ -65,9 +65,11 @@
 					{#each dl.links as link }
 						<a href={link.url}>
 							<div class="content">
-									<img src={link.img} alt={link.alt} />
+									{#if (link.img)}
+										<img src={link.img} alt={link.alt} />
+									{/if}
 									<p>
-									<span style="color: #aaa;">{link.alt}</span>
+										<span style="color: #aaa;">{link.alt}</span>
 									</p>
 								</div>
 							{#if (!!dl.subtitle)}
