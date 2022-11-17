@@ -8,8 +8,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter({ precompress: true }),
-		inlineStyleThreshold: Infinity,
+		adapter: adapter({ precompress: true })
 	}
 };
 
