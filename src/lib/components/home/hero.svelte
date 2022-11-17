@@ -56,7 +56,7 @@
 
 <style>
 	.hero {
-		background: url(/images/hero/tri.jpg);
+		background: url('/images/hero/tri.webp');
 		background-size: cover;
 		background-position: 50%;
 		background-attachment: fixed;
