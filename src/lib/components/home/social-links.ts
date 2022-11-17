@@ -1,52 +1,52 @@
 export default [
 	{
 		url: 'https://twitter.com/BlackcoinOrg',
-		image: '/images/twitterORG.png',
+		img: '/images/twitterORG.png',
 		alt: 'BlackcoinOrg Twitter'
 	},
 	{
 		url: 'https://twitter.com/BlackcoinNL',
-		image: '/images/twitterNL.png',
+		img: '/images/twitterNL.png',
 		alt: 'BlackcoinNL Twitter'
 	},
 	{
 		url: 'https://t.me/blackcoin',
-		image: '/images/telegramORG.png',
+		img: '/images/telegramORG.png',
 		alt: 'Telegram'
 	},
 	{
 		url: 'https://t.me/blackcoinNL',
-		image: '/images/telegramNL.png',
+		img: '/images/telegramNL.png',
 		alt: 'BlackcoinNL Telegram'
 	},
 	{
 		url: 'https://keybase.io/team/blackcoin',
-		image: '/images/keybase.png',
+		img: '/images/keybase.png',
 		alt: 'Keybase'
 	},
 	{
 		url: 'https://discord.gg/hjNUgWD',
-		image: '/images/discord.png',
+		img: '/images/discord.png',
 		alt: 'Discord'
 	},
 	{
 		url: 'https://bitcointalk.org/index.php?topic=3017838.new#new',
-		image: '/images/bitcointalk.png',
+		img: '/images/bitcointalk.png',
 		alt: 'Bitcointalk'
 	},
 	{
 		url: 'https://webchat.freenode.net/?channels=%23blackcoin',
-		image: '/images/irc.png',
+		img: '/images/irc.png',
 		alt: 'IRC'
 	},
 	{
 		url: 'https://gitter.im/BlackCoin_Hub',
-		image: '/images/gitter.png',
+		img: '/images/gitter.png',
 		alt: 'Gitter'
 	},
 	{
 		url: 'https://facebook.com/BlackcoinOrg',
-		image: '/images/facebook.png',
+		img: '/images/facebook.png',
 		alt: 'Facebook'
 	}
 ];

@@ -51,7 +51,11 @@
 <nav id="navbar">
 	<div class="bar">
 		<a id="nav-logo" href="/{i18n(navI18n, 'locale', lang)}/">
-			<img height="526" width="402" src="/images/blkb.png" alt="Blackcoin - Logo" />
+			<picture>
+				<source srcset="/images/blkb.webp" type="image/webp">
+				<source srcset="/images/blkb.png" type="image/png"> 
+				<img height="526" width="402" src="/images/blkb.png" alt="Blackcoin - Logo" >
+			  </picture>
 		</a>
 
 		<div id="opened">

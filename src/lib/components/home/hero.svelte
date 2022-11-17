@@ -21,25 +21,33 @@
 		<div class="bg-overlay">
 			<div class="content-wrapper">
 					<div class="content">
-						<img
-							id="logo"
-							height="128"
-							width="111"
-							src="/images/hero/ag2-logo.png"
-							alt="Blackcoin Logo"
-						/>
+						<picture>
+							<source srcset="/images/hero/ag2-logo.webp" type="image/webp">
+							<source srcset="/images/hero/ag2-logo.png" type="image/png"> 
+							<img
+								id="logo"
+								height="128"
+								width="111"
+								src="/images/hero/ag2-logo.png"
+								alt="Blackcoin Logo"
+							/>
+						  </picture>
 						<h1>
 							{i18n(heroI18n, 'blackcoin', lang)}
 						</h1>
 						<h2>{i18n(heroI18n, 'since2014', lang)}</h2>
 						<a href="#community" class="join-community">
-							<img
-								id="cta"
-								height="46"
-								width="350"
-								src="/images/joincommunity.png"
-								alt="Join the Blackcoin Community!"
-							/>
+							<picture>
+								<source srcset="/images/joincommunity.webp" type="image/webp">
+								<source srcset="/images/joincommunity.png" type="image/png"> 
+								<img
+									id="cta"
+									height="46"
+									width="350"
+									src="/images/joincommunity.png"
+									alt="Join the Blackcoin Community!"
+								/>
+							  </picture>
 						</a>
 					</div>
 					<br />

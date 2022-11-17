@@ -17,7 +17,11 @@
 		{#each social as s}
 			<li>
 				<a href={s.url} target="_blank noreferer" rel="noopener">
-					<img height="102" width="125" src={s.image} alt={s.alt} />
+					<picture>
+					  <source srcset={s.img.split('.')[0]+".webp"} type="image/webp">
+					  <source srcset={s.img} type="image/png">
+					  <img height="102" width="125" src={s.img} alt={s.alt} />
+					</picture>
 				</a>
 			</li>
 		{/each}
