@@ -213,7 +213,7 @@ export default {
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
 		},
-		
+
 		INTEGRATING_BLACKCOIN_PAYMENTS: {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,

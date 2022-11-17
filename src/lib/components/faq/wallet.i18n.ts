@@ -46,8 +46,8 @@ export default {
 		nl: `` /*Dutch*/,
 		it: `` /*Italian*/,
 		hr: `` /*Croatian*/
-		},
-		qa: {
+	},
+	qa: {
 		HOW_LONG_DOES_THE_WALLET_TAKE_TO_SYNC: {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
@@ -758,7 +758,7 @@ export default {
 			nl: `` /*Dutch*/,
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
-		},	
+		},
 		DOES_A_WEB_OR_MOBILE_WALLET_EXIST: {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
@@ -822,6 +822,6 @@ export default {
 			nl: `` /*Dutch*/,
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
-		},
+		}
 	}
 };

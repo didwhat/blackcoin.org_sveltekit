@@ -107,7 +107,7 @@ export default {
 				of actions instead of words. It is <span>one of the most active communities</span> next to
 				Dogecoin.
 			</p>
-			<style>span {color: goldenrod;}</style>` /*English*/, 
+			<style>span {color: goldenrod;}</style>` /*English*/,
 			hi: `` /*Hindi*/,
 			ar: `` /*Arabic - Right-to-left*/,
 			pt: `` /*Portuguese*/,
@@ -139,7 +139,7 @@ export default {
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
 		},
-		
+
 		HOW_DOES_IT_WORK: {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
@@ -343,7 +343,7 @@ export default {
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
 		},
-		
+
 		PROOF_OF_STAKE_VS_PROOF_OF_WORK: {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
@@ -427,7 +427,7 @@ export default {
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
 		},
-		
+
 		THE_ANNUAL_INFLATION_OF_BLACKCOIN: {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
@@ -503,7 +503,7 @@ export default {
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
 		},
-		
+
 		WHERE_CAN_I_CHECK_THE_NETWORK_WEIGHT: {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
@@ -624,7 +624,7 @@ export default {
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
 		},
-		
+
 		STAKING: {
 			zh: `` /*Chinese*/,
 			es: `` /*Spanish*/,
@@ -923,6 +923,6 @@ export default {
 			nl: `` /*Dutch*/,
 			it: `` /*Italian*/,
 			hr: `` /*Croatian*/
-		},
-	}	
+		}
+	}
 };

@@ -192,8 +192,8 @@
 		text-align: center;
 	}
 	#linksBtn {
-		background-image: linear-gradient(rgba(255,0,0,.4), transparent);
-		padding: .5rem !important;
+		background-image: linear-gradient(rgba(255, 0, 0, 0.4), transparent);
+		padding: 0.5rem !important;
 		margin: 0 auto;
 		border-radius: 5%;
 	}
@@ -289,7 +289,7 @@
 			background-color: transparent;
 		}
 		#main-menu li {
-			padding: 0 .5rem;
+			padding: 0 0.5rem;
 		}
 		#linksBtn {
 			padding-bottom: 3.5rem !important;
@@ -321,5 +321,4 @@
 			padding: 0 15vw 1rem 20vw;
 		}
 	}
-
 </style>

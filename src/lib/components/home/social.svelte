@@ -43,6 +43,6 @@
 		li {
 			width: 5%;
 			padding: 1rem;
-		}		
+		}
 	}
 </style>

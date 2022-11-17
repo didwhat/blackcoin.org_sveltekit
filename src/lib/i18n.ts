@@ -4,6 +4,6 @@ export default function (src, key, lang) {
 	} else if (!!src[lang][key]) {
 		return !!src[lang][key] && src[lang][key] !== '' ? src[lang][key] : src['en'][key];
 	} else if (!!src[lang]) {
-		return src[lang]
+		return src[lang];
 	}
 }
