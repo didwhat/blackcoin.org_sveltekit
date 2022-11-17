@@ -100,7 +100,7 @@
 		justify-content: center;
 	}
 	.blkb img {
-		height: 100%;
+		height: auto;
 		width: 75%;
 	}
 	@media (min-width: 700px) {

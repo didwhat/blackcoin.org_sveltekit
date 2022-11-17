@@ -19,7 +19,7 @@
 					<picture>
 						<source srcset={e.image.split('.')[0]+".webp"} type="image/webp">
 						<source srcset={e.image} type="image/png"> 
-						<img height="43" width="222" src={e.image} alt={e.alt} />
+						<img src={e.image} alt={e.alt} />
 					  </picture>
 				</a>
 			</li>
