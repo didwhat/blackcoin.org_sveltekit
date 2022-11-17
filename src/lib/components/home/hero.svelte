@@ -3,7 +3,6 @@
 	import heroI18n from './hero.i18n';
 	import BreakingNews from './news.svelte';
 	import HeroAnimation from './hero-animation.svelte'
-	import jQuery from 'jquery';
 
 	export let lang;
 	export let width;
