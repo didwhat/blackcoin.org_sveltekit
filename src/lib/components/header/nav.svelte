@@ -160,6 +160,10 @@
 		text-shadow: 1px 1px 1px orange;
 	}
 
+	#burger {
+		display: flex;
+		align-content: center;
+	}
 	#navbar {
 		width: 100%;
 		position: fixed;

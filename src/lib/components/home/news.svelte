@@ -41,7 +41,8 @@
 		padding: 0;
 	}
 	h2 {
-		font-size: 15px;
+		margin-left: 1rem;
+		font-size: 13px;
 		font-weight: 900;
 		align-self: center;
 	}

@@ -73,7 +73,6 @@
 	}
 	#logo {
 		padding-top: 25%;
-		width: 50%;
 		height: auto;
 	}
 	#large-header {
