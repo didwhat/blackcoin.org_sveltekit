@@ -41,8 +41,9 @@
 		padding: 0;
 	}
 	h2 {
-		font-size: 12px;
-		padding-bottom: 5px;
+		font-size: 15px;
+		font-weight: 900;
+		align-self: center;
 	}
 	h3 {
 		font-size: 11px;
@@ -64,12 +65,13 @@
 	}
 	.title {
 		width: 20%;
+		height: 100%;
 		position: absolute;
 		top: 0;
 		background-color: red;
-	}
-	.title h2 {
-		margin-left: 1rem;
+		display: grid;
+		justify-items: center;
+		align-itemjustify-items: center;
 	}
 	.innerBox {
 		width: 80%;
@@ -81,9 +83,14 @@
 		color: #ddb77a;
 	}
 
+	@media (min-width: 700px) {
+		h2 {
+			font-size: 20px;
+		}
+	}
 	@media (min-width: 1080px) {
 		h2 {
-			font-size: 25px;
+			font-size: 20px;
 		}
 		h3 {
 			font-size: 20px;

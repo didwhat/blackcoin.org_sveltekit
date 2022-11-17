@@ -55,7 +55,7 @@
 		</a>
 
 		<div id="opened">
-			{#if open || width > 600}
+			{#if open || width > 1080}
 				<div>
 					<ul id="main-menu">
 						<li>

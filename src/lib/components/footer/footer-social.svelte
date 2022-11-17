@@ -1,13 +1,14 @@
 <script>
-	import metadata from '$lib/components/metadata';
+	import footerLinks from './footer-links';
 </script>
 
 <div class="social">
-	{#each metadata.author.social as s}
+	{#each footerLinks as s}
 		<a target="_blank noreferrer" href={s.url}>
-			<i class={s.class}>{s.name}</i>
+			{s.alt}
 		</a>
 	{/each}
+	
 </div>
 
 <style>
@@ -18,5 +19,14 @@
 	}
 	a {
 		padding-right: 1rem;
+		font-size: normal;
+	}
+	@media (min-width: 1080px ) {
+		.social {
+			/* display: inline-flex;
+			justify-content: center;
+			flex-wrap: wrap; */
+			width: 25%;
+		}
 	}
 </style>

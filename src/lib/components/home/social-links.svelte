@@ -1,5 +1,5 @@
 <script>
-	import socialLinks from './social';
+	import socialLinks from './social-links';
 </script>
 
 <!-- Social Links -->

@@ -1,6 +1,6 @@
 <script>
 	import i18n from '$lib/i18n';
-	import social from './social';
+	import social from './social-links';
 	import socialI18n from './social.i18n';
 	export let lang;
 </script>
@@ -41,8 +41,13 @@
 
 	@media (min-width: 700px) {
 		li {
-			width: 5%;
-			padding: 1rem;
+			width: 15%;
 		}
 	}
+	@media (min-width: 1440px) {
+		li {
+			width: 5%;
+		}
+	}
+
 </style>

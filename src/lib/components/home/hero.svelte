@@ -1,9 +1,9 @@
 <script>
-	import jQuery from 'jquery';
 	import i18n from '$lib/i18n';
 	import heroI18n from './hero.i18n';
 	import BreakingNews from './news.svelte';
 	import HeroAnimation from './hero-animation.svelte'
+	import jQuery from 'jquery';
 
 	let height;
 	let width;
@@ -12,12 +12,14 @@
 
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
+	{#if (width > 700)}
+		<div id="large-header">
+			<HeroAnimation />
+		</div>
+	{/if}
 	<div class="hero">
 		<div class="bg-overlay">
 			<div class="content-wrapper">
-				<div id="large-header">
-					<HeroAnimation />
-				</div>
 					<div class="content">
 						<img
 							id="logo"
