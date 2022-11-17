@@ -60,7 +60,7 @@
 		background: #151515;
 		height: 40px;
 		position: relative;
-		border: solid 2px darkred;
+		border: solid 1px red;
 		overflow: hidden;
 	}
 	.title {
@@ -68,7 +68,7 @@
 		height: 100%;
 		position: absolute;
 		top: 0;
-		background-color: red;
+		background-color: #a00;
 		display: grid;
 		justify-items: center;
 		align-itemjustify-items: center;
