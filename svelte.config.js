@@ -9,7 +9,7 @@ const config = {
 
 	kit: {
 		adapter: adapter({ precompress: true }),
-		inlineStyleThreshold: 100,
+		inlineStyleThreshold: Infinity,
 	}
 };
 
