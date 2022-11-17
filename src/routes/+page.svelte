@@ -6,7 +6,12 @@
 	import SocialMedia from '$lib/components/home/social.svelte';
 	import Donations from '$lib/components/home/donations.svelte';
 	let lang = 'en';
-</script>
+
+	export let width;
+	export let height;
+  </script>
+
+<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
 <svelte:head>
 	<title>BlackcoinOrg</title>
@@ -15,9 +20,9 @@
 </svelte:head>
 
 <div id="home" />
-<Hero {lang} />
+<Hero {lang}  bind:width bind:height />
 <About {lang} />
 <Exchange {lang} />
 <Downloads {lang} />
 <SocialMedia {lang} />
-<Donations {lang} />
+<Donations {lang} bind:width />

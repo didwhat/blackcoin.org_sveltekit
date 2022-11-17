@@ -5,12 +5,10 @@
 	import HeroAnimation from './hero-animation.svelte'
 	import jQuery from 'jquery';
 
-	let height;
-	let width;
 	export let lang;
+	export let width;
+	export let height;
   </script>
-
-<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
 	{#if (width > 700)}
 		<div id="large-header">

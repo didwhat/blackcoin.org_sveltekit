@@ -2,6 +2,7 @@
 	import i18n from '$lib/i18n';
 	import donationsI18n from './donations.i18n';
 	export let lang;
+	export let width;
 	import donationQuickAddresses from './donation-quick-addresses';
 </script>
 
@@ -26,7 +27,7 @@
 				<ul>
 					{#each donationQuickAddresses as address}
 						<li>
-							{address[0]}: <span class="golden">{address[1].substring(0,8)}...</span>
+							{address[0]}: <span class="golden">{width < 1080 ? address[1].substring(0,8)+'...' : address[1]}</span>
 							<img src='/images/svg/qr.svg' alt="Click for QR"/>
 							<img src='/images/svg/copy.svg' alt="Click to Copy"/>
 						</li>
@@ -37,8 +38,33 @@
 	</div>
 </section>
 <style>
+	p  {
+		font-size: 1.5rem;
+	}
+	li {
+		font-size: 1.7rem;
+		padding: .5rem 0;
+	}
 	img {
-		width: 1rem;
+		width: 2rem;
+		margin: .3rem;
 		height: auto;
+	}
+	@media (min-width: 700px) {
+		img {
+			width: 2.5rem;
+		}
+	}
+	@media (min-width: 1440px) {
+	p  {
+		font-size: 1.7rem;
+	}
+	li {
+		font-size: 2rem;
+	}
+	img {
+		width: 2.75rem;
+		height: auto;
+	}
 	}
 </style>

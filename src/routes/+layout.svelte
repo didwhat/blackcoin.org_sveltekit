@@ -3,9 +3,12 @@
 	import Footer from '$lib/components/footer/footer.svelte';
 	import '$lib/styles.css';
 	let lang = 'en';
+	export let width
 </script>
 
-<Navbar bind:lang />
+<svelte:window bind:innerWidth={width} />
+
+<Navbar bind:lang bind:width />
 <div>
 	<slot />
 </div>

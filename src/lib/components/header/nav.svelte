@@ -5,7 +5,7 @@
 	import LangSelect from './lang-select.svelte';
 
 	export let lang;
-	let width = 0;
+	export let width;
 
 	let open = false;
 
@@ -47,7 +47,6 @@
 	$: markets = false;
 </script>
 
-<svelte:window bind:innerWidth={width} />
 <nav id="navbar">
 	<div class="bar">
 		<a id="nav-logo" href="/{i18n(navI18n, 'locale', lang)}/">
