@@ -5,7 +5,7 @@
 	import donationQuickAddresses from './donation-quick-addresses';
 </script>
 
-<div class="testimonials-parallax">
+<section>
 	<div class="bg-overlay">
 		<div class="container">
 			<center>
@@ -25,10 +25,20 @@
 				</p>
 				<ul>
 					{#each donationQuickAddresses as address}
-						<li>{address[0]}: <span class="golden">{address[1]}</span></li>
+						<li>
+							{address[0]}: <span class="golden">{address[1].substring(0,8)}...</span>
+							<img src='/images/svg/qr.svg' alt="Click for QR"/>
+							<img src='/images/svg/copy.svg' alt="Click to Copy"/>
+						</li>
 					{/each}
 				</ul>
 			</center>
 		</div>
 	</div>
-</div>
+</section>
+<style>
+	img {
+		width: 1rem;
+		height: auto;
+	}
+</style>
