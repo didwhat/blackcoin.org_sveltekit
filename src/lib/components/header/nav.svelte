@@ -153,6 +153,7 @@
 	a,
 	li {
 		color: #ddb77a;
+		text-shadow: 1px 1px 1px orange;
 	}
 
 	#navbar {
@@ -171,9 +172,22 @@
 		display: grid;
 		align-content: center;
 	}
-	#main-menu li {
-		margin: 1rem;
-		text-shadow: 1px 1px 1px orange;
+
+	#main-menu {
+		position: absolute;
+		top: 5rem;
+		right: 0;
+		width: 100vw;
+		height: calc(100vh - 5rem);
+		display: flex;
+		flex-direction: column;
+		font-size: 2.5rem;
+		background-color: black;
+		line-height: 3rem;
+		margin: 0;
+		justify-content: center;
+		display: flex;
+		text-align: center;
 	}
 	.bar {
 		display: flex;
@@ -222,10 +236,11 @@
 		align-content: center;
 		display: flex;
 		justify-content: space-around;
-		height: auto;
+		height: 30vh;
 		overflow-y: scroll;
 		-ms-overflow-style: none; /* IE and Edge */
 		scrollbar-width: none; /* Firefox */
+		z-index: 10;
 	}
 
 	#navbar ul li ul {
@@ -251,33 +266,25 @@
 		padding: 0 0.75rem;
 	}
 
-	@media (max-width: 700px) {
-		#main-menu {
-			position: absolute;
-			top: 5rem;
-			right: 0;
-			width: 100vw;
-			height: calc(100vh - 5rem);
-			display: flex;
-			flex-direction: column;
-			font-size: xxx-large;
-			background-color: black;
-			line-height: 3rem;
-			margin: 0;
-			justify-content: space-around;
-			display: flex;
-		}
 		#links {
 			position: absolute;
 			top: 5rem;
 			height: calc(100vh - 5rem);
 			justify-content: space-around;
 		}
-	}
 	@media (min-width: 700px) {
 		#main-menu {
+			position: absolute;
+			top: 2rem;
+			height: 2rem;
 			display: inline-flex;
-			font-size: 1.2vw;
+			flex-direction: row;
+			justify-content: center;
+			font-size: 2.5rem;
+			background-color: transparent;
+		}
+		#main-menu li {
+			padding: 0 1rem;
 		}
 	}
 </style>

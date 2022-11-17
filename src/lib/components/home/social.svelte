@@ -35,7 +35,14 @@
 		justify-content: center;
 	}
 	li {
-		width: 5%;
-		padding: 0.5rem;
+		width: 30%;
+		margin: 1%;
+	}
+
+	@media (min-width: 700px) {
+		li {
+			width: 5%;
+			padding: 1rem;
+		}		
 	}
 </style>

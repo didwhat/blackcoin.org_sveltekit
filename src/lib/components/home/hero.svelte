@@ -15,7 +15,7 @@
 
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
-<header id="page-hero">
+<div id="page-hero">
 	<div id="home" class="hero">
 		<div class="bg-overlay">
 			<div id="page-hero" class="content-wrapper">
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 	<hr />
-</header>
+</div>
 
 <style>
 	.hero {

@@ -191,7 +191,7 @@ export default {
 		it: 'PORTAFOGLIO LEGACY' /*Italian*/,
 		hr: 'LEGATNI NOVČANIK' /*Croatian*/
 	},
-	legacy_gitlab: {
+	gitlab_source: {
 		zh: 'Gitlab源代码' /*Chinese*/,
 		es: 'Código fuente de Gitlab' /*Spanish*/,
 		en: 'Gitlab Source Code' /*English*/,
