@@ -19,7 +19,7 @@
 	}
 	a {
 		padding-right: 1rem;
-		font-size: normal;
+		font-size: larger;
 	}
 	@media (min-width: 1080px ) {
 		.social {
