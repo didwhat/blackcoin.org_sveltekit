@@ -72,7 +72,6 @@
 		background-color: #a00;
 		display: grid;
 		justify-items: center;
-		align-itemjustify-items: center;
 	}
 	.innerBox {
 		width: 80%;

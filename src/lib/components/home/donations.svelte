@@ -28,8 +28,8 @@
 					{#each donationQuickAddresses as address}
 						<li>
 							{address[0]}: <span class="golden">{width < 1080 ? address[1].substring(0,8)+'...' : address[1]}</span>
-							<img src='/images/svg/qr.svg' alt="Click for QR"/>
-							<img src='/images/svg/copy.svg' alt="Click to Copy"/>
+							<img width="110" height="110" src='/images/svg/qr.svg' alt="Click for QR"/>
+							<img width="512" height="512" src='/images/svg/copy.svg' alt="Click to Copy"/>
 						</li>
 					{/each}
 				</ul>
@@ -40,6 +40,9 @@
 <style>
 	p  {
 		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 3vw;
 	}
 	li {
 		font-size: 1.7rem;
