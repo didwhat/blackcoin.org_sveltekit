@@ -53,7 +53,7 @@
 			<picture>
 				<source srcset="/images/blkb.webp" type="image/webp">
 				<source srcset="/images/blkb.png" type="image/png"> 
-				<img height="323" width="243" src="/images/blkb.png" alt="Blackcoin - Logo" >
+				<img height="526" width="402" src="/images/blkb.png" alt="Blackcoin - Logo" >
 			  </picture>
 		</a>
 
