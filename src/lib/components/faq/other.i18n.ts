@@ -244,7 +244,7 @@ export default {
 			en: `
 			<p>
 				<a
-					href="/Step-By-Step-Instructions-for-Online-Businesses-_BLK.pdf"
+					href="/"
 					target="_blank norefer">Guide for online businesses on integrating blk payments.</a
 				><br />
 			</p>` /*English*/,

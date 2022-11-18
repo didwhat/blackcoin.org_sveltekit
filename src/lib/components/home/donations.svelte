@@ -4,7 +4,8 @@
 	export let lang;
 	export let width;
 	import donationQuickAddresses from './donation-quick-addresses';
-	import QrCodeGen from './qr-code-gen.svelte'
+	import QrCodeGen from '../common/qr-code-gen.svelte'
+  import DonationsAddrQr from '../common/addr-qr.svelte';
 	$: qr = ''
 	function copyHTML(content: string) {
 		navigator.clipboard.writeText(content);
@@ -32,17 +33,7 @@
 				<ul>
 					{#each donationQuickAddresses as address}
 						<li>
-								{address[0]}: <span class="golden">{width < 1080 ? address[1].substring(0,8)+'...' : address[1]}</span>
-								<img on:click={()=>{
-									copyHTML(address[1])
-								}} width="512" height="512" src='/images/svg/copy.svg' alt="Click to Copy"/>
-							{#if (qr !== address[1])}
-								<img width="110" height="110" src='/images/svg/qr.svg' alt="Click for QR" on:click={()=>{
-									qr = address[1]
-								}}/>
-							{:else}
-								<QrCodeGen value={qr} size={width*.9} />
-							{/if}
+							<DonationsAddrQr {address} {width} {qr} />
 						</li>
 					{/each}
 				</ul>
@@ -61,26 +52,12 @@
 		font-size: 1.7rem;
 		padding: .5rem 0;
 	}
-	img {
-		width: 2rem;
-		margin: .3rem;
-		height: auto;
-	}
-	@media (min-width: 700px) {
-		img {
-			width: 2.5rem;
-		}
-	}
 	@media (min-width: 1440px) {
-	p  {
-		font-size: 1.7rem;
-	}
-	li {
-		font-size: 2rem;
-	}
-	img {
-		width: 2.75rem;
-		height: auto;
-	}
+		p  {
+			font-size: 1.7rem;
+		}
+		li {
+			font-size: 2rem;
+		}
 	}
 </style>

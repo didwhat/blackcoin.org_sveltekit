@@ -18,11 +18,16 @@
 				rel="/{locale.code} {lang}"
 				hreflang={locale.code}><li>{locale.label}</li></a
 			>
-
 			<!-- <button on:click={()=>lang = locale.code}>{locale.code}</button> -->
 		{/each}
 	</ul>
 </ul>
+
+<!-- HIDDEN - FOR STATIC BUILD -->
+{#each locales as locale}
+	<a style="visability:hidden;" href="/{locale.code}/donations" />
+	<a style="visability:hidden;" href="/{locale.code}/faq" />
+{/each}
 
 <style>
 	* {
