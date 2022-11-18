@@ -1,7 +1,7 @@
 export default {
 	support_donate: {
 		zh: '支持BlackCoin并捐赠给开发人员和正在进行的项目。' /*Chinese*/,
-		es: 'Apoye a BlackCoin y done a los desarrolladores y los proyectos en curso.' /*Spanish*/,
+		es: 'Apoya a BlackCoin y dona a sus desarrolladores y a los proyectos en curso.' /*Spanish*/,
 		en: 'Support BlackCoin and donate to the developers and the ongoing projects.' /*English*/,
 		hi: 'BlackCoin का समर्थन करें और डेवलपर्स और चल रही परियोजनाओं के लिए दान करें।' /*Hindi*/,
 		ar: 'ادعم BlackCoin وتبرع للمطورين والمشاريع الجارية.' /*Arabic - Right-to-left*/,
@@ -70,11 +70,11 @@ export default {
   },
   more_info: {
     'zh': '更多信息'
-    'es': 'Más información'
+    'es': 'Más info'
     'en': 'More Info'
     'hi': 'और जानकारी'
     'ar': 'More Info'
-    'pt': 'More Info'
+    'pt': 'Mais Info'
     'bn': 'More Info'
     'ru': 'More Info'
     'ja': 'More Info'
@@ -97,7 +97,7 @@ export default {
     'en': 'Technical Lead'
     'hi': 'तकनीकी बढ़त'
     'ar': 'Technical Lead'
-    'pt': 'Technical Lead'
+    'pt': 'Líder Técnico'
     'bn': 'Technical Lead'
     'ru': 'Technical Lead'
     'ja': 'Technical Lead'
@@ -120,7 +120,7 @@ export default {
     'en': 'Community Lead'
     'hi': 'सामुदायिक लीड '
     'ar': 'Community Lead'
-    'pt': 'Community Lead'
+    'pt': 'Lider da comunidade'
     'bn': 'Community Lead'
     'ru': 'Community Lead'
     'ja': 'Community Lead'
@@ -143,7 +143,7 @@ export default {
     'en': 'Blackcoinorg Website'
     'hi': 'Blackcoinorg वेबसाइट '
     'ar': 'Blackcoinorg Website'
-    'pt': 'Blackcoinorg Website'
+    'pt': 'Site de Blackcoin'
     'bn': 'Blackcoinorg Website'
     'ru': 'Blackcoinorg Website'
     'ja': 'Blackcoinorg Website'
@@ -212,7 +212,7 @@ export default {
     'en': 'Developer'
     'hi': 'डेवलपर '
     'ar': 'Developer'
-    'pt': 'Developer'
+    'pt': 'Desenvolvedor'
     'bn': 'Developer'
     'ru': 'Developer'
     'ja': 'Developer'
