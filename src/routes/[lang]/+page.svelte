@@ -5,9 +5,13 @@
 	import Downloads from '$lib/components/home/downloads.svelte';
 	import SocialMedia from '$lib/components/home/social.svelte';
 	import Donations from '$lib/components/home/donations.svelte';
-	export let data;
-	$: lang = data.lang;
-</script>
+	let lang = 'en';
+
+	export let width;
+	export let height;
+  </script>
+
+<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
 <svelte:head>
 	<title>BlackcoinOrg</title>
@@ -16,9 +20,9 @@
 </svelte:head>
 
 <div id="home" />
-<Hero bind:lang />
-<About bind:lang />
-<Exchange bind:lang />
-<Downloads bind:lang />
-<SocialMedia bind:lang />
-<Donations bind:lang />
+<Hero {lang}  bind:width bind:height />
+<About {lang} />
+<Exchange {lang} />
+<Downloads {lang} />
+<SocialMedia {lang} />
+<Donations {lang} bind:width />
