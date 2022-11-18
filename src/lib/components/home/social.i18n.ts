@@ -1,7 +1,7 @@
 export default {
 	join_community: {
 		zh: '加入Blackcoin社区' /*Chinese*/,
-		es: 'Únase a la comunidad Blackcoin' /*Spanish*/,
+		es: 'Sumate a la comunidad Blackcoin' /*Spanish*/,
 		en: 'Join The Blackcoin Community' /*English*/,
 		hi: 'Blackcoin समुदाय में शामिल हों' /*Hindi*/,
 		ar: 'انضم إلى مجتمع Blackcoin' /*Arabic - Right-to-left*/,
