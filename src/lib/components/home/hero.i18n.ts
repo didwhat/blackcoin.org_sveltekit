@@ -25,7 +25,7 @@ export default {
 	},
 	since2014: {
 		zh: '自2014年以来的纯权益证明' /*Chinese*/,
-		es: 'Prueba de Participación pura desde 2014' /*Spanish*/,
+		es: '%100 Prueba de Participación desde 2014' /*Spanish*/,
 		en: 'Pure Proof of Stake since 2014' /*English*/,
 		hi: '2014 से स्टेक का शुद्ध प्रमाण' /*Hindi*/,
 		ar: 'دليل خالص على الحصة منذ عام 2014' /*Arabic - Right-to-left*/,
