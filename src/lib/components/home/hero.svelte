@@ -18,13 +18,13 @@
 			<div class="content-wrapper">
 					<div class="content">
 						<picture>
-							<source srcset="/images/hero/ag2-logo.webp" type="image/webp">
-							<source srcset="/images/hero/ag2-logo.png" type="image/png"> 
+							<source srcset="/images/hero/blackcoin-logo.webp" type="image/webp">
+							<source srcset="/images/hero/blackcoin-logo.png" type="image/png"> 
 							<img
 								id="logo"
 								height="128"
 								width="111"
-								src="/images/hero/ag2-logo.png"
+								src="/images/hero/blackcoin-logo.png"
 								alt="Blackcoin Logo"
 							/>
 						  </picture>
