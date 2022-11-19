@@ -25,10 +25,11 @@
 			</center>
 			<center>
 				<p>
-					Donate to a <a alt="Link to Donations Page" href="/donations">Person or Project</a>.
+					{i18n(donationsI18n, 'donate_to', lang)}
+					 <a alt="Link to Donations Page" href="/donations">{i18n(donationsI18n, 'person_project', lang)}</a>.
 				</p>
 				<p>
-					or simply send to one of the addresses below.
+					{i18n(donationsI18n, 'simply_send', lang)}
 				</p>
 				<ul>
 					{#each donationQuickAddresses as address}
