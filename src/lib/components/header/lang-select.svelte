@@ -44,33 +44,71 @@
 		background-color: transparent;
 		border: none;
 		padding-bottom: 1rem;
+		font-size: x-small;
 	}
 	#menu-locale {
 		width: 100vw;
+		height: calc(100vh - 5rem);
+		margin-bottom: 5rem;
+		overflow-y: scroll;
+		overflow-x: hidden;
 		position: absolute;
 		right: 0;
 		top: 6rem;
 		flex-wrap: wrap;
+		justify-content: center;
+		align-content: space-around;
 		background-color: #111;
 	}
 	/* #menu-locale button, */
 	#menu-locale a {
+		text-align: center;
 		background-color: #000;
 		width: 33vw;
-		padding: 2rem;
+		padding: .5rem;
+	}
+	@media (min-width: 300px) {
+		#menuOpener {
+			font-size: normal;
+		}
+	#menu-locale a {
+		padding: .75rem;
+	}
 	}
 	@media (min-width: 700px) {
 		#menu-locale {
 			top: 7.5rem;
 		}
 		#menu-locale a {
-			padding: 3rem;
-			width: 9vw;
-			font-size: xxx-large;
+			font-size: x-large;
 		}
 		#menuOpener {
-			font-size: x-large;
+			font-size: large;
 			padding: 0;
+		}
+	}
+	@media (min-width: 1080px) {
+		#menu-locale {
+			top: 5rem;
+			background-color: #000;
+		}
+		#menu-locale a {
+			width: 15vw;
+			font-size: x-large;
+		}
+		#menuOpener {
+			font-size: large;
+			padding: 0;
+		}
+	}
+	@media (min-width: 1440px) {
+		#menu-locale a {
+			font-size: xx-large;
+		}
+	}
+	@media (min-width: 2560px) {
+		#menu-locale a {
+			font-size: xxx-large;
 		}
 	}
 </style>

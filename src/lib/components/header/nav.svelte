@@ -57,9 +57,7 @@
 			  </picture>
 		</a>
 
-		<div id="opened">
 			{#if open || width > 1080}
-				<div>
 					<ul id="main-menu">
 						<li>
 							<a
@@ -141,9 +139,7 @@
 							</ul>
 						</li>
 					</ul>
-				</div>
 			{/if}
-		</div>
 		<div class="btns">
 			<LangSelect {lang} />
 			<div id="burger">
@@ -176,10 +172,10 @@
 		align-items: center;
 		flex-flow: row;
 	}
-	#opened {
+	/* #opened {
 		display: grid;
 		align-content: center;
-	}
+	} */
 
 	#main-menu {
 		position: absolute;
@@ -189,9 +185,9 @@
 		height: calc(100vh - 5rem);
 		display: flex;
 		flex-direction: column;
-		font-size: 2.5rem;
+		font-size: 1rem;
+		line-height: 1.5rem;
 		background-color: black;
-		line-height: 3rem;
 		margin: 0;
 		justify-content: center;
 		align-content: center;
@@ -285,48 +281,75 @@
 		padding: 0 0.75rem;
 	}
 
+
+	@media (min-width: 300px) {
+		#main-menu {
+			font-size: 2rem;
+			line-height: 3rem;
+		}
+		#main-menu li {
+			padding: 0 .5rem;
+		}
+		.bar {
+			padding: 0 15vw 1rem 20vw;
+		}
+	}
+
+	@media (min-width: 700px) {
+		#main-menu {
+			font-size: 4rem;
+			line-height: 6rem;
+		}
+	}
+
 	@media (min-width: 1080px) {
 		#main-menu {
-			position: absolute;
-			top: 2rem;
-			height: 2rem;
+			position: initial;
+			width: auto;
+			height: auto;
 			display: inline-flex;
 			flex-direction: row;
 			justify-content: center;
-			font-size: 1rem;
+			align-content: center;
+			font-size: .8rem;
+			line-height: 1.5rem;
 			background-color: transparent;
 		}
 		#main-menu li {
 			padding: 0 0.5rem;
+			align-self: center;
 		}
 		#linksBtn {
-			padding-bottom: 3.5rem !important;
-			margin: 0;
+			padding-bottom: 1.2rem !important;
+			margin: 1rem 0 0 0;
+			align-self: center;
 		}
 		.bar {
 			padding: 0 1vw 1rem 5vw;
 		}
+		#burger { display: none;}
 	}
 	@media (min-width: 1440px) {
 		#main-menu {
-			font-size: 1.5rem;
+			font-size: 1rem;
 		}
 		#main-menu li {
-			padding: 0 1rem;
+			padding: 0 .5rem;
 		}
 		.bar {
-			padding: 0 2vw 1rem 10vw;
+			padding: 0 1rem 1rem 5vw;
 		}
 	}
 	@media (min-width: 2560px) {
 		#main-menu {
-			font-size: 2rem;
+			font-size: 1.75rem;
 		}
 		#main-menu li {
 			padding: 0 1.5rem;
+			font-size: 1rem;
 		}
 		.bar {
-			padding: 0 15vw 1rem 20vw;
+			padding: 0 15vw 1rem 15vw;
 		}
 	}
 </style>
