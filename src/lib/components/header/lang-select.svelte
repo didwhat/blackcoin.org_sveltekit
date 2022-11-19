@@ -2,6 +2,7 @@
 <script>
 	import locales from './locales';
 	import SELECT_LANGUAGE from './lang-select.i18n';
+  import HiddenLinks from './hidden-links.svelte';
 	export let lang;
 	$: menuOpen = false;
 </script>
@@ -24,10 +25,7 @@
 </ul>
 
 <!-- HIDDEN - FOR STATIC BUILD -->
-{#each locales as locale}
-	<a style="visability:hidden;" href="/{locale.code}/donations" />
-	<a style="visability:hidden;" href="/{locale.code}/faq" />
-{/each}
+<HiddenLinks {locales} />
 
 <style>
 	* {
