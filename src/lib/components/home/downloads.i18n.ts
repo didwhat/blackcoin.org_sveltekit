@@ -49,11 +49,11 @@ export default {
 	},
 	more_wallet: {
 		zh: 'More钱包' /*Chinese*/,
-		es: 'MÁS CARTERA' /*Spanish*/,
+		es: 'CARTERA MORE' /*Spanish*/,
 		en: 'MORE WALLET' /*English*/,
 		hi: 'अधिक जानकारी' /*Hindi*/,
 		ar: 'المزيد من المحفظة' /*Arabic - Right-to-left*/,
-		pt: 'MAIS CARTEIRA' /*Portuguese*/,
+		pt: 'CARTEIRA MORE' /*Portuguese*/,
 		bn: 'আরও ভাল' /*Bengal*/,
 		ru: 'More' /*Russian*/,
 		ja: 'Moreウォレット' /*Japanese*/,
@@ -73,7 +73,7 @@ export default {
 	},
 	blackcoin_more: {
 		zh: '黒币 More' /*Chinese*/,
-		es: 'Blackcoin Más' /*Spanish*/,
+		es: 'Blackcoin More' /*Spanish*/,
 		en: 'Blackcoin More' /*English*/,
 		hi: 'Blackcoin More' /*Hindi*/,
 		ar: 'بلاك كوين مور' /*Arabic - Right-to-left*/,
@@ -97,7 +97,7 @@ export default {
 	},
 	community_supported: {
 		zh: '社区支持的钱包。' /*Chinese*/,
-		es: 'La billetera apoyada por la comunidad.' /*Spanish*/,
+		es: 'La billetera soportada por la comunidad.' /*Spanish*/,
 		en: 'The community supported wallet.' /*English*/,
 		hi: 'समुदाय ने बटुए का समर्थन किया।' /*Hindi*/,
 		ar: 'دعم المجتمع المحفظة.' /*Arabic - Right-to-left*/,
@@ -121,7 +121,7 @@ export default {
 	},
 	mobile_wallets: {
 		zh: '手机钱包' /*Chinese*/,
-		es: 'CARTERAS MÓVILES' /*Spanish*/,
+		es: 'CARTERAS PARA EL MOBIL' /*Spanish*/,
 		en: 'MOBILE WALLETS' /*English*/,
 		hi: 'मोबाइल वॉलेट' /*Hindi*/,
 		ar: 'محافظ محمولة' /*Arabic - Right-to-left*/,
