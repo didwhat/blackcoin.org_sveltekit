@@ -4,7 +4,7 @@ export default {
 	en: 'Select language' /*English*/,
 	hi: 'भाषा का चयन करें' /*Hindi*/,
 	ar: 'اختار اللغة' /*Arabic - Right-to-left*/,
-	pt: 'Pagina inicial' /*Portuguese*/,
+	pt: 'Selecione o idioma' /*Portuguese*/,
 	bn: 'ভাষা নির্বাচন কর' /*Bengal*/,
 	ru: 'Выберите язык' /*Russian*/,
 	ja: '言語を選択する' /*Japanese*/,
