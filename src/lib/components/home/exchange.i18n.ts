@@ -25,11 +25,11 @@ export default {
 	},
 	check: {
 		zh: '检查' /*Chinese*/,
-		es: 'Verificar el' /*Spanish*/,
+		es: 'Verificar' /*Spanish*/,
 		en: 'Check ' /*English*/,
 		hi: 'मार्केट वॉल्यूम की ' /*Hindi*/,
 		ar: ' حجم الأسواق' /*Arabic - Right-to-left*/,
-		pt: 'Verifique o ' /*Portuguese*/,
+		pt: 'Verifica' /*Portuguese*/,
 		bn: 'মার্কেটসের ভলিউম' /*Bengal*/,
 		ru: 'Проверить ' /*Russian*/,
 		ja: '市場ボリュームを' /*Japanese*/,
