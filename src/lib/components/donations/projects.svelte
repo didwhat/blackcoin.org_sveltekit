@@ -60,7 +60,6 @@
 	}
 	.items {
 		display: grid;
-		grid-template-rows: 1fr 1fr;
 		align-items: center;
 		justify-items: center;
 		text-align: center;
@@ -70,7 +69,6 @@
 	}
 	.content {
 		display: grid;
-		grid-template-rows: 1fr 1fr;
 		align-items: center;
 		justify-items: center;
 	}

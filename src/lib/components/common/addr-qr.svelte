@@ -9,26 +9,41 @@
 		let a = address
 		address = ['BLK',a]
 	}
+	$: copied = false
 </script>
 
-
-{address[0]}: <span class="golden">{width < 1080 ? address[1].substring(0,8)+'...' : address[1]}</span>
-    <img on:click={()=>{
-        copyHTML(address[1])
-    }} width="512" height="512" src='/images/svg/copy.svg' alt="Click to Copy"/>
-{#if (qr !== address[1])}
-    <img width="110" height="110" src='/images/svg/qr.svg' alt="Click for QR" on:click={()=>{
-        qr = address[1]
-    }}/>
-{:else}
-    <QrCodeGen value={qr} size={width > 1080 ? width*.1 : width*.5} />
-{/if}
+<div class="rel">
+	{address[0]}: <span class="golden">{width < 1080 ? address[1].substring(0,8)+'...' : address[1]}</span>
+		<p class="copied" style="display: {!!copied ? "flex" : "none"};">Copied!</p>
+		<img on:click={()=>{
+			copied = !copied
+			copyHTML(address[1])
+		}} width="512" height="512" src='/images/svg/copy.svg' alt="Click to Copy"/>
+	{#if (qr !== address[1])}
+		<img width="110" height="110" src='/images/svg/qr.svg' alt="Click for QR" on:click={()=>{
+			qr = address[1]
+		}}/>
+	{:else}
+		<QrCodeGen value={qr} size={width > 1080 ? width*.1 : width*.5} />
+	{/if}
+</div>
 
 <style>
+	.rel {
+		width: 100%;
+		position: relative;
+	}
 	img {
 		width: 2rem;
 		margin: .3rem;
 		height: auto;
+	}
+	.copied {
+		position: absolute;
+		right: 0;
+		background-color: rgba(0,0,0,0.5);
+		padding: .25rem;
+		box-shadow: 1px 1px 1rem black;
 	}
 	@media (min-width: 700px) {
 		img {

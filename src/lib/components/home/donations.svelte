@@ -31,13 +31,13 @@
 				<p>
 					{i18n(donationsI18n, 'simply_send', lang)}
 				</p>
-				<ul>
+				<div>
 					{#each donationQuickAddresses as address}
-						<li>
+						<div class="addr">
 							<AddrQr {address} {width} {qr} />
-						</li>
+						</div>
 					{/each}
-				</ul>
+					</div>
 			</center>
 		</div>
 	</div>
@@ -49,7 +49,7 @@
 	h3 {
 		font-size: 3vw;
 	}
-	li {
+	.addr {
 		font-size: 1.7rem;
 		padding: .5rem 0;
 	}
@@ -57,7 +57,7 @@
 		p  {
 			font-size: 1.7rem;
 		}
-		li {
+		.addr {
 			font-size: 2rem;
 		}
 	}
