@@ -5,7 +5,12 @@
     export let address
     export let width
     export let qr
+	if (typeof address === 'string') {
+		let a = address
+		address = ['BLK',a]
+	}
 </script>
+
 
 {address[0]}: <span class="golden">{width < 1080 ? address[1].substring(0,8)+'...' : address[1]}</span>
     <img on:click={()=>{

@@ -1,11 +1,14 @@
 <script>
+	import AddrQr from '../common/addr-qr.svelte'
 	import ongoing from './ongoing';
 	import community from './community';
 	import outreach from './outreach';
 	import development from './development';
 
 	const projects = [...development, ...outreach, ...ongoing, ...community];
-	export let lang;
+	export let width
+	$: width = width
+	$: qr = ''
 </script>
 
 <div class="grid">
@@ -28,7 +31,7 @@
 							{/if}
 						</ul>
 						<item>
-							{item.address}
+							<AddrQr address={item.address} {width} {qr} />
 						</item>
 					</div>
 				</div>
@@ -43,7 +46,7 @@
 	}
 
 	.grid {
-		padding-top: 15rem;
+		padding-top: 5rem;
 		display: grid;
 		align-items: start;
 		justify-items: center;

@@ -5,7 +5,7 @@
 	export let width;
 	import donationQuickAddresses from './donation-quick-addresses';
 	import QrCodeGen from '../common/qr-code-gen.svelte'
-  import DonationsAddrQr from '../common/addr-qr.svelte';
+  import AddrQr from '../common/addr-qr.svelte';
 	$: qr = ''
 	function copyHTML(content: string) {
 		navigator.clipboard.writeText(content);
@@ -34,7 +34,7 @@
 				<ul>
 					{#each donationQuickAddresses as address}
 						<li>
-							<DonationsAddrQr {address} {width} {qr} />
+							<AddrQr {address} {width} {qr} />
 						</li>
 					{/each}
 				</ul>

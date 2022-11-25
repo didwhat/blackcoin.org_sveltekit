@@ -3,7 +3,11 @@
 	// export let data;
 	// $: lang = data.lang;
 	$: lang = 'en';
+
+	export let width
 </script>
 
+<svelte:window bind:innerWidth={width} />
+
 <div id="home" />
-<Projects bind:lang />
+<Projects bind:lang {width} />
