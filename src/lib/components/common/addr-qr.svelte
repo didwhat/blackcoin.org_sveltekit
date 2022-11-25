@@ -31,7 +31,7 @@
 
 <style>
 	.rel {
-		width: 100%;
+		width: fit-content;
 		position: relative;
 	}
 	img {
@@ -41,10 +41,12 @@
 	}
 	.copied {
 		position: absolute;
-		right: 0;
-		background-color: rgba(0,0,0,0.5);
+		right: 1rem;
+		top: 1rem;
+		background-color: rgba(0,0,0,0.6);
 		padding: .25rem;
 		box-shadow: 1px 1px 1rem black;
+		z-index: 100;
 	}
 	@media (min-width: 700px) {
 		img {
