@@ -41,10 +41,10 @@
 		padding: 0;
 	}
 	h2 {
-		margin-left: 1rem;
-		font-size: 13px;
+		font-size: .8rem;
 		font-weight: 900;
 		align-self: center;
+		text-align: center;
 	}
 	h3 {
 		font-size: 11px;
@@ -85,12 +85,14 @@
 
 	@media (min-width: 700px) {
 		h2 {
-			font-size: 20px;
+			font-size: 1rem;
+			line-height: 1rem;
 		}
 	}
 	@media (min-width: 1080px) {
 		h2 {
-			font-size: 20px;
+			font-size: 1.5rem;
+			line-height: 1.5rem;
 		}
 		h3 {
 			font-size: 20px;
@@ -103,9 +105,9 @@
 		.title {
 			height: 4rem;
 		}
-		.title > h2 {
+		/* .title > h2 {
 			line-height: 4rem;
-		}
+		} */
 	}
 	@media (max-aspect-ratio: 5/1) and (min-width: 2560px) {
 		h3 {
