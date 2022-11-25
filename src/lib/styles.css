@@ -97,6 +97,12 @@ header span {
 	background-color: #333;
 }
 
+/* used in FAQ */
+.body span {
+	color: goldenrod;
+}
+/* end FAQ */
+
 /* 
 @media (max-width: 770px) {
 } */

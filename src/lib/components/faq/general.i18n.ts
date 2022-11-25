@@ -103,8 +103,7 @@ export default {
 				Everyone is a star here at Blackcoin. They have all worked tirelessly to make this coin one
 				of actions instead of words. It is <span>one of the most active communities</span> next to
 				Dogecoin.
-			</p>
-			<style>span {color: goldenrod;}</style>` /*English*/,
+			</p>` /*English*/,
 			hi: `` /*Hindi*/,
 			ar: `` /*Arabic - Right-to-left*/,
 			pt: `` /*Portuguese*/,
