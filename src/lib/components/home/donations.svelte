@@ -7,9 +7,6 @@
 	import QrCodeGen from '../common/qr-code-gen.svelte'
   import AddrQr from '../common/addr-qr.svelte';
 	$: qr = ''
-	function copyHTML(content: string) {
-		navigator.clipboard.writeText(content);
-	}
 </script>
 
 <section>

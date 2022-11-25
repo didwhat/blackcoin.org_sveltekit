@@ -1,6 +1,6 @@
 <script>
+  import copyHTML from "./copyHTML";
   import QrCodeGen from "./qr-code-gen.svelte";
-
 
     export let address
     export let width
@@ -17,6 +17,7 @@
 		<p class="copied" style="display: {!!copied ? "flex" : "none"};">Copied!</p>
 		<img on:click={()=>{
 			copied = !copied
+			setTimeout(()=>copied = !copied, 1000)
 			copyHTML(address[1])
 		}} width="512" height="512" src='/images/svg/copy.svg' alt="Click to Copy"/>
 	{#if (qr !== address[1])}
