@@ -28,10 +28,10 @@
 								alt="Blackcoin Logo"
 							/>
 						  </picture>
-						<h1>
+						<h1 class="title">
 							{i18n(heroI18n, 'blackcoin', lang)}
 						</h1>
-						<h2>{i18n(heroI18n, 'since2014', lang)}</h2>
+						<h2 class="subtitle">{i18n(heroI18n, 'since2014', lang)}</h2>
 						<a href="#community" class="join-community">
 							<picture>
 								<source srcset="/images/joincommunity.webp" type="image/webp">
@@ -78,6 +78,15 @@
 	#large-header {
 		position: absolute;
 		margin: o auto;
+	}
+	.title {
+		margin-bottom: 0;
+		letter-spacing: 10px;
+	}
+	.subtitle {
+		margin-top: 0;
+		font-size: large;
+		letter-spacing: 10px;
 	}
 
 	@media (min-width: 700px) {
