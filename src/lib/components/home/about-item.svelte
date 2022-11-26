@@ -13,7 +13,11 @@
 		<i class="icon">{icon}</i>
 	</div>
 </div>
-<p>{p} <a href={url}>{a}</a></p>
+<p>
+	{p}
+	<br />
+	<a href={url}>{a}</a>
+</p>
 
 <style>
 	i {
