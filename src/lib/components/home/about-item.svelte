@@ -18,7 +18,7 @@
 <style>
 	i {
 		font-size: 3rem;
-		padding: 0 2rem;
+		padding: 0 1rem;
 	}
 	.container {
 		display: inline-flex;
@@ -29,7 +29,13 @@
 	}
 	@media (min-width: 700px) {
 		i {
+			font-size: 4rem;
+		}
+	}
+	@media (min-width: 1080px) {
+		i {
 			font-size: 6rem;
+			padding: 0 2rem;
 		}
 	}
 </style>

@@ -90,20 +90,56 @@
 
 <style>
 	.container {
-		padding: 5vw;
 		display: block;
 		margin: 0 auto;
 	}
-	.blkb {
-		display: flex;
-		align-self: center;
-		justify-content: center;
-	}
 	.blkb img {
 		height: auto;
-		width: 75%;
+		width: 50%;
+		margin-left: 25%;
+	}
+	@media (min-width: 300px) {
+		.about-section {
+			width: 95%;
+			margin: 0 auto;
+		}
 	}
 	@media (min-width: 700px) {
+		.container {
+			display: flex;
+			justify-content: center;
+			width: 80%;
+		}
+		.about-section {
+			width: 33%;
+		}
+		.blkb {
+			display: flex;
+			align-self: center;
+			justify-content: center;
+		}
+	}
+	@media (min-width: 1080px) {
+		.container {
+			display: flex;
+			justify-content: center;
+			width: 80%;
+		}
+		.about-section {
+			width: 33%;
+		}
+	}
+	@media (min-width: 1440px) {
+		.container {
+			display: flex;
+			justify-content: center;
+			width: 80%;
+		}
+		.about-section {
+			width: 33%;
+		}
+	}
+	@media (min-width: 2856px) {
 		.container {
 			display: flex;
 			justify-content: center;
