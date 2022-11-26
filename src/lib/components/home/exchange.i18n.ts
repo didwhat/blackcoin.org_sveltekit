@@ -50,7 +50,7 @@ export default {
 	markets_volume: {
 		zh: '市场量' /*Chinese*/,
 		es: 'volumen de los mercados' /*Spanish*/,
-		en: 'Markets Volume' /*English*/,
+		en: 'Market Volume' /*English*/,
 		hi: 'जाँच करें' /*Hindi*/,
 		ar: 'تحقق من' /*Arabic - Right-to-left*/,
 		pt: 'volume dos mercados' /*Portuguese*/,

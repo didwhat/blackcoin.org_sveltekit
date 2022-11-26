@@ -60,7 +60,7 @@
 		background-position: 50%;
 		background-attachment: fixed;
 	}
-	.hero .bg-overlay {
+	.bg-overlay {
 		background: rgba(17, 17, 17, 0.5);
 		overflow: hidden;
 		height: 100vh;

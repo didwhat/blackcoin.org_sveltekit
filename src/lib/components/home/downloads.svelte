@@ -51,7 +51,7 @@
 	];
 </script>
 
-<div class="gray-bg">
+<div class="bg">
 	<section id="services" class="container section ft-boxed-hover">
 		<header>
 			<h2 class="golden" id="downloads">{i18n(downloadsI18n, 'downloads', lang)}</h2>
@@ -92,6 +92,13 @@
 </div>
 
 <style>
+
+	.bg {
+		background: url('/images/hero/tri.webp');
+		background-size: cover;
+		background-position: 50%;
+		background-attachment: fixed;
+	}
 	.col-row {
 		display: flex;
 		flex-direction: column;

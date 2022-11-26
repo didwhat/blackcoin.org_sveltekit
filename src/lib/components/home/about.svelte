@@ -128,6 +128,10 @@
 		.about-section {
 			width: 33%;
 		}
+		.blkb img {
+			width: 70%;
+			margin-left: 15%;
+		}
 	}
 	@media (min-width: 1440px) {
 		.container {
@@ -138,6 +142,10 @@
 		.about-section {
 			width: 33%;
 		}
+		.blkb img {
+			width: 95%;
+			margin-left: 2.5%;
+		}
 	}
 	@media (min-width: 2856px) {
 		.container {
@@ -147,6 +155,10 @@
 		}
 		.about-section {
 			width: 33%;
+		}
+		.blkb img {
+			width: 100%;
+			margin-left: 0;
 		}
 	}
 </style>

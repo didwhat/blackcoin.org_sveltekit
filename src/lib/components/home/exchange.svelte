@@ -19,7 +19,7 @@
 					<picture>
 						<source srcset={e.image.split('.')[0]+".webp"} type="image/webp">
 						<source srcset={e.image} type="image/png"> 
-						<img src={e.image} alt={e.alt} />
+						<img src={e.image} alt={e.name} />
 					  </picture>
 				</a>
 			</li>
@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	img {
+		width: 200px;
+	}
 	ul {
 		display: flex;
 		flex-direction: row;
