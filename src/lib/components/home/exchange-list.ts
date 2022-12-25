@@ -1,4 +1,9 @@
 export default [
+	// {
+	// 	name: '',
+	// 	url: '',
+	// 	image: ''
+	// },
 	{
 		name: 'Bittrex',
 		url: 'https://bittrex.com/Market/Index?MarketName=BTC-BLK',
@@ -23,6 +28,11 @@ export default [
 		name: 'HolyTransaction',
 		url: 'https://holytransaction.com/',
 		image: '/images/exchanges/e3.png'
+	},
+	{
+		name: 'FreiXlite',
+		url: 'https://freixlite.com/market/BLK/LTC',
+		image: '/images/exchanges/freixlite.png'
 	}
 ];
 
