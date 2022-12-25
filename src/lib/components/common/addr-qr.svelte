@@ -16,6 +16,7 @@
 	{address[0]}:
 	<span class="golden">{width < 1080 ? address[1].substring(0, 8) + '...' : address[1]}</span>
 	<p class="copied" style="display: {!!copied ? 'flex' : 'none'};">Copied!</p>
+<br />
 	<img
 		on:click={() => {
 			copied = !copied;
@@ -43,6 +44,9 @@
 </div>
 
 <style>
+	.golden {
+		font-size: x-large;
+	}
 	.rel {
 		width: fit-content;
 		position: relative;

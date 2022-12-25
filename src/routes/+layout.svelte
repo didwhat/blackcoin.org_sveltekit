@@ -5,13 +5,9 @@
 
 	export let data;
 	$: lang = data.lang || 'en';
-
-	export let width;
 </script>
 
-<svelte:window bind:innerWidth={width} />
-
-<Navbar bind:lang bind:width />
+<Navbar bind:lang />
 <div>
 	<slot />
 </div>

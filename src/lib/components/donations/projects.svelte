@@ -7,7 +7,6 @@
 
 	const projects = [...development, ...outreach, ...ongoing, ...community];
 	export let width;
-	$: width = width;
 	$: qr = '';
 </script>
 
