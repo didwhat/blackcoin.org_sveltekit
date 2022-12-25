@@ -1,4 +1,7 @@
 <script>
+	import i18n from '$lib/i18n';
+	import aboutI18n from './about.i18n';
+	export let lang;
 	export let h3;
 	export let icon;
 	export let a;
@@ -8,15 +11,15 @@
 </script>
 
 <div class="container" style="flex-direction:{side === 'left' ? 'row-reverse' : 'row'};">
-	<h3>{h3}</h3>
+	<h3>{i18n(aboutI18n, h3, lang)}</h3>
 	<div class="ft-icon">
 		<i class="icon">{icon}</i>
 	</div>
 </div>
 <p>
-	{p}
+	{i18n(aboutI18n, p, lang)}
 	<br />
-	<a href={url}>{a}</a>
+	<a href={url}>{i18n(aboutI18n, a, lang)}</a>
 </p>
 
 <style>

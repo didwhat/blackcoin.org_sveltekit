@@ -2,56 +2,7 @@
 	import i18n from '$lib/i18n';
 	import downloadsI18n from './downloads.i18n';
 	export let lang;
-	const downloadGroups = [
-		{
-			title: i18n(downloadsI18n, 'more_wallet', lang),
-			subtitle: i18n(downloadsI18n, 'community_supported', lang),
-			links: [
-				{
-					url: 'https://blackcoinmore.org',
-					img: '/images/logo-more-bw-sm.png',
-					alt: i18n(downloadsI18n, 'blackcoin_more', lang)
-				}
-			]
-		},
-		{
-			title: i18n(downloadsI18n, 'mobile_wallets', lang),
-			links: [
-				{
-					url: 'https://coinomi.com/',
-					img: '/images/downloads/coinomi.png',
-					alt: 'Coinomi Multicoin Wallet'
-				},
-				{
-					url: 'https://atomicdex.io/',
-					img: '/images/exchanges/atomicdex.png',
-					alt: 'Atomic DEX Mobile'
-				}
-			]
-		},
-		{
-			title: i18n(downloadsI18n, 'electrum', lang),
-			subtitle: i18n(downloadsI18n, 'electrum_text', lang),
-			links: [
-				{
-					url: 'https://github.com/CoinBlack/electrum-blk/releases/tag/v4.2.1',
-					img: '/images/downloads/elecblk.png',
-					alt: 'Electrum-BLK'
-				}
-			]
-		},
-		{
-			title: i18n(downloadsI18n, 'dex', lang),
-			subtitle: i18n(downloadsI18n, 'dex_text', lang),
-			links: [
-				{
-					url: 'https://atomicdex.io/',
-					img: '/images/exchanges/atomicdex.png',
-					alt: 'Atomic DEX'
-				}
-			]
-		}
-	];
+	import downloadGroups from './download-groups';
 </script>
 
 <div class="bg">
@@ -64,7 +15,7 @@
 			{#each downloadGroups as dl}
 				<li class="item">
 					<div class="label">
-						<h3>{dl.title}</h3>
+						<h3>{i18n(downloadsI18n, dl.title, lang)}</h3>
 					</div>
 					{#each dl.links as link}
 						<a href={link.url}>
@@ -83,7 +34,7 @@
 								</p>
 							</div>
 							{#if !!dl.subtitle}
-								<p class="pd-15px">{dl.subtitle}</p>
+								<p class="pd-15px">{i18n(downloadsI18n, dl.subtitle, lang)}</p>
 							{/if}
 						</a>
 					{/each}

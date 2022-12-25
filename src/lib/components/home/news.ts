@@ -10,14 +10,14 @@ export default [
 		url: 'https://blackcoinmore.org',
 		date: 'Nov 24, 2022',
 		news: {
-			en: '- Blackcoin More v13.2.0 released. Introducing stake reward donations to the dev fund.',
+			en: '- Blackcoin More v13.2.0 released. Introducing stake reward donations to the dev fund.'
 		}
 	},
 	{
 		url: 'https://blackcoinmore.org',
 		date: 'Feb 24, 2022',
 		news: {
-			en: '- Blackcoin More v2.13.2.9 released.',
+			en: '- Blackcoin More v2.13.2.9 released.'
 		}
 	},
 	{
