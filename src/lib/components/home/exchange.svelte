@@ -15,12 +15,11 @@
 		{#each exchangeList as e}
 			<li>
 				<a href={e.url} target="_blank noreferer" rel="noopener">
-
 					<picture>
-						<source srcset={e.image.split('.')[0]+".webp"} type="image/webp">
-						<source srcset={e.image} type="image/png"> 
+						<source srcset={e.image.split('.')[0] + '.webp'} type="image/webp" />
+						<source srcset={e.image} type="image/png" />
 						<img src={e.image} alt={e.name} />
-					  </picture>
+					</picture>
 				</a>
 			</li>
 		{/each}

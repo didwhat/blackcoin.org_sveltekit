@@ -51,51 +51,51 @@
 	<div class="bar">
 		<a id="nav-logo" href="/{i18n(navI18n, 'locale', lang)}/">
 			<picture>
-				<source srcset="/images/blkb.webp" type="image/webp">
-				<source srcset="/images/blkb.png" type="image/png"> 
-				<img height="526" width="402" src="/images/blkb.png" alt="Blackcoin - Logo" >
-			  </picture>
+				<source srcset="/images/blkb.webp" type="image/webp" />
+				<source srcset="/images/blkb.png" type="image/png" />
+				<img height="526" width="402" src="/images/blkb.png" alt="Blackcoin - Logo" />
+			</picture>
 		</a>
 
-			{#if open || width > 1080}
-					<ul id="main-menu">
-						<li>
-							<a
-								on:click={() => (!!open ? (open = false) : (open = true))}
-								href="/{i18n(navI18n, 'locale', lang)}/#about"
-							>
-								{i18n(navI18n, 'about', lang)}
-							</a>
-						</li>
-						<!-- <li>
+		{#if open || width > 1080}
+			<ul id="main-menu">
+				<li>
+					<a
+						on:click={() => (!!open ? (open = false) : (open = true))}
+						href="/{i18n(navI18n, 'locale', lang)}/#about"
+					>
+						{i18n(navI18n, 'about', lang)}
+					</a>
+				</li>
+				<!-- <li>
                     <a on:click={()=>""}>
                         {i18n(navI18n,'community',lang)}
                     </a>
                 </li> -->
 
-						<li>
-							<a
-								on:click={() => (!!open ? (open = false) : (open = true))}
-								href="/{i18n(navI18n, 'locale', lang)}/#downloads"
-							>
-								{i18n(navI18n, 'download', lang)}
-							</a>
-						</li>
-						<li on:click={() => (!!markets ? (markets = false) : (markets = true))}>
-							{i18n(navI18n, 'markets', lang)}
-							<ul id="markets" style="display:{!!markets ? 'flex' : 'none'};">
-								<button class="x">X</button>
-								<a
-									class="centered"
-									href="https://www.coingecko.com/{i18n(navI18n, 'locale', lang)}/coins/blackcoin"
-									rel="noopener"
-									target="_blanknoreferer"
-								>
-									{i18n(navI18n, 'more_charts_on', lang)} CoinGecko
-								</a>
-							</ul>
-						</li>
-						<!-- <li>
+				<li>
+					<a
+						on:click={() => (!!open ? (open = false) : (open = true))}
+						href="/{i18n(navI18n, 'locale', lang)}/#downloads"
+					>
+						{i18n(navI18n, 'download', lang)}
+					</a>
+				</li>
+				<li on:click={() => (!!markets ? (markets = false) : (markets = true))}>
+					{i18n(navI18n, 'markets', lang)}
+					<ul id="markets" style="display:{!!markets ? 'flex' : 'none'};">
+						<button class="x">X</button>
+						<a
+							class="centered"
+							href="https://www.coingecko.com/{i18n(navI18n, 'locale', lang)}/coins/blackcoin"
+							rel="noopener"
+							target="_blanknoreferer"
+						>
+							{i18n(navI18n, 'more_charts_on', lang)} CoinGecko
+						</a>
+					</ul>
+				</li>
+				<!-- <li>
                     <a  
 						on:click={()=>!!open ? open = false : open = true}
 						href="/#" on:click={()=>""}>
@@ -105,41 +105,41 @@
                         {% include "home/twitter.svelte"
                     </ul>
                 </li> -->
-						<li>
-							<a
-								on:click={() => (!!open ? (open = false) : (open = true))}
-								href="/{i18n(navI18n, 'locale', lang)}/donations"
-							>
-								{i18n(navI18n, 'donations', lang)}
-							</a>
-						</li>
-						<li id="faq">
-							<a
-								on:click={() => (!!open ? (open = false) : (open = true))}
-								href="/{i18n(navI18n, 'locale', lang)}/faq"
-							>
-								<span>
-									{i18n(navI18n, 'faq', lang)}
-								</span>
-							</a>
-						</li>
+				<li>
+					<a
+						on:click={() => (!!open ? (open = false) : (open = true))}
+						href="/{i18n(navI18n, 'locale', lang)}/donations"
+					>
+						{i18n(navI18n, 'donations', lang)}
+					</a>
+				</li>
+				<li id="faq">
+					<a
+						on:click={() => (!!open ? (open = false) : (open = true))}
+						href="/{i18n(navI18n, 'locale', lang)}/faq"
+					>
+						<span>
+							{i18n(navI18n, 'faq', lang)}
+						</span>
+					</a>
+				</li>
 
-						<li id="linksBtn" on:click={() => (!!links ? (links = false) : (links = true))}>
-							{i18n(navI18n, 'links', lang)}
+				<li id="linksBtn" on:click={() => (!!links ? (links = false) : (links = true))}>
+					{i18n(navI18n, 'links', lang)}
 
-							<ul id="links" style="display:{!!links ? 'flex' : 'none'};">
-								<button class="x">X</button>
-								{#each linkArr as l}
-									<li>
-										<a rel="noopener" target="_blank noreferer" href={l.url}>
-											{l.title}
-										</a>
-									</li>
-								{/each}
-							</ul>
-						</li>
+					<ul id="links" style="display:{!!links ? 'flex' : 'none'};">
+						<button class="x">X</button>
+						{#each linkArr as l}
+							<li>
+								<a rel="noopener" target="_blank noreferer" href={l.url}>
+									{l.title}
+								</a>
+							</li>
+						{/each}
 					</ul>
-			{/if}
+				</li>
+			</ul>
+		{/if}
 		<div class="btns">
 			<LangSelect {lang} />
 			<div id="burger">
@@ -281,14 +281,13 @@
 		padding: 0 0.75rem;
 	}
 
-
 	@media (min-width: 300px) {
 		#main-menu {
 			font-size: 2rem;
 			line-height: 3rem;
 		}
 		#main-menu li {
-			padding: 0 .5rem;
+			padding: 0 0.5rem;
 		}
 		.bar {
 			padding: 0 15vw 1rem 20vw;
@@ -311,7 +310,7 @@
 			flex-direction: row;
 			justify-content: center;
 			align-content: center;
-			font-size: .8rem;
+			font-size: 0.8rem;
 			line-height: 1.5rem;
 			background-color: transparent;
 		}
@@ -327,14 +326,16 @@
 		.bar {
 			padding: 0 1vw 1rem 5vw;
 		}
-		#burger { display: none;}
+		#burger {
+			display: none;
+		}
 	}
 	@media (min-width: 1440px) {
 		#main-menu {
 			font-size: 1rem;
 		}
 		#main-menu li {
-			padding: 0 .5rem;
+			padding: 0 0.5rem;
 		}
 		.bar {
 			padding: 0 1rem 1rem 5vw;

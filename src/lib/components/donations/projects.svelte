@@ -1,14 +1,14 @@
 <script>
-	import AddrQr from '../common/addr-qr.svelte'
+	import AddrQr from '../common/addr-qr.svelte';
 	import ongoing from './ongoing';
 	import community from './community';
 	import outreach from './outreach';
 	import development from './development';
 
 	const projects = [...development, ...outreach, ...ongoing, ...community];
-	export let width
-	$: width = width
-	$: qr = ''
+	export let width;
+	$: width = width;
+	$: qr = '';
 </script>
 
 <div class="grid">

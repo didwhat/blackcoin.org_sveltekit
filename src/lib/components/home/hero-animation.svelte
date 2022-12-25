@@ -1,34 +1,23 @@
-
-<div id="large-header">
-    <canvas id="demo-canvas" class="demo-canvas"></canvas>
-</div>
-<style>
-	canvas {
-		position: absolute;
-	}
-</style>
-
 <script>
-import { onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	let config = {
 		hex: [''],
 		xy: [{ x: 0, y: 0 }],
 		transp: [0]
 	};
 	$: config = config;
-	onMount(()=>{
-
-			/*!
-		* VERSION: 1.13.1
-		* DATE: 2014-07-22
-		* UPDATES AND DOCS AT: https://www.greensock.com
-		*
-		* @license Copyright (c) 2008-2014, GreenSock. All rights reserved.
-		* This work is subject to the terms at https://www.greensock.com/terms_of_use.html or for
-		* Club GreenSock members, the software agreement that was issued with your membership.
-		*
-		* @author: Jack Doyle, jack@greensock.com
-		*/
+	onMount(() => {
+		/*!
+		 * VERSION: 1.13.1
+		 * DATE: 2014-07-22
+		 * UPDATES AND DOCS AT: https://www.greensock.com
+		 *
+		 * @license Copyright (c) 2008-2014, GreenSock. All rights reserved.
+		 * This work is subject to the terms at https://www.greensock.com/terms_of_use.html or for
+		 * Club GreenSock members, the software agreement that was issued with your membership.
+		 *
+		 * @author: Jack Doyle, jack@greensock.com
+		 */
 		var x = window.matchMedia('(max-width: 700px)');
 		animDots(x); // Call listener function at run time
 		x.addListener(animDots); // Attach listener function on state changes
@@ -100,11 +89,11 @@ import { onMount } from 'svelte';
 																function () {
 																	return m;
 																}
-														)
+														  )
 														: s === e &&
-														'undefined' != typeof module &&
-														module.exports &&
-														(module.exports = m)),
+														  'undefined' != typeof module &&
+														  module.exports &&
+														  (module.exports = m)),
 												d = 0;
 											this.sc.length > d;
 											d++
@@ -161,13 +150,15 @@ import { onMount } from 'svelte';
 										--a > -1;
 
 									)
-										(o = u[a]), (w[r + '.' + o] = w[o + r] = n[o] = t.getRatio ? t : t[o] || new t());
+										(o = u[a]),
+											(w[r + '.' + o] = w[o + r] = n[o] = t.getRatio ? t : t[o] || new t());
 							});
 						for (
 							r = y.prototype,
 								r._calcEnd = !1,
 								r.getRatio = function (t) {
-									if (this._func) return (this._params[0] = t), this._func.apply(null, this._params);
+									if (this._func)
+										return (this._params[0] = t), this._func.apply(null, this._params);
 									var e = this._type,
 										i = this._power,
 										s = 1 === e ? 1 - t : 2 === e ? t : 0.5 > t ? 2 * t : 2 * (1 - t);
@@ -216,7 +207,8 @@ import { onMount } from 'svelte';
 							(r.removeEventListener = function (t, e) {
 								var i,
 									s = this._listeners[t];
-								if (s) for (i = s.length; --i > -1; ) if (s[i].c === e) return s.splice(i, 1), void 0;
+								if (s)
+									for (i = s.length; --i > -1; ) if (s[i].c === e) return s.splice(i, 1), void 0;
 							}),
 							(r.dispatchEvent = function (t) {
 								var e,
@@ -230,7 +222,7 @@ import { onMount } from 'svelte';
 												? s.c.call(s.s || i, {
 														type: t,
 														target: i
-												})
+												  })
 												: s.c.call(s.s || i);
 							});
 						var k = t.requestAnimationFrame,
@@ -289,7 +281,7 @@ import { onMount } from 'svelte';
 												? k
 												: function (t) {
 														return setTimeout(t, 0 | (1e3 * (l - h.time) + 1));
-												}),
+												  }),
 										h === a && (o = !0),
 										d(2);
 								}),
@@ -397,7 +389,8 @@ import { onMount } from 'svelte';
 								return this;
 							}),
 							(r._swapSelfInParams = function (t) {
-								for (var e = t.length, i = t.concat(); --e > -1; ) '{self}' === t[e] && (i[e] = this);
+								for (var e = t.length, i = t.concat(); --e > -1; )
+									'{self}' === t[e] && (i[e] = this);
 								return i;
 							}),
 							(r.eventCallback = function (t, e, i, s) {
@@ -407,9 +400,11 @@ import { onMount } from 'svelte';
 									null == e
 										? delete n[t]
 										: ((n[t] = e),
-										(n[t + 'Params'] =
-												m(i) && -1 !== i.join('').indexOf('{self}') ? this._swapSelfInParams(i) : i),
-										(n[t + 'Scope'] = s)),
+										  (n[t + 'Params'] =
+												m(i) && -1 !== i.join('').indexOf('{self}')
+													? this._swapSelfInParams(i)
+													: i),
+										  (n[t + 'Scope'] = s)),
 										'onUpdate' === t && (this._onUpdate = e);
 								}
 								return this;
@@ -418,29 +413,31 @@ import { onMount } from 'svelte';
 								return arguments.length
 									? (this._timeline.smoothChildTiming &&
 											this.startTime(this._startTime + t - this._delay),
-									(this._delay = t),
-									this)
+									  (this._delay = t),
+									  this)
 									: this._delay;
 							}),
 							(r.duration = function (t) {
 								return arguments.length
 									? ((this._duration = this._totalDuration = t),
-									this._uncache(!0),
-									this._timeline.smoothChildTiming &&
+									  this._uncache(!0),
+									  this._timeline.smoothChildTiming &&
 											this._time > 0 &&
 											this._time < this._duration &&
 											0 !== t &&
 											this.totalTime(this._totalTime * (t / this._duration), !0),
-									this)
+									  this)
 									: ((this._dirty = !1), this._duration);
 							}),
 							(r.totalDuration = function (t) {
-								return (this._dirty = !1), arguments.length ? this.duration(t) : this._totalDuration;
+								return (
+									(this._dirty = !1), arguments.length ? this.duration(t) : this._totalDuration
+								);
 							}),
 							(r.time = function (t, e) {
 								return arguments.length
 									? (this._dirty && this.totalDuration(),
-									this.totalTime(t > this._duration ? this._duration : t, e))
+									  this.totalTime(t > this._duration ? this._duration : t, e))
 									: this._time;
 							}),
 							(r.totalTime = function (t, e, i) {
@@ -484,7 +481,7 @@ import { onMount } from 'svelte';
 											this.timeline &&
 												this.timeline._sortChildren &&
 												this.timeline.add(this, t - this._delay)),
-									this)
+									  this)
 									: this._startTime;
 							}),
 							(r.timeScale = function (t) {
@@ -506,7 +503,7 @@ import { onMount } from 'svelte';
 													: this._totalTime,
 												!0
 											)),
-									this)
+									  this)
 									: this._reversed;
 							}),
 							(r.paused = function (t) {
@@ -549,7 +546,8 @@ import { onMount } from 'svelte';
 										((t._startTime = Number(e || 0) + t._delay),
 										t._paused &&
 											this !== t._timeline &&
-											(t._pauseTime = t._startTime + (this.rawTime() - t._startTime) / t._timeScale),
+											(t._pauseTime =
+												t._startTime + (this.rawTime() - t._startTime) / t._timeScale),
 										t.timeline && t.timeline._remove(t, !0),
 										(t.timeline = t._timeline = this),
 										t._gc && t._enabled(!0, !0),
@@ -574,7 +572,9 @@ import { onMount } from 'svelte';
 										t._prev
 											? (t._prev._next = t._next)
 											: this._first === t && (this._first = t._next),
-										t._next ? (t._next._prev = t._prev) : this._last === t && (this._last = t._prev),
+										t._next
+											? (t._next._prev = t._prev)
+											: this._last === t && (this._last = t._prev),
 										(t._next = t._prev = t.timeline = null),
 										this._timeline && this._uncache(!0)),
 									this
@@ -592,7 +592,7 @@ import { onMount } from 'svelte';
 															(t - n._startTime) * n._timeScale,
 														e,
 														i
-												)
+												  )
 												: n.render((t - n._startTime) * n._timeScale, e, i)),
 										(n = s);
 							}),
@@ -629,16 +629,16 @@ import { onMount } from 'svelte';
 												r
 													? 'string' != typeof r
 														? r.length &&
-														r !== t &&
-														r[0] &&
-														(r[0] === t || (r[0].nodeType && r[0].style && !r.nodeType))
+														  r !== t &&
+														  r[0] &&
+														  (r[0] === t || (r[0].nodeType && r[0].style && !r.nodeType))
 															? (a.splice(n--, 1), (this._targets = a = a.concat(u(r))))
 															: ((this._siblings[n] = $(r, this, !1)),
-															1 === l &&
+															  1 === l &&
 																	this._siblings[n].length > 1 &&
 																	K(r, this, null, 1, this._siblings[n]))
 														: ((r = a[n--] = I.selector(r)),
-														'string' == typeof r && a.splice(n + 1, 1))
+														  'string' == typeof r && a.splice(n + 1, 1))
 													: a.splice(n--, 1);
 									else
 										(this._propLookup = {}),
@@ -783,7 +783,10 @@ import { onMount } from 'svelte';
 										}
 										if (
 											((i = B._first),
-											(!i || i._paused) && I.autoSleep && !q._first && 1 === a._listeners.tick.length)
+											(!i || i._paused) &&
+												I.autoSleep &&
+												!q._first &&
+												1 === a._listeners.tick.length)
 										) {
 											for (; i && i._paused; ) i = i._next;
 											i || a.sleep();
@@ -826,8 +829,8 @@ import { onMount } from 'svelte';
 										(o._timeline !== e._timeline
 											? ((h = h || H(e, 0, p)), 0 === H(o, h, p) && (f[m++] = o))
 											: u >= o._startTime &&
-											o._startTime + o.totalDuration() / o._timeScale > u &&
-											(((p || !o._initted) && 2e-10 >= u - o._startTime) || (f[m++] = o)));
+											  o._startTime + o.totalDuration() / o._timeScale > u &&
+											  (((p || !o._initted) && 2e-10 >= u - o._startTime) || (f[m++] = o)));
 								for (r = m; --r > -1; )
 									(o = f[r]),
 										2 === s && o._kill(i, t) && (a = !0),
@@ -980,7 +983,7 @@ import { onMount } from 'svelte';
 														r.indexOf('set') || 'function' != typeof e['get' + r.substr(3)]
 															? r
 															: 'get' + r.substr(3)
-												]()
+												  ]()
 												: parseFloat(e[r])),
 											(h.c =
 												'string' == typeof _ && '=' === _.charAt(1)
@@ -991,15 +994,15 @@ import { onMount } from 'svelte';
 								return n && this._kill(n, e)
 									? this._initProps(e, i, s, n)
 									: this._overwrite > 1 &&
-									this._firstPT &&
-									s.length > 1 &&
-									K(e, this, i, this._overwrite, s)
+									  this._firstPT &&
+									  s.length > 1 &&
+									  K(e, this, i, this._overwrite, s)
 									? (this._kill(i, e), this._initProps(e, i, s, n))
 									: (this._firstPT &&
 											((this.vars.lazy !== !1 && this._duration) ||
 												(this.vars.lazy && !this._duration)) &&
 											(L[e._gsTweenID] = !0),
-									o);
+									  o);
 							}),
 							(r.render = function (t, e, i) {
 								var s,
@@ -1027,9 +1030,10 @@ import { onMount } from 'svelte';
 											((n = 'onReverseComplete'), (s = this._reversed)),
 										0 > t
 											? ((this._active = !1),
-											0 === l &&
+											  0 === l &&
 													(this._initted || !this.vars.lazy || i) &&
-													(h >= 0 && (i = !0), (this._rawPrevTime = a = !e || t || h === t ? t : _)))
+													(h >= 0 && (i = !0),
+													(this._rawPrevTime = a = !e || t || h === t ? t : _)))
 											: this._initted || (i = !0);
 								else if (((this._totalTime = this._time = t), this._easeType)) {
 									var u = t / l,
@@ -1065,8 +1069,8 @@ import { onMount } from 'svelte';
 										this._time && !s
 											? (this.ratio = this._ease.getRatio(this._time / l))
 											: s &&
-											this._ease._calcEnd &&
-											(this.ratio = this._ease.getRatio(0 === this._time ? 0 : 1));
+											  this._ease._calcEnd &&
+											  (this.ratio = this._ease.getRatio(0 === this._time ? 0 : 1));
 									}
 									for (
 										this._lazy !== !1 && (this._lazy = !1),
@@ -1140,7 +1144,10 @@ import { onMount } from 'svelte';
 									if (a) {
 										(l = t || a),
 											(h =
-												t !== s && 'all' !== s && t !== a && ('object' != typeof t || !t._tempKill));
+												t !== s &&
+												'all' !== s &&
+												t !== a &&
+												('object' != typeof t || !t._tempKill));
 										for (n in l)
 											(r = a[n]) &&
 												(r.pg && r.t._kill(l) && (o = !0),
@@ -1188,7 +1195,9 @@ import { onMount } from 'svelte';
 							}),
 							(I.from = function (t, e, i) {
 								return (
-									(i.runBackwards = !0), (i.immediateRender = 0 != i.immediateRender), new I(t, e, i)
+									(i.runBackwards = !0),
+									(i.immediateRender = 0 != i.immediateRender),
+									new I(t, e, i)
 								);
 							}),
 							(I.fromTo = function (t, e, i, s) {
@@ -1266,8 +1275,8 @@ import { onMount } from 'svelte';
 												n: n || e,
 												r: r
 											}),
-									o._next && (o._next._prev = o),
-									o)
+									  o._next && (o._next._prev = o),
+									  o)
 									: void 0;
 							}),
 							(r.setRatio = function (t) {
@@ -1353,7 +1362,8 @@ import { onMount } from 'svelte';
 						) {
 							for (n = 0; s.length > n; n++) s[n]();
 							for (r in p)
-								p[r].func || t.console.log('GSAP encountered missing dependency: com.greensock.' + r);
+								p[r].func ||
+									t.console.log('GSAP encountered missing dependency: com.greensock.' + r);
 						}
 						o = !1;
 					}
@@ -1365,16 +1375,16 @@ import { onMount } from 'svelte';
 				);
 
 				/*!
-				* VERSION: beta 1.9.4
-				* DATE: 2014-07-17
-				* UPDATES AND DOCS AT: https://www.greensock.com
-				*
-				* @license Copyright (c) 2008-2014, GreenSock. All rights reserved.
-				* This work is subject to the terms at https://www.greensock.com/terms_of_use.html or for
-				* Club GreenSock members, the software agreement that was issued with your membership.
-				*
-				* @author: Jack Doyle, jack@greensock.com
-				**/
+				 * VERSION: beta 1.9.4
+				 * DATE: 2014-07-17
+				 * UPDATES AND DOCS AT: https://www.greensock.com
+				 *
+				 * @license Copyright (c) 2008-2014, GreenSock. All rights reserved.
+				 * This work is subject to the terms at https://www.greensock.com/terms_of_use.html or for
+				 * Club GreenSock members, the software agreement that was issued with your membership.
+				 *
+				 * @author: Jack Doyle, jack@greensock.com
+				 **/
 				var _gsScope =
 					'undefined' != typeof module && module.exports && 'undefined' != typeof global
 						? global
@@ -1414,7 +1424,8 @@ import { onMount } from 'svelte';
 								c = function (t, e, i) {
 									(this.t = t),
 										(this.v = e),
-										i && ((this.next = i), (i.prev = this), (this.c = i.v - e), (this.gap = i.t - t));
+										i &&
+											((this.next = i), (i.prev = this), (this.c = i.v - e), (this.gap = i.t - t));
 								},
 								p = function (e, i) {
 									var s = h(
@@ -1649,7 +1660,9 @@ import { onMount } from 'svelte';
 										'ElasticOut',
 										function (t) {
 											return (
-												this._p1 * Math.pow(2, -10 * t) * Math.sin(((t - this._p3) * a) / this._p2) +
+												this._p1 *
+													Math.pow(2, -10 * t) *
+													Math.sin(((t - this._p3) * a) / this._p2) +
 												1
 											);
 										},
@@ -1794,7 +1807,8 @@ import { onMount } from 'svelte';
 									if (c != y) {
 										for (var p = !1, x = 0; 5 > x; x++)
 											p || (void 0 == r[x] && ((r[x] = y), (p = !0)));
-										for (var x = 0; 5 > x; x++) p || (m(c, y) < m(c, r[x]) && ((r[x] = y), (p = !0)));
+										for (var x = 0; 5 > x; x++)
+											p || (m(c, y) < m(c, r[x]) && ((r[x] = y), (p = !0)));
 									}
 								}
 								c.closest = r;
@@ -1812,13 +1826,14 @@ import { onMount } from 'svelte';
 						}
 
 						function t(e) {
-							let posy
+							let posy;
 							var n = (posy = 0);
 							e.pageX || e.pageY
 								? ((n = e.pageX), (posy = e.pageY))
 								: (e.clientX || e.clientY) &&
-								((n = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft),
-								(posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop)),
+								  ((n = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft),
+								  (posy =
+										e.clientY + document.body.scrollTop + document.documentElement.scrollTop)),
 								(g.x = n),
 								(g.y = posy);
 						}
@@ -1907,6 +1922,15 @@ import { onMount } from 'svelte';
 					})();
 			}
 		}
-	})
-
+	});
 </script>
+
+<div id="large-header">
+	<canvas id="demo-canvas" class="demo-canvas" />
+</div>
+
+<style>
+	canvas {
+		position: absolute;
+	}
+</style>

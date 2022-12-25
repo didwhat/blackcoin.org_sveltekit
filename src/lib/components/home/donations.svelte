@@ -1,12 +1,12 @@
-<script type='ts'>
+<script type="ts">
 	import i18n from '$lib/i18n';
 	import donationsI18n from './donations.i18n';
 	export let lang;
 	export let width;
 	import donationQuickAddresses from './donation-quick-addresses';
-	import QrCodeGen from '../common/qr-code-gen.svelte'
-  import AddrQr from '../common/addr-qr.svelte';
-	$: qr = ''
+	import QrCodeGen from '../common/qr-code-gen.svelte';
+	import AddrQr from '../common/addr-qr.svelte';
+	$: qr = '';
 </script>
 
 <section>
@@ -23,7 +23,9 @@
 			<center>
 				<p>
 					{i18n(donationsI18n, 'donate_to', lang)}
-					 <a alt="Link to Donations Page" href="/donations">{i18n(donationsI18n, 'person_project', lang)}</a>.
+					<a alt="Link to Donations Page" href="/donations"
+						>{i18n(donationsI18n, 'person_project', lang)}</a
+					>.
 				</p>
 				<p>
 					{i18n(donationsI18n, 'simply_send', lang)}
@@ -34,13 +36,14 @@
 							<AddrQr {address} {width} {qr} />
 						</div>
 					{/each}
-					</div>
+				</div>
 			</center>
 		</div>
 	</div>
 </section>
+
 <style>
-	p  {
+	p {
 		font-size: 1.5rem;
 	}
 	h3 {
@@ -48,10 +51,10 @@
 	}
 	.addr {
 		font-size: 1.7rem;
-		padding: .5rem 0;
+		padding: 0.5rem 0;
 	}
 	@media (min-width: 1440px) {
-		p  {
+		p {
 			font-size: 1.7rem;
 		}
 		.addr {

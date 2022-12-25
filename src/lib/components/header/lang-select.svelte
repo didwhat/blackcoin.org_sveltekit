@@ -2,7 +2,7 @@
 <script>
 	import locales from './locales';
 	import SELECT_LANGUAGE from './lang-select.i18n';
-  import HiddenLinks from './hidden-links.svelte';
+	import HiddenLinks from './hidden-links.svelte';
 	export let lang;
 	$: menuOpen = false;
 </script>
@@ -63,15 +63,15 @@
 		text-align: center;
 		background-color: #000;
 		width: 33vw;
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 	@media (min-width: 300px) {
 		#menuOpener {
 			font-size: normal;
 		}
-	#menu-locale a {
-		padding: .75rem;
-	}
+		#menu-locale a {
+			padding: 0.75rem;
+		}
 	}
 	@media (min-width: 700px) {
 		#menu-locale {

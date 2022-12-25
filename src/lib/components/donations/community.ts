@@ -21,7 +21,7 @@ export default [
 				title: 'Suptuppel',
 				address: 'B64bwzvcD15Wdiy73rZsGqK8H83HVDvaB4',
 				links: []
-       },
+			},
 			{
 				title: 'Pana',
 				address: 'BMqLc7jkR9MSWhD1cU2t7txMaEd2WvdKnd',

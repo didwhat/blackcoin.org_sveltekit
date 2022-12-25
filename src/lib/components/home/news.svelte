@@ -41,7 +41,7 @@
 		padding: 0;
 	}
 	h2 {
-		font-size: .8rem;
+		font-size: 0.8rem;
 		font-weight: 900;
 		align-self: center;
 		text-align: center;

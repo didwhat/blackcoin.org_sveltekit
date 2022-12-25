@@ -72,10 +72,10 @@
 
 		<div class="blkb about-section">
 			<picture>
-				<source srcset="/images/blkb.webp" type="image/webp">
-				<source srcset="/images/blkb.png" type="image/png"> 
+				<source srcset="/images/blkb.webp" type="image/webp" />
+				<source srcset="/images/blkb.png" type="image/png" />
 				<img height="526" width="402" src="/images/blkb.png" alt="Blackcoin B" />
-			  </picture>
+			</picture>
 		</div>
 
 		<div class="about-section">

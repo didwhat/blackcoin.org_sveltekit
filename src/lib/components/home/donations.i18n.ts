@@ -118,5 +118,5 @@ export default {
 		nl: `` /*Dutch*/,
 		it: `` /*Italian*/,
 		hr: `` /*Croatian*/
-	},
+	}
 };

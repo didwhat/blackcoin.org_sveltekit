@@ -8,7 +8,6 @@
 			{s.alt}
 		</a>
 	{/each}
-	
 </div>
 
 <style>
@@ -21,7 +20,7 @@
 		padding-right: 1rem;
 		font-size: larger;
 	}
-	@media (min-width: 1080px ) {
+	@media (min-width: 1080px) {
 		.social {
 			/* display: inline-flex;
 			justify-content: center;

@@ -18,9 +18,9 @@
 			<li>
 				<a href={s.url} target="_blank noreferer" rel="noopener">
 					<picture>
-					  <source srcset={s.img.split('.')[0]+".webp"} type="image/webp">
-					  <source srcset={s.img} type="image/png">
-					  <img height="102" width="125" src={s.img} alt={s.alt} />
+						<source srcset={s.img.split('.')[0] + '.webp'} type="image/webp" />
+						<source srcset={s.img} type="image/png" />
+						<img height="102" width="125" src={s.img} alt={s.alt} />
 					</picture>
 				</a>
 			</li>
@@ -53,5 +53,4 @@
 			width: 5%;
 		}
 	}
-
 </style>

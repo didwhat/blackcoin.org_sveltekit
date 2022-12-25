@@ -70,13 +70,13 @@
 						<a href={link.url}>
 							<div class="content">
 								{#if link.img}
-								<picture>
-									{#if (link.img.split('.')[1] !== 'svg')}
-									<source srcset={link.img.split('.')[0]+".webp"} type="image/webp">
-									{/if}
-									<source srcset={link.img} type="image/png"> 
-									<img src={link.img} alt={link.alt} />
-								  </picture>
+									<picture>
+										{#if link.img.split('.')[1] !== 'svg'}
+											<source srcset={link.img.split('.')[0] + '.webp'} type="image/webp" />
+										{/if}
+										<source srcset={link.img} type="image/png" />
+										<img src={link.img} alt={link.alt} />
+									</picture>
 								{/if}
 								<p>
 									<span style="color: #aaa;">{link.alt}</span>
@@ -95,7 +95,6 @@
 </div>
 
 <style>
-
 	.bg {
 		background: url('/images/hero/tri.webp');
 		background-size: cover;

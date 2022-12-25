@@ -4,7 +4,7 @@
 	// $: lang = data.lang;
 	$: lang = 'en';
 
-	export let width
+	export let width;
 </script>
 
 <svelte:window bind:innerWidth={width} />

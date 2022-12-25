@@ -5,13 +5,13 @@
 	import Downloads from '$lib/components/home/downloads.svelte';
 	import SocialMedia from '$lib/components/home/social.svelte';
 	import Donations from '$lib/components/home/donations.svelte';
-	
+
 	export let data;
 	$: lang = data.lang || 'en';
 
 	export let width;
 	export let height;
-  </script>
+</script>
 
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 
@@ -22,7 +22,7 @@
 </svelte:head>
 
 <div id="home" />
-<Hero bind:lang  bind:width bind:height />
+<Hero bind:lang bind:width bind:height />
 <About bind:lang />
 <Exchange bind:lang />
 <Downloads bind:lang />
