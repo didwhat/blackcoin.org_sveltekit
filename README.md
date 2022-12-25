@@ -1,3 +1,10 @@
+## Contributing Content
+
+Internationalization (i18n) files are stored along side other data and template files.
+
+Most contributers will be concerned with [Pages](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/pages) and may need to serve files from [Static](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static).
+
+
 ## Developing
 
 ```bash
