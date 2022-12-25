@@ -21,6 +21,8 @@
 			>
 			<!-- <button on:click={()=>lang = locale.code}>{locale.code}</button> -->
 		{/each}
+		<!-- placeholder for where the open chat button is -->
+		<a class="space-on-mobile" />
 	</ul>
 </ul>
 
@@ -97,6 +99,9 @@
 		#menuOpener {
 			font-size: large;
 			padding: 0;
+		}
+		.space-on-mobile {
+			display: none;
 		}
 	}
 	@media (min-width: 1440px) {

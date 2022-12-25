@@ -24,7 +24,7 @@
 			<li>
 				<h3>
 					<a href={bn.url}>
-						<span>{bn.date}</span>
+						<span class="date">{bn.date}</span>
 						<span class="content">{i18n(bn, 'news', lang)}</span>
 					</a>
 				</h3>
@@ -45,11 +45,17 @@
 		font-weight: 900;
 		align-self: center;
 		text-align: center;
+		background: -webkit-linear-gradient(#fff, #fea, #fd6);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	h3 {
 		font-size: 11px;
 		font-weight: 300;
 		padding: 5px 0 0 1rem;
+	}
+	.date {
+		color: white;
 	}
 	.news-container {
 		width: 100%;
