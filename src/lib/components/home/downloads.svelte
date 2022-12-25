@@ -19,32 +19,35 @@
 			links: [
 				{
 					url: 'https://coinomi.com/',
-					img: '/images/coinomi.png',
+					img: '/images/downloads/coinomi.png',
 					alt: 'Coinomi Multicoin Wallet'
 				},
 				{
-					url: 'https://abra.com/',
-					img: '/images/svg/abra-logo-white.svg',
-					alt: 'Abra Multicoin Wallet'
+					url: 'https://atomicdex.io/',
+					img: '/images/exchanges/atomicdex.png',
+					alt: 'Atomic DEX Mobile'
 				}
 			]
 		},
 		{
-			title: i18n(downloadsI18n, 'blackhalo', lang),
+			title: i18n(downloadsI18n, 'electrum', lang),
+			subtitle: i18n(downloadsI18n, 'electrum_text', lang),
 			links: [
 				{
-					url: 'https://blackhalo.info/#section-call-to-actiontwo',
-					img: '/images/blackhalo2.png',
-					alt: 'BlackHalo Logo'
+					url: 'https://github.com/CoinBlack/electrum-blk/releases/tag/v4.2.1',
+					img: '/images/downloads/elecblk.png',
+					alt: 'Electrum-BLK'
 				}
 			]
 		},
 		{
-			title: i18n(downloadsI18n, 'legacy_wallet', lang),
+			title: i18n(downloadsI18n, 'dex', lang),
+			subtitle: i18n(downloadsI18n, 'dex_text', lang),
 			links: [
 				{
-					url: 'https://gitlab.com/blackcoin/blackcoin/-/blob/master/README.md',
-					alt: i18n(downloadsI18n, 'gitlab_source', lang)
+					url: 'https://atomicdex.io/',
+					img: '/images/exchanges/atomicdex.png',
+					alt: 'Atomic DEX'
 				}
 			]
 		}
