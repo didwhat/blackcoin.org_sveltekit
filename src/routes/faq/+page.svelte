@@ -1,5 +1,5 @@
 <script>
-	import Faq from '$lib/components/faq/faq.svelte';
+	import Faq from '$lib/pages/faq/faq.svelte';
 
 	// export let data;
 	// $: lang = data.lang;

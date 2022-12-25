@@ -4,8 +4,8 @@
 	export let lang;
 	export let width;
 	import donationQuickAddresses from './donation-quick-addresses';
-	import QrCodeGen from '../common/qr-code-gen.svelte';
-	import AddrQr from '../common/addr-qr.svelte';
+	import QrCodeGen from '$lib/components/common/qr-code-gen.svelte';
+	import AddrQr from '$lib/components/common/addr-qr.svelte';
 	$: qr = '';
 </script>
 

@@ -1,5 +1,5 @@
 <script>
-	import Projects from '$lib/components/donations/projects.svelte';
+	import Projects from '$lib/pages/donations/projects.svelte';
 	// export let data;
 	// $: lang = data.lang;
 	$: lang = 'en';

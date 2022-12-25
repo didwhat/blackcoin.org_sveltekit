@@ -1,2 +1,2 @@
-import social from '../home/social-links';
+import social from '../../pages/home/social-links';
 export default social;

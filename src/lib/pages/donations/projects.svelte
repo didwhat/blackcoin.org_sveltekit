@@ -1,5 +1,5 @@
 <script>
-	import AddrQr from '../common/addr-qr.svelte';
+	import AddrQr from '../../components/common/addr-qr.svelte';
 	import ongoing from './ongoing';
 	import community from './community';
 	import outreach from './outreach';

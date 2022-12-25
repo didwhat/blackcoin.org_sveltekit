@@ -1,10 +1,10 @@
 <script>
-	import Hero from '$lib/components/home/hero.svelte';
-	import About from '$lib/components/home/about.svelte';
-	import Exchange from '$lib/components/home/exchange.svelte';
-	import Downloads from '$lib/components/home/downloads.svelte';
-	import SocialMedia from '$lib/components/home/social.svelte';
-	import Donations from '$lib/components/home/donations.svelte';
+	import Hero from '$lib/pages/home/hero.svelte';
+	import About from '$lib/pages/home/about.svelte';
+	import Exchange from '$lib/pages/home/exchange.svelte';
+	import Downloads from '$lib/pages/home/downloads.svelte';
+	import SocialMedia from '$lib/pages/home/social.svelte';
+	import Donations from '$lib/pages/home/donations.svelte';
 
 	export let data;
 	$: lang = data.lang || 'en';
