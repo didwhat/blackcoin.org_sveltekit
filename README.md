@@ -2,6 +2,8 @@
 
 Please to `pnpm format` before sending PR.
 
+If you add jpeg or png images run `bash /sh/make-webp.sh` to make well compressed versions.
+
 ### Orgnization
 
 Most contributers will be concerned with [/src/lib/pages](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/pages) and may need to serve files from [/static](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static).
