@@ -32,7 +32,47 @@ export default {
 		es: 'Últimas noticias' /*Spanish*/,
         ...
 ```
+
+#### I18N Data
+
 An **English** translation **must be available**, all others are optional.
+
+We currently support 22 languages.
+
+Here they are, listed in order with most widely spoken first.
+
+```
+    ...
+	key: {
+		zh: 'translation' /*Chinese*/,
+		es: 'translation' /*Spanish*/,
+		en: 'translation' /*English*/,
+		hi: 'translation' /*Hindi*/,
+		ar: 'translation' /*Arabic - Right-to-left*/,
+		pt: 'translation' /*Portuguese*/,
+		bn: 'translation' /*Bengal*/,
+		ru: 'translation' /*Russian*/,
+		ja: 'translation' /*Japanese*/,
+		jv: 'translation' /*Javanese*/,
+		de: 'translation' /*German*/,
+		ko: 'translation' /*Korean*/,
+		fr: 'translation' /*French*/,
+		te: 'translation' /*Telugu*/,
+		mr: 'translation' /*Marathi*/,
+		tr: 'translation' /*Turkish*/,
+		ta: 'translation' /*Tamil*/,
+		vi: 'translation' /*Vietnamese*/,
+		ur: 'translation' /*Urdu - Right-to-left*/,
+		nl: 'translation' /*Dutch*/,
+		it: 'translation' /*Italian*/,
+		hr: 'translation' /*Croatian*/
+	},
+	...
+```
+
+I18N data can be passed to the [/src/lib/i18n.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/i18n.ts) function in three configurations.
+`src[key][lang]`, `src[lang][key]`, and `src[lang]`.
+This allows for translation data to be passed convinently and structured according to what makes sense for any given component.
 
 ## Developing
 
