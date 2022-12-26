@@ -25,14 +25,14 @@
 		}}
 		width="512"
 		height="512"
-		src="/images/svg/copy.svg"
+		src="/images/common/copy.svg"
 		alt="Click to Copy"
 	/>
 	{#if qr !== address[1]}
 		<img
 			width="110"
 			height="110"
-			src="/images/svg/qr.svg"
+			src="/images/common/qr.svg"
 			alt="Click for QR"
 			on:click={() => {
 				qr = address[1];
