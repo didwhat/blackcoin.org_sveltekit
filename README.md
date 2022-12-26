@@ -2,16 +2,15 @@
 
 Please to `pnpm format` before sending PR.
 
-Most contributers will be concerned with [Pages](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/pages) and may need to serve files from [Static](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static).
+### Orgnization
 
-That's
-`/src/lib/pages/`
-and
-`/static/`
+Most contributers will be concerned with [/src/lib/pages](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/pages) and may need to serve files from [/static](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static).
+Elements not tied to a page can be found at [/src/lib/components](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/components).
 
-Internationalization (.i18n.ts) files are stored along side other data and template files. Some components have i18n data in the regular .ts files.
+Internationalization (.i18n.ts) files for layout are stored along side other data and template files. Some .ts have i18n data as well.
 
-For example, to update [News content](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/news.ts) the data is in `/src/lib/pages/home/news.ts`
+For example,
+update News content in [/src/lib/pages/home/news.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/news.ts)
 ```
     ...
 	{
@@ -23,7 +22,7 @@ For example, to update [News content](https://github.com/danielclough/blackcoin.
 	},
     ...
 ```
-However, the layout i18n data is found at `/src/lib/pages/home/news.i18n.ts`
+And, update layout i18n data at [/src/lib/pages/home/news.i18n.ts](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/pages/home/news.i18n.ts)
 ```
 export default {
 	latest_news: {
