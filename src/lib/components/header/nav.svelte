@@ -7,7 +7,7 @@
 
 	export let lang;
 
-	let open = false;
+	$: open = false;
 </script>
 
 <nav id="navbar">
@@ -21,10 +21,10 @@
 		</a>
 
 		{#if open}
-			<MenuItems {lang} {open} />
+			<MenuItems {lang} bind:open />
 		{/if}
 		<div class="display-fullscreen">
-			<MenuItems {lang} {open} />
+			<MenuItems {lang} bind:open />
 		</div>
 
 		<div class="btns">

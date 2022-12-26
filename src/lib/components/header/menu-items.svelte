@@ -44,27 +44,40 @@
 <ul id="main-menu">
     <li>
         <a
-            on:click={() => (!!open ? (open = false) : (open = true))}
+            on:click={() => !!open ? (open = false) : (open = true)}
             href="/{i18n(navI18n, 'locale', lang)}/#about"
         >
             {i18n(navI18n, 'about', lang)}
         </a>
     </li>
-    <!-- <li>
-        <a on:click={()=>""}>
-            {i18n(navI18n,'community',lang)}
-        </a>
-    </li> -->
-
     <li>
         <a
-            on:click={() => (!!open ? (open = false) : (open = true))}
+            on:click={() => !!open ? (open = false) : (open = true)}
             href="/{i18n(navI18n, 'locale', lang)}/#downloads"
         >
             {i18n(navI18n, 'download', lang)}
         </a>
     </li>
-    <li on:click={() => (!!markets ? (markets = false) : (markets = true))}>
+    <li>
+        <a
+            on:click={() => !!open ? (open = false) : (open = true)}
+            href="/{i18n(navI18n, 'locale', lang)}/donations"
+        >
+            {i18n(navI18n, 'donations', lang)}
+        </a>
+    </li>
+    <li id="faq">
+        <a
+            on:click={() => !!open ? (open = false) : (open = true)}
+            href="/{i18n(navI18n, 'locale', lang)}/faq"
+        >
+            <span>
+                {i18n(navI18n, 'faq', lang)}
+            </span>
+        </a>
+    </li>
+
+    <!-- <li on:click={() => (!!markets ? (markets = false) : (markets = true))}>
         {i18n(navI18n, 'markets', lang)}
         <ul id="markets" style="display:{!!markets ? 'flex' : 'none'};">
             <button class="x">X</button>
@@ -78,35 +91,7 @@
             </a>
         </ul>
     </li>
-    <!-- <li>
-        <a  
-            on:click={()=>!!open ? open = false : open = true}
-            href="/#" on:click={()=>""}>
-        Twitter
-    </a>
-        <ul id="menu-twitter">
-            {% include "home/twitter.svelte"
-        </ul>
-    </li> -->
-    <li>
-        <a
-            on:click={() => (!!open ? (open = false) : (open = true))}
-            href="/{i18n(navI18n, 'locale', lang)}/donations"
-        >
-            {i18n(navI18n, 'donations', lang)}
-        </a>
-    </li>
-    <li id="faq">
-        <a
-            on:click={() => (!!open ? (open = false) : (open = true))}
-            href="/{i18n(navI18n, 'locale', lang)}/faq"
-        >
-            <span>
-                {i18n(navI18n, 'faq', lang)}
-            </span>
-        </a>
-    </li>
-
+	 -->
     <li id="linksBtn" on:click={() => (!!links ? (links = false) : (links = true))}>
         {i18n(navI18n, 'links', lang)}
 
