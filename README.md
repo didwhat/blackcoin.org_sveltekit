@@ -64,7 +64,7 @@ export default {
 
 #### I18N Data
 
-An **English** translation **must be available**, all others are optional.
+An **English** (`en: 'translation',`) translation **must be available**, all others are optional.
 
 We currently support 22 languages.
 
