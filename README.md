@@ -4,15 +4,26 @@ Please to `pnpm format` before sending PR.
 
 If you add jpeg or png images run `bash /sh/make-webp.sh` to make well compressed versions.
 
+Note that directories are written with the root of the project as `/`. You will need to consider that to mean `/path/to/project/` (copy paste won't work).
+
 ### Orgnization
 
 Most contributers will be concerned with [/src/lib/pages](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/pages) and may need to serve files from [/static](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static).
+
 Elements not tied to a page can be found at [/src/lib/components](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/components).
 
 Internationalization (.i18n.ts) files for layout are stored along side other data and template files. Some .ts have i18n data as well.
 
-For example,
-update News content in [/src/lib/pages/home/news.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/news.ts)
+#### Examples:
+Update Exchange Listing in [/src/lib/pages/home/exchange-list.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/exchange-list.ts)
+
+You will need to add a png logo in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges)
+
+And, because you added a png logo we need to create a webp version by running `bash /sh/make-webp.sh`. (Can skip this step, but good for speed.)
+
+---
+
+Update News content in [/src/lib/pages/home/news.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/news.ts)
 ```
     ...
 	{
