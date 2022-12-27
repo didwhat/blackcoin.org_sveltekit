@@ -14,8 +14,8 @@ Elements not tied to a page can be found at [/src/lib/components](https://github
 
 Internationalization (.i18n.ts) files for layout are stored along side other data and template files. Some .ts have i18n data as well.
 
-#### Examples:
-Update Exchange Listing in [/src/lib/pages/home/exchange-list.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/exchange-list.ts)
+#### Update Exchange Listings
+In [/src/lib/pages/home/exchange-list.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/exchange-list.ts)
 
 You will need to add a png logo in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges)
 
@@ -23,7 +23,8 @@ And, because you added a png logo we need to create a webp version by running `b
 
 ---
 
-Update News content in [/src/lib/pages/home/news.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/news.ts)
+#### Update News Content
+In [/src/lib/pages/home/news.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/news.ts)
 ```
     ...
 	{
