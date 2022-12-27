@@ -26,9 +26,11 @@ In [/src/lib/pages/home/exchange-list.ts](https://github.com/danielclough/blackc
 	},
 ```
 
-You can see from the data pattern what info required.
+You can see from the data pattern what info required. You can easily find that info at the exchange website, for example.
 
-You will need to add a **png logo** in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges). png logos are standard because they offer transparency and are supported in all browsers.
+![Add Exchange Img](https://github.com/danielclough/blackcoin.org_sveltekit/raw/main/static/images/README/add-exchange.png)
+
+Most likely you will download a **png logo**. You will need to put it in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges). png logos are standard because they offer transparency and are supported in all browsers.
 
 Because, you added a png logo we should to create a webp version by running `bash /sh/make-webp.sh`. You can skip this step, but good for speed. As webp images have much better compression than png.
 
