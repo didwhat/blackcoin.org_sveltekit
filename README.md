@@ -24,11 +24,12 @@ In [/src/lib/pages/home/exchange-list.ts](https://github.com/danielclough/blackc
 	},
 ```
 
-You can see from the data pattern what info required. You can easily find that info at the exchange website, for example.
+You can see from the data pattern what info is required. You can easily find that info at the exchange website.
 
+For example:
 ![Add Exchange Img](https://github.com/danielclough/blackcoin.org_sveltekit/raw/main/static/images/README/add-exchange.png)
 
-Most likely you will download a **png logo**. You will need to put it in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges). png logos are standard because they offer transparency and are supported in all browsers.
+Most likely you will download a **.png logo**. You will need to put it in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges). .png logos are standard because they offer transparency and are supported in all browsers.
 
 ---
 
