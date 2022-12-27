@@ -15,16 +15,29 @@ Elements not tied to a page can be found at [/src/lib/components](https://github
 Internationalization (.i18n.ts) files for layout are stored along side other data and template files. Some .ts have i18n data as well.
 
 #### Update Exchange Listings
+
 In [/src/lib/pages/home/exchange-list.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/exchange-list.ts)
 
-You will need to add a png logo in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges)
+```
+	{
+		name: 'Bittrex',
+		url: 'https://bittrex.com/Market/Index?MarketName=BTC-BLK',
+		image: '/images/exchanges/bittrex.png'
+	},
+```
 
-And, because you added a png logo we need to create a webp version by running `bash /sh/make-webp.sh`. (Can skip this step, but good for speed.)
+You can see from the data pattern what info required.
+
+You will need to add a **png logo** in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges). png logos are standard because they offer transparency and are supported in all browsers.
+
+Because, you added a png logo we should to create a webp version by running `bash /sh/make-webp.sh`. You can skip this step, but good for speed. As webp images have much better compression than png.
 
 ---
 
 #### Update News Content
+
 In [/src/lib/pages/home/news.ts](https://github.com/danielclough/blackcoin.org_sveltekit/blob/main/src/lib/pages/home/news.ts)
+
 ```
     ...
 	{
@@ -36,7 +49,9 @@ In [/src/lib/pages/home/news.ts](https://github.com/danielclough/blackcoin.org_s
 	},
     ...
 ```
+
 And, update layout i18n data at [/src/lib/pages/home/news.i18n.ts](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/src/lib/pages/home/news.i18n.ts)
+
 ```
 export default {
 	latest_news: {
