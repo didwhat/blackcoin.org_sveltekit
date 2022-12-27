@@ -2,8 +2,6 @@
 
 Please to `pnpm format` before sending PR.
 
-If you add jpeg or png images run `bash /sh/make-webp.sh` to make well compressed versions.
-
 Note that directories are written with the root of the project as `/`. You will need to consider that to mean `/path/to/project/` (copy paste won't work).
 
 ### Orgnization
@@ -31,8 +29,6 @@ You can see from the data pattern what info required. You can easily find that i
 ![Add Exchange Img](https://github.com/danielclough/blackcoin.org_sveltekit/raw/main/static/images/README/add-exchange.png)
 
 Most likely you will download a **png logo**. You will need to put it in [/static/images/exchanges](https://github.com/danielclough/blackcoin.org_sveltekit/tree/main/static/images/exchanges). png logos are standard because they offer transparency and are supported in all browsers.
-
-Because, you added a png logo we should to create a webp version by running `bash /sh/make-webp.sh`. You can skip this step, but good for speed. As webp images have much better compression than png.
 
 ---
 
@@ -104,6 +100,11 @@ I18N data can be passed to the [/src/lib/i18n.ts](https://github.com/danielcloug
 This allows for translation data to be passed convinently and structured according to what makes sense for any given component.
 
 ## Developing
+
+
+Currently using imagemagick as dependency for making webp images using `bash /sh/make-webp.sh`.
+(*Need to update script to js.*)
+
 
 ```bash
 pnpm run dev
