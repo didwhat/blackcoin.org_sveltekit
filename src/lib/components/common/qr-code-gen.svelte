@@ -8,7 +8,7 @@
 
 	onMount(() => {
 		let script = document.createElement('script');
-		script.src = 'https://blk-svelte.netlify.app/js/qrcode.min.js';
+		script.src = 'https://tmp.blackcoin.one/js/qrcode.min.js';
 		document.head.append(script);
 
 		script.onload = function () {
