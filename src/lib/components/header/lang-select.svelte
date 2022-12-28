@@ -22,7 +22,7 @@
 			<!-- <button on:click={()=>lang = locale.code}>{locale.code}</button> -->
 		{/each}
 		<!-- placeholder for where the open chat button is -->
-		<a class="space-on-mobile" />
+		<a href="/" class="space-on-mobile" />
 	</ul>
 </ul>
 
