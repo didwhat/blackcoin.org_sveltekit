@@ -16,15 +16,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.4
       - uses: actions/checkout@v3
       - uses: actions/configure-pages@v1
         id: pages
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'pnpm'
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18
+      #     cache: 'pnpm'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
       - run: pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
