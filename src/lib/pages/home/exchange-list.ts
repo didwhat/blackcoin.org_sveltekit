@@ -33,7 +33,12 @@ export default [
 		name: 'FreiXlite',
 		url: 'https://freixlite.com/market/BLK/LTC',
 		image: '/images/exchanges/freixlite.png'
-	}
+	},
+  {
+    name:'FreiExchange
+    url: 'https://freiexchange.com/
+    image: 'static/images/exchanges/Freiexchange.jpeg
+  
 ];
 
 const defunct = [
