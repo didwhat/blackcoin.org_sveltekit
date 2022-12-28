@@ -24,7 +24,7 @@
 			<MenuItems {lang} bind:open />
 		{/if}
 		<div class="display-fullscreen">
-			<MenuItems {lang} bind:open />
+			<MenuItems {lang} {open} />
 		</div>
 
 		<div class="btns">
