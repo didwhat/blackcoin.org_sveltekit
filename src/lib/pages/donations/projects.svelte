@@ -66,6 +66,7 @@
 		text-align: center;
 		padding: 1rem;
 		margin: 1rem;
+		width: 100%;
 		background-color: rgba(255, 255, 255, 0.1);
 	}
 	.content {
