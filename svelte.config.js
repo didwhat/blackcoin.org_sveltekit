@@ -8,7 +8,12 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter({ precompress: true })
+		adapter: adapter({ precompress: true }),
+	    csp: {
+			directives: {
+				'script-src': ['self']
+			}
+		}
 	}
 };
 
