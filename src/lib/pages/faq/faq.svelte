@@ -41,12 +41,12 @@
 			<hr />
 		</div>
 	{/each}
+	<span class="faq-contact-links"
+		><i class="fa fa-info-circle" /> If you have more questions
+		<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter. </a>
+	</span>
 </div>
 
-<span class="faq-contact-links"
-	><i class="fa fa-info-circle" /> If you have more questions
-	<a href="https://gitter.im/BlackCoin_Hub" target="_blank norefer">contact us on Gitter. </a>
-</span>
 
 <style>
 	h1, h2 {
@@ -64,6 +64,9 @@
 	.inner {
 		padding: 1rem;
 		width: 40vw;
+	}
+	.inner:nth-child(3) {
+		width: 85%;
 	}
 	}
 </style>
