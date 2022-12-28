@@ -16,18 +16,16 @@
 <br />
 <div class="news-container">
 	<br />
+	<div class="title">
+		<h2>{i18n(newsI18n, 'latest_news', lang)}</h2>
+	</div>
 	<div class="newsBox">
-		<div class="title">
-			<h2>{i18n(newsI18n, 'latest_news', lang)}</h2>
-		</div>
 		<ul class="innerBox">
 			<li>
-				<h3>
-					<a href={bn.url}>
-						<span class="date">{bn.date}</span>
-						<span class="content">{i18n(bn, 'news', lang)}</span>
-					</a>
-				</h3>
+				<a href={bn.url}>
+					<span class="date">{bn.date}</span>
+					<span class="content">{i18n(bn, 'news', lang)}</span>
+				</a>
 			</li>
 		</ul>
 	</div>
@@ -40,53 +38,59 @@
 		margin: 0;
 		padding: 0;
 	}
+	li {
+		padding: .1rem;
+	}
+	a {
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+	}
 	h2 {
 		font-size: 0.8rem;
-		font-weight: 900;
+		font-weight: 500;
 		align-self: center;
 		text-align: center;
 		background: -webkit-linear-gradient(#fff, #fea, #fd6);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
-	h3 {
-		font-size: 11px;
+	.content {
+		font-size: 12px;
 		font-weight: 300;
-		padding: 5px 0 0 1rem;
+		padding-left: 3px;
+		color: #ddb77a;
+		align-self: center;
 	}
 	.date {
+		font-size: 11px;
 		color: white;
+		font-weight: 100;
+		padding: 0 .5rem;
 	}
 	.news-container {
-		width: 100%;
+		width: 90%;
 		max-width: 960px;
 		margin: 0 auto;
 	}
 	.newsBox {
 		text-align: left;
 		background: #151515;
-		height: 40px;
-		position: relative;
+		height: 50px;
 		border: solid 1px red;
 		overflow: hidden;
+		display: grid;
+		align-content: center;
 	}
 	.title {
-		width: 20%;
-		height: 100%;
-		position: absolute;
+		width: 33%;
 		top: 0;
 		background-color: #a00;
-		display: grid;
-		justify-items: center;
+		padding: .2rem;
 	}
 	.innerBox {
-		width: 80%;
-		position: absolute;
 		right: 0;
 		top: 0;
-	}
-	.content {
-		color: #ddb77a;
 	}
 
 	@media (min-width: 700px) {
@@ -94,32 +98,40 @@
 			font-size: 1rem;
 			line-height: 1rem;
 		}
+		span {
+			letter-spacing: 0.15rem;
+		}
+		.content, .date {
+			font-size: 15px;
+		}
+		.date {
+			font-size: 13px;
+		}
 	}
 	@media (min-width: 1080px) {
+		.title {
+			width: 22%;
+		}
 		h2 {
 			font-size: 1.5rem;
 			line-height: 1.5rem;
 		}
-		h3 {
+		.content, .date {
 			font-size: 20px;
-			margin: 0px 0 10px 0;
-			font-weight: 500;
 		}
 		.newsBox {
 			height: 4rem;
 		}
-		.title {
-			height: 4rem;
+		.news-container {
+			width: 60vw;
 		}
 		/* .title > h2 {
 			line-height: 4rem;
 		} */
 	}
 	@media (max-aspect-ratio: 5/1) and (min-width: 2560px) {
-		h3 {
+		.content, .date {
 			font-size: 20px;
-			margin: 0px 0 10px 0;
-			font-weight: 500;
 		}
 	}
 </style>

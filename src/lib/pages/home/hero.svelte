@@ -87,7 +87,6 @@
 	}
 	.subtitle {
 		margin-top: 0;
-		font-size: large;
 		letter-spacing: 10px;
 	}
 
