@@ -31,7 +31,7 @@
 		<div class="about-section">
 			{#each aboutItems as item}
 				{#if item.side === 'right'}
-				<Item {...item} {lang} />
+					<Item {...item} {lang} />
 				{/if}
 			{/each}
 		</div>

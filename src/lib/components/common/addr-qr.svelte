@@ -16,7 +16,7 @@
 	{address[0]}:
 	<span class="golden">{width < 1080 ? address[1].substring(0, 8) + '...' : address[1]}</span>
 	<p class="copied" style="display: {!!copied ? 'flex' : 'none'};">Copied!</p>
-<br />
+	<br />
 	<img
 		on:click={() => {
 			copied = !copied;

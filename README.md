@@ -102,10 +102,8 @@ This allows for translation data to be passed convinently and structured accordi
 
 ## Developing
 
-
 Currently using imagemagick as dependency for making webp images using `bash /sh/make-webp.sh`.
-(*Need to update script to js.*)
-
+(_Need to update script to js._)
 
 ```bash
 pnpm run dev
