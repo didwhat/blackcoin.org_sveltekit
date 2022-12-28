@@ -11,8 +11,8 @@ const config = {
 		adapter: adapter({ precompress: true }),
 	    csp: {
 			directives: {
-				'script-src': ['tmp.blackcoin.one', 'sidecar.gitter.im', 'unsafe-inline'],
-				'object-src': ['tmp.blackcoin.one', 'unsafe-inline']
+				'script-src': ['tmp.blackcoin.one', 'sidecar.gitter.im'],
+				'script-src-elem': ['unsafe-inline']
 			}
 		}
 	}
