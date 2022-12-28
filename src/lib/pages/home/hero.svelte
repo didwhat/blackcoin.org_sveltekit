@@ -74,7 +74,7 @@
 		color: #ececec;
 	}
 	#logo {
-		padding-top: 25%;
+		padding-top: 20%;
 		height: auto;
 	}
 	#large-header {
@@ -86,8 +86,9 @@
 		letter-spacing: 10px;
 	}
 	.subtitle {
-		margin-top: 0;
+		margin: 0;
 		letter-spacing: 10px;
+		font-size: 1.3rem;
 	}
 
 	@media (min-width: 700px) {
