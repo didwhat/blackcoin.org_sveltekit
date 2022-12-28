@@ -26,8 +26,8 @@ export default [
 				url: 'https://atomicdex.io/',
 				alt: 'Atomic DEX Mobile',
 				img: '/images/exchanges/atomicdex.png',
-				height: "80",
-				width: "250"
+				height: "66",
+				width: "240"
 			}
 		]
 	},
@@ -52,8 +52,8 @@ export default [
 				url: 'https://atomicdex.io/',
 				alt: 'Atomic DEX',
 				img: '/images/exchanges/atomicdex.png',
-				height: "80",
-				width: "250"
+				height: "66",
+				width: "240"
 			}
 		]
 	}
