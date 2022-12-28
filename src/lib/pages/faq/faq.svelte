@@ -23,21 +23,25 @@
 	}
 </script>
 
-{#each titles as faq, i}
-	<div class="container">
-		<div>
-			<h3>{i18n(faq, 'TITLE', lang)}</h3>
-			<p>{i18n(faq, 'SUBTITLE', lang)}</p>
-		</div>
+<h1>General Questions</h1>
+<h2>Frequently Asked Questions</h2>
+<div class="container">
+	{#each titles as faq, i}
+		<div class="inner">
+			<div>
+				<h3>{i18n(faq, 'TITLE', lang)}</h3>
+				<p>{i18n(faq, 'SUBTITLE', lang)}</p>
+			</div>
 
-		<div class="panel-group">
-			{#each Qs[i] as d, j}
-				<Group {lang} {As} {d} {i} {j} />
-			{/each}
+			<div class="panel-group">
+				{#each Qs[i] as d, j}
+					<Group {lang} {As} {d} {i} {j} />
+				{/each}
+			</div>
+			<hr />
 		</div>
-		<hr />
-	</div>
-{/each}
+	{/each}
+</div>
 
 <span class="faq-contact-links"
 	><i class="fa fa-info-circle" /> If you have more questions
@@ -45,10 +49,21 @@
 </span>
 
 <style>
+	h1, h2 {
+		text-align: center;
+	}
 	.container {
 		padding: 1rem;
 		width: 95%;
-		max-width: 1440px;
 		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media (min-width: 1080px) {
+	.inner {
+		padding: 1rem;
+		width: 40vw;
+	}
 	}
 </style>
