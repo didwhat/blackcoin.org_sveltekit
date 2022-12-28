@@ -31,20 +31,17 @@
 				<h1 class="title">
 					{i18n(heroI18n, 'blackcoin', lang)}
 				</h1>
+				<!-- <a href="#community" class="join-community">
+					<img
+					id="cta"
+					height="176"
+					width="550"
+					src="/images/hero/banner.svg"
+					alt="Join the Blackcoin Community!"
+					/>
+				</a> -->
+				<hr />
 				<h2 class="subtitle">{i18n(heroI18n, 'since2014', lang)}</h2>
-				<a href="#community" class="join-community">
-					<picture>
-						<source srcset="/images/joincommunity.webp" type="image/webp" />
-						<source srcset="/images/joincommunity.png" type="image/png" />
-						<img
-							id="cta"
-							height="46"
-							width="350"
-							src="/images/joincommunity.png"
-							alt="Join the Blackcoin Community!"
-						/>
-					</picture>
-				</a>
 			</div>
 			<br />
 			<BreakingNews {lang} />
@@ -54,6 +51,11 @@
 </div>
 
 <style>
+	hr {
+		margin: 1.5rem;
+		color: transparent;
+		border: none;
+	}
 	.hero {
 		background: url('/images/hero/tri.webp');
 		background-size: cover;
