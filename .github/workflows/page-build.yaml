@@ -38,7 +38,8 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      # url: ${{ steps.deployment.outputs.page_url }}
+      url: tmp.blackcoin.one
     steps:
       - uses: actions/deploy-pages@v1
         id: deployment
