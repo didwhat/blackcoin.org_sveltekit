@@ -32,7 +32,7 @@
 	a {
 		float: right;
 		color: goldenrod;
-		padding: 0.2rem;
+		margin: .75rem;
 	}
 	.copyright {
 		width: 50%;
