@@ -10,12 +10,13 @@
 	$: qr = '';
 </script>
 
+<h1>Donations</h1>
 <div class="grid">
 	{#each projects as group}
+	<center>
+		<h2>{group.name}</h2>
+	</center>
 		<div class="group">
-			<center>
-				<h2>{group.name}</h2>
-			</center>
 			{#each group.items as item}
 				<div class="items">
 					<h3 class="title">{item.title}</h3>
@@ -43,9 +44,10 @@
 	li {
 		font-size: x-large;
 	}
-
+	h1 {
+		text-align: center;
+	}
 	.grid {
-		padding-top: 5rem;
 		display: grid;
 		align-items: start;
 		justify-items: center;
@@ -53,12 +55,13 @@
 	.group {
 		display: flex;
 		flex-wrap: wrap;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		align-content: center;
 	}
 	.items {
 		display: grid;
+		width: 45vw;
 		align-items: center;
 		justify-items: center;
 		text-align: center;
@@ -73,7 +76,11 @@
 	}
 	@media (min-width: 700px) {
 		.grid {
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: auto;
+			align-items: start;
+			justify-items: start;
+			align-items: stretch;
+			justify-items: stretch;
 		}
 	}
 </style>
