@@ -11,7 +11,7 @@ const config = {
 		adapter: adapter({ precompress: true }),
 	    csp: {
 			directives: {
-				'script-src': ['self', 'unsafe-inline'],
+				'script-src': ['self', 'sidecar.gitter.im', 'unsafe-inline'],
 				'object-src': ['self', 'unsafe-inline']
 			}
 		}
