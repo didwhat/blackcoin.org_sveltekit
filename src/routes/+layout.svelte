@@ -8,13 +8,8 @@
 </script>
 
 <Navbar bind:lang />
-<div>
+<div class="slot-container">
 	<slot />
 </div>
 <Footer {lang} />
 
-<style>
-	div {
-		padding-top: 5rem;
-	}
-</style>
