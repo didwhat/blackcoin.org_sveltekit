@@ -5,8 +5,10 @@ export default [
 		links: [
 			{
 				url: 'https://blackcoinmore.org',
+				alt: 'Blackcoin More',
 				img: '/images/logo-more-bw-sm.png',
-				alt: 'Blackcoin More'
+				height: "100",
+				width: "100"
 			}
 		]
 	},
@@ -15,13 +17,17 @@ export default [
 		links: [
 			{
 				url: 'https://coinomi.com/',
+				alt: 'Coinomi Multicoin Wallet',
 				img: '/images/downloads/coinomi.png',
-				alt: 'Coinomi Multicoin Wallet'
+				height: "100",
+				width: "175"
 			},
 			{
 				url: 'https://atomicdex.io/',
+				alt: 'Atomic DEX Mobile',
 				img: '/images/exchanges/atomicdex.png',
-				alt: 'Atomic DEX Mobile'
+				height: "80",
+				width: "250"
 			}
 		]
 	},
@@ -31,8 +37,10 @@ export default [
 		links: [
 			{
 				url: 'https://github.com/CoinBlack/electrum-blk/releases/tag/v4.2.1',
+				alt: 'Electrum-BLK',
 				img: '/images/downloads/elecblk.png',
-				alt: 'Electrum-BLK'
+				height: "100",
+				width: "100"
 			}
 		]
 	},
@@ -42,8 +50,10 @@ export default [
 		links: [
 			{
 				url: 'https://atomicdex.io/',
+				alt: 'Atomic DEX',
 				img: '/images/exchanges/atomicdex.png',
-				alt: 'Atomic DEX'
+				height: "80",
+				width: "250"
 			}
 		]
 	}

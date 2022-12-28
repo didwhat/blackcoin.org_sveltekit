@@ -26,7 +26,7 @@
 											<source srcset={link.img.split('.')[0] + '.webp'} type="image/webp" />
 										{/if}
 										<source srcset={link.img} type="image/png" />
-										<img src={link.img} alt={link.alt} />
+										<img height={link.height} width={link.width} src={link.img} alt={link.alt} />
 									</picture>
 								{/if}
 								<p>
@@ -64,6 +64,9 @@
 		width: 100%;
 		padding: 1rem;
 		background-color: rgba(0, 0, 0, 0.5);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	a {
 		justify-self: center;
