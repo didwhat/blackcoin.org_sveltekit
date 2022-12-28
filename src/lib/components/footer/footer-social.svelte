@@ -17,8 +17,8 @@
 		flex-wrap: wrap;
 	}
 	a {
-		padding-right: 1rem;
-		font-size: larger;
+		padding: 1rem;
+		font-size: x-large;
 	}
 	@media (min-width: 1080px) {
 		.social {
