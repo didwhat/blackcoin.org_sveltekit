@@ -59,7 +59,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: space-around;
-	background-color: #111;
+	background-color: #000;
 }
 
 /* #menu-locale button, */
