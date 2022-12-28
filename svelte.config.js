@@ -12,7 +12,7 @@ const config = {
 	    csp: {
 			directives: {
 				'script-src': ['tmp.blackcoin.one', 'sidecar.gitter.im'],
-				'script-src-elem': ['unsafe-inline']
+				'script-src-elem': ['tmp.blackcoin.one', 'unsafe-inline']
 			}
 		}
 	}
