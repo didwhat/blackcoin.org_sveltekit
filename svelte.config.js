@@ -11,7 +11,8 @@ const config = {
 		adapter: adapter({ precompress: true }),
 	    csp: {
 			directives: {
-				'script-src': ['self']
+				'script-src': ['self', 'unsafe-inline'],
+				'object-src': ['self', 'unsafe-inline']
 			}
 		}
 	}
