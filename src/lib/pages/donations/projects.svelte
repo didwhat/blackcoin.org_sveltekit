@@ -61,7 +61,6 @@
 	}
 	.items {
 		display: grid;
-		width: 45vw;
 		align-items: center;
 		justify-items: center;
 		text-align: center;
@@ -81,6 +80,9 @@
 			justify-items: start;
 			align-items: stretch;
 			justify-items: stretch;
+		}
+		.items {
+			width: 45vw;
 		}
 	}
 </style>
